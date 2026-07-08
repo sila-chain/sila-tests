@@ -15,7 +15,7 @@ loopMul:
   solidity: |
     pragma solidity ^0.8.5;
     // SPDX-License-Identifier: GPL-3.0
-    // RETESTETH_SOLC_EVM_VERSION=berlin
+    // RETESTSIL_SOLC_EVM_VERSION=berlin
 
     contract MulPerformanceTester {
         uint result;
@@ -61,7 +61,7 @@ loopMul:
   pre:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
-      code: :solidity MulPerformanceTester 
+      code: :solidity MulPerformanceTester
       nonce: 1
       storage: {}
 
@@ -77,9 +77,9 @@ loopMul:
     - :label add-10M    :abi testAdd(uint256,uint256,uint256) 0x8edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf501 0x8edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf501 10000000
     - :label divadd-10M :abi testDivAdd(uint256,uint256,uint256,uint256) 0x8edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf501 0x1c68db1c179cd35ab3fc60c63704aa7fcbea40f19782b1611aaba86726a7686c 0xff00ffffffffffffffffffffffffffaaffffffffffffffffbbffffffffffffff0000 10000000
     # Skipped the unrolled divadd test, because the source is missing
-    # Skipped mul, because we don't have the source. 
+    # Skipped mul, because we don't have the source.
     #        The old test has two parameters, the function here three
-    - :label mulmod-2M  :abi testMulMod(uint256,uint256,uint256,uint256) 0x8edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf501 0x1c68db1c179cd35ab3fc60c63704aa7fcbea40f19782b1611aaba86726a7686c 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 2000000 
+    - :label mulmod-2M  :abi testMulMod(uint256,uint256,uint256,uint256) 0x8edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf501 0x1c68db1c179cd35ab3fc60c63704aa7fcbea40f19782b1611aaba86726a7686c 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 2000000
     gasLimit:
     - 0x7fffffffffffffff
     gasPrice: '10'

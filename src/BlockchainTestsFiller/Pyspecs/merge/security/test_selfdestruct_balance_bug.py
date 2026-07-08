@@ -1,7 +1,7 @@
 """
 bug: Tests the Consensus Flaw During Block Processing related to SELFDESTRUCT
     Tests the consensus-vulnerability reported in
-    [go-ethereum/security/advisories/GHSA-xw37-57qp-9mm4](https://github.com/ethereum/go-ethereum/security/advisories/GHSA-xw37-57qp-9mm4).
+    [go-sila/security/advisories/GHSA-xw37-57qp-9mm4](https://github.com/sila/go-sila/security/advisories/GHSA-xw37-57qp-9mm4).
 
 To reproduce the issue with this test case:
 
@@ -12,7 +12,7 @@ To reproduce the issue with this test case:
 
 import pytest
 
-from ethereum_test_tools import (
+from sila_test_tools import (
     Account,
     Block,
     BlockchainTestFiller,
@@ -23,7 +23,7 @@ from ethereum_test_tools import (
     compute_create_address,
     to_address,
 )
-from ethereum_test_tools.vm.opcode import Opcodes as Op
+from sila_test_tools.vm.opcode import Opcodes as Op
 
 
 @pytest.mark.compile_yul_with("Merge")  # Shanghai refuses to compile SELFDESTRUCT

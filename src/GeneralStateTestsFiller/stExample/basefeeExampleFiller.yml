@@ -33,7 +33,7 @@ basefeeExample:
       network:
         - '<London'
       result: {}
-      expectException:     
+      expectException:
         '<London': TR_TypeNotSupported
 
   pre:
@@ -42,7 +42,7 @@ basefeeExample:
       code: |
           {
              ; Can also add lll style comments here
-             [[0]] (ADD 1 1) 
+             [[0]] (ADD 1 1)
           }
       nonce: '0'
       storage: {}

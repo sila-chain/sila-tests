@@ -17,9 +17,9 @@ echo Test type $testType
 
 if [ $nodocker ]
 then
-   cmd="retesteth -t $suite -- "
+   cmd="retestsil -t $suite -- "
 else
-   cmd="./dretesteth.sh -t $suite -- --datadir /tests/config "
+   cmd="./dretestsil.sh -t $suite -- --datadir /tests/config "
 fi
 
 

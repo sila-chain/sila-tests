@@ -14,10 +14,10 @@ CreateCollisionResults:
 
   pre:
 
-    # Same address as CREATE creates. 
+    # Same address as CREATE creates.
     8af6a7af30d840ba137e8f3f34d54cfb8beba6e2:
       balance: '0x0ba1a9ce0ba1a9ce'
-      code:   | 
+      code:   |
         {
           [[0]] 0x001D
         }
@@ -29,7 +29,7 @@ CreateCollisionResults:
     # Same address as CREATE2 creates
     40f1299359ea754ac29eb2662a1900752bf8275f:
       balance: '0x0ba1a9ce0ba1a9ce'
-      code:   | 
+      code:   |
         {
           [[0]] 0x001D
         }
@@ -40,7 +40,7 @@ CreateCollisionResults:
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
-      code:   | 
+      code:   |
         {
           ; Variables are 0x20 bytes (= 256 bits) apart, except for
           ; code buffers that get 0x100 (256 bytes)
@@ -69,11 +69,11 @@ CreateCollisionResults:
           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ; Create the contract and a constructor to pass to CREATE[2]
           ;
-          [constructorLength] 
+          [constructorLength]
             (lll
                (return contractCode contractMacro)
-               constructorCode            
-            )   
+               constructorCode
+            )
           [contractLength] contractMacro
           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ; Actually create the contract
@@ -91,18 +91,18 @@ CreateCollisionResults:
           [[0x11]] @addr1
           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ; CALL the address where the contract should have been created
-          [callRet] (call 0xFFFF 
+          [callRet] (call 0xFFFF
                          0x8af6a7af30d840ba137e8f3f34d54cfb8beba6e2 0 0 0 0 0)
           ; PC after contract call (CREATE)
           [[0x21]] (pc)
           [[0x12]] (- @callRet 1)
-          [[0x13]] (returndatasize)  
-          [callRet] (call 0xFFFF 
+          [[0x13]] (returndatasize)
+          [callRet] (call 0xFFFF
                          0x40f1299359ea754ac29eb2662a1900752bf8275f 0 0 0 0 0)
           ; PC after contract call (CREATE2)
           [[0x22]] (pc)
           [[0x14]] (- @callRet 1)
-          [[0x15]] (returndatasize)  
+          [[0x15]] (returndatasize)
           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ; Read code from contracts
           ; The code CREATE attempted to overwrite
@@ -141,7 +141,7 @@ CreateCollisionResults:
     #
     # Create type:    01 - CREATE  02 - CREATE2
     #
-    # LSB  
+    # LSB
     - :raw 0x01
     - :raw 0x02
     gasLimit:
@@ -167,7 +167,7 @@ CreateCollisionResults:
 
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
-            # In the case of a collision CREATE[2] just pops the 
+            # In the case of a collision CREATE[2] just pops the
             # parameter values from the stack and returns zero, so the
             # results should all be zero except for these:
 

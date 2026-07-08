@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Test where accnt has slot 1 value of '2', is cleared, then calls itself and overwrites with '3', causing a refund-deduction in second call context",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "51bdefd67d65ed557d5c3b7833206d1693228b5faed1dc75d554e6e407640bc1",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

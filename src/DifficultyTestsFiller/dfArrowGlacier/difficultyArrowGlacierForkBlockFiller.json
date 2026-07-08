@@ -1,8 +1,8 @@
 {
-    "difficultyArrowGlacierForkBlock" : 
+    "difficultyArrowGlacierForkBlock" :
     {
         "_info" : {
-            "comment" : "ArrowGlacier Difficulty Combination Check at Fork Block (13,773,000): Difficulty range start uses current mainnet difficulty, range end uses approximate value with constant 13 second block, 5% uncle rate"
+            "comment" : "ArrowGlacier Difficulty Combination Check at Fork Block (13,773,000): Difficulty range start uses current sila-sila-mainnet difficulty, range end uses approximate value with constant 13 second block, 5% uncle rate"
         },
         "network" : [ "ArrowGlacier" ],
         "blocknumber" : ["0xd228c8"],

@@ -12,7 +12,7 @@ CallEcrecover_Overflow:
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
 
 
-  pre:  
+  pre:
 
 
     cccccccccccccccccccccccccccccccccccccccc:
@@ -25,7 +25,7 @@ CallEcrecover_Overflow:
          // Call the EC Recover Precompile
          sstore(0, call(3000, 1, 0, 0, 0x80, 0x80, 0x20))
          sstore(1, mload(0x80))
-        }  
+        }
       nonce: '0'
       storage: {}
       balance: 0
@@ -73,11 +73,11 @@ CallEcrecover_Overflow:
   expect:
 
   - indexes:
-      data: 
+      data:
       - :label fail
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Frontier"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -86,11 +86,11 @@ CallEcrecover_Overflow:
           0x01: 0x00
 
   - indexes:
-      data: 
+      data:
       - :label pass01
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Frontier"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -99,11 +99,11 @@ CallEcrecover_Overflow:
           0x01: 0x2182da748249a933bf737586b80212df19b8f829
 
   - indexes:
-      data: 
+      data:
       - :label pass02
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Frontier"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -112,11 +112,11 @@ CallEcrecover_Overflow:
           0x01: 0x1b85ac3c9b09de43659c5d04a2d9c75457d9abf4
 
   - indexes:
-      data: 
+      data:
       - :label pass03
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Frontier"
     result:
       cccccccccccccccccccccccccccccccccccccccc:

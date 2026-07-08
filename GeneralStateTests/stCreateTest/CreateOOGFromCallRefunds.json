@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "",
             "filling-rpc-server" : "evm version 1.13.0-unstable-6ddb92ca-20230811",
-            "filling-tool-version" : "retesteth-0.3.1-cancun+commit.8cf9b032.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.1-cancun+commit.8cf9b032.Linux.g++",
             "generatedTestHash" : "1933b559b8505c6bc7f6ca1caed3d933a55cc1eee85c80b8c654498c6cd8e927",
             "labels" : {
                 "0" : "SStore_Refund_NoOoG",

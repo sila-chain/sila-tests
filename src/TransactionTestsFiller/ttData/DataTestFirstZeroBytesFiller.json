@@ -1,7 +1,7 @@
 {
     "DataTestFirstZeroBytes" :
     {
-        "expectException" : 
+        "expectException" :
         {
         },
         "transaction" :

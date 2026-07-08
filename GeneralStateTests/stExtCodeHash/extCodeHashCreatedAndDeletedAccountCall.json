@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "EXTCODEHASH/EXTCODESIZE of an account created then deleted via CALL in same transaction",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "60bd40f8e772d664344f0d453bab9e48a7b24c0e754278c225dc21578a492534",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

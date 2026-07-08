@@ -1,7 +1,7 @@
 {
     "createInitFail_OOGduringInit" : {
         "_info" : {
-            "comment" : "create fails because init code has OOG" 
+            "comment" : "create fails because init code has OOG"
         },
         "env" : {
             "currentCoinbase" : "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

@@ -13,7 +13,7 @@ testOpcode_b0:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -63,7 +63,7 @@ testOpcode_b0:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b000
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -73,7 +73,7 @@ testOpcode_b0:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 176 (call 10000000 0x7E57C0DE000000000000000000000000000000b0 0 0 32 0 0))
         }
 
@@ -136,7 +136,7 @@ testOpcode_b1:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -186,7 +186,7 @@ testOpcode_b1:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b100
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -196,7 +196,7 @@ testOpcode_b1:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 177 (call 10000000 0x7E57C0DE000000000000000000000000000000b1 0 0 32 0 0))
         }
 
@@ -259,7 +259,7 @@ testOpcode_b2:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -309,7 +309,7 @@ testOpcode_b2:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b200
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -319,7 +319,7 @@ testOpcode_b2:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 178 (call 10000000 0x7E57C0DE000000000000000000000000000000b2 0 0 32 0 0))
         }
 
@@ -382,7 +382,7 @@ testOpcode_b3:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -432,7 +432,7 @@ testOpcode_b3:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b300
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -442,7 +442,7 @@ testOpcode_b3:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 179 (call 10000000 0x7E57C0DE000000000000000000000000000000b3 0 0 32 0 0))
         }
 
@@ -505,7 +505,7 @@ testOpcode_b4:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -555,7 +555,7 @@ testOpcode_b4:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b400
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -565,7 +565,7 @@ testOpcode_b4:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 180 (call 10000000 0x7E57C0DE000000000000000000000000000000b4 0 0 32 0 0))
         }
 
@@ -628,7 +628,7 @@ testOpcode_b5:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -678,7 +678,7 @@ testOpcode_b5:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b500
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -688,7 +688,7 @@ testOpcode_b5:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 181 (call 10000000 0x7E57C0DE000000000000000000000000000000b5 0 0 32 0 0))
         }
 
@@ -751,7 +751,7 @@ testOpcode_b6:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -801,7 +801,7 @@ testOpcode_b6:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b600
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -811,7 +811,7 @@ testOpcode_b6:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 182 (call 10000000 0x7E57C0DE000000000000000000000000000000b6 0 0 32 0 0))
         }
 
@@ -874,7 +874,7 @@ testOpcode_b7:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -924,7 +924,7 @@ testOpcode_b7:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b700
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -934,7 +934,7 @@ testOpcode_b7:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 183 (call 10000000 0x7E57C0DE000000000000000000000000000000b7 0 0 32 0 0))
         }
 
@@ -997,7 +997,7 @@ testOpcode_b8:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1047,7 +1047,7 @@ testOpcode_b8:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b800
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1057,7 +1057,7 @@ testOpcode_b8:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 184 (call 10000000 0x7E57C0DE000000000000000000000000000000b8 0 0 32 0 0))
         }
 
@@ -1120,7 +1120,7 @@ testOpcode_b9:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1170,7 +1170,7 @@ testOpcode_b9:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001b900
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1180,7 +1180,7 @@ testOpcode_b9:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 185 (call 10000000 0x7E57C0DE000000000000000000000000000000b9 0 0 32 0 0))
         }
 
@@ -1243,7 +1243,7 @@ testOpcode_ba:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1293,7 +1293,7 @@ testOpcode_ba:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001ba00
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1303,7 +1303,7 @@ testOpcode_ba:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 186 (call 10000000 0x7E57C0DE000000000000000000000000000000ba 0 0 32 0 0))
         }
 
@@ -1366,7 +1366,7 @@ testOpcode_bb:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1416,7 +1416,7 @@ testOpcode_bb:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001bb00
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1426,7 +1426,7 @@ testOpcode_bb:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 187 (call 10000000 0x7E57C0DE000000000000000000000000000000bb 0 0 32 0 0))
         }
 
@@ -1489,7 +1489,7 @@ testOpcode_bc:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1539,7 +1539,7 @@ testOpcode_bc:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001bc00
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1549,7 +1549,7 @@ testOpcode_bc:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 188 (call 10000000 0x7E57C0DE000000000000000000000000000000bc 0 0 32 0 0))
         }
 
@@ -1612,7 +1612,7 @@ testOpcode_bd:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1662,7 +1662,7 @@ testOpcode_bd:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001bd00
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1672,7 +1672,7 @@ testOpcode_bd:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 189 (call 10000000 0x7E57C0DE000000000000000000000000000000bd 0 0 32 0 0))
         }
 
@@ -1735,7 +1735,7 @@ testOpcode_be:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1785,7 +1785,7 @@ testOpcode_be:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001be00
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1795,7 +1795,7 @@ testOpcode_be:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 190 (call 10000000 0x7E57C0DE000000000000000000000000000000be 0 0 32 0 0))
         }
 
@@ -1858,7 +1858,7 @@ testOpcode_bf:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -1908,7 +1908,7 @@ testOpcode_bf:
       nonce: 0
       storage: {}
       code: :raw 0x6001600160016001600160016001bf00
-  
+
 
 
     '0xB1607E5700000000000000000000000000000000':
@@ -1918,7 +1918,7 @@ testOpcode_bf:
       code: |
         {
               (mstore8 30 0xBA)
-              (mstore8 31 0xD0) 
+              (mstore8 31 0xD0)
               (sstore 191 (call 10000000 0x7E57C0DE000000000000000000000000000000bf 0 0 32 0 0))
         }
 

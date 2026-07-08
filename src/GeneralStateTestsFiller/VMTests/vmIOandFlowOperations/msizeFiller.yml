@@ -84,11 +84,11 @@ msize:
            (mstore8 0x20 1)
            [[1]] (msize)
 
-           ; Does it matter if we reset the memory?  
+           ; Does it matter if we reset the memory?
            ; Spoiler alert, it doesn't
            (mstore8 0x20 0)
            [[2]] (msize)
-         
+
         }
       nonce: '0'
       storage: {}
@@ -103,7 +103,7 @@ msize:
            ;
            ; Note: It doesn't
            (mstore8 0xB00000 1)
-           [[0]] (msize)         
+           [[0]] (msize)
         }
       nonce: '0'
       storage: {}
@@ -115,7 +115,7 @@ msize:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (delegatecall (gas) (+ 0x100 $4) 0 0 0 0)
         }
       nonce: '0'
@@ -127,7 +127,7 @@ msize:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -140,7 +140,7 @@ msize:
     - :label chunks   :abi f(uint) 4
 
     # Off in hyperspace, is the chunk size still 0x20?
-    - :label farChunk :abi f(uint) 5 
+    - :label farChunk :abi f(uint) 5
     gasLimit:
     - 0x10000000
     gasPrice: '10'
@@ -149,11 +149,11 @@ msize:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
-        data: 
+        data:
         - :label msize0
         - :label msize1
         gas:  !!int -1
@@ -169,7 +169,7 @@ msize:
 
 
     - indexes:
-        data: 
+        data:
         - :label msize2
         gas:  !!int -1
         value: !!int -1
@@ -183,7 +183,7 @@ msize:
 
 
     - indexes:
-        data: 
+        data:
         - :label msize3
         gas:  !!int -1
         value: !!int -1
@@ -197,7 +197,7 @@ msize:
 
 
     - indexes:
-        data: 
+        data:
         - :label chunks
         gas:  !!int -1
         value: !!int -1
@@ -214,7 +214,7 @@ msize:
 
 
     - indexes:
-        data: 
+        data:
         - :label farChunk
         gas:  !!int -1
         value: !!int -1

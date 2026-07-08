@@ -1,5 +1,5 @@
 not:
- 
+
   # Test the NOT operator
   # note that the VMTest test has a bug that kills the result instead of
   # returning it (it's written to memory, not storage)
@@ -20,19 +20,19 @@ not:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            [[0]] (not 0x0123456789abcdef)
         }
       nonce: '0'
       storage: {}
 
 
-      
+
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call 0xffffff (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -44,7 +44,7 @@ not:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
   transaction:
     data:
     - :abi f(uint) 0
@@ -56,8 +56,8 @@ not:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: !!int -1

@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "4464a21e0fd87cbdf3b4067680b34e042ce71116cbf0292c51cce3620c4b4ae7",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

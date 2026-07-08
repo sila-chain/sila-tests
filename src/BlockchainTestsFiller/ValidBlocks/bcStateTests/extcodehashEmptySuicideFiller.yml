@@ -17,7 +17,7 @@ extcodehashEmptySuicide:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -58,11 +58,11 @@ extcodehashEmptySuicide:
         }
       nonce: 0
       storage:
-        0x00: 0x01 
+        0x00: 0x01
 
 
     # Give 0xDEAD one wei in memory of its life
-    dddddddddddddddddddddddddddddddddddddddd: 
+    dddddddddddddddddddddddddddddddddddddddd:
       balance: 100
       code: |
         {
@@ -150,4 +150,4 @@ extcodehashEmptySuicide:
           # After the dead account is given 1 wei
           0x0004: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
           0x0104: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
-           
+

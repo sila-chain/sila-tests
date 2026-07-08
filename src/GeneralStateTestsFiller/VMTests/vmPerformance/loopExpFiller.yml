@@ -15,7 +15,7 @@ loopExp:
   solidity: |
     pragma solidity ^0.8.5;
     // SPDX-License-Identifier: GPL-3.0
-    // RETESTETH_SOLC_EVM_VERSION=berlin
+    // RETESTSIL_SOLC_EVM_VERSION=berlin
 
     contract ExpPerformanceTester {
 
@@ -89,7 +89,7 @@ loopExp:
   transaction:
     data:
     # fun(a,b,c) calculates b <- b^a    c times
-    # 
+    #
     # testExp            naive implementation
     # testExpUnroll16    the loop is unrolled so it only runs c/16 times
     # testNop            like the naive implementation but with an empty loop
@@ -111,7 +111,7 @@ loopExp:
     - :label exp_8b_100k    :abi testExp(uint256,uint256,uint256) 0xffffffffffffffff 0x5851f42d4c957f2d 100000 # 11
     - :label exp_16b_100k   :abi testExp(uint256,uint256,uint256) 0xffffffffffffffffffffffffffffffff 0x5851f42d4c957f2d 100000 # 12
     - :label exp_32b_100k   :abi testExp(uint256,uint256,uint256) 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 0x5851f42d4c957f2d 100000 #13
-   
+
     # Used to be nop_0_15_1M, but with Solidity 0.8 it stopped working
     - :label nop_0_15_300k  :abi testNop(uint256,uint256,uint256) 0 15 300000 # 14
 

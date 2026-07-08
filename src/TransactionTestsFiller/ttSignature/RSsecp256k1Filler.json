@@ -1,7 +1,7 @@
 {
     "RSsecp256k1" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "InvalidVRS"
         },

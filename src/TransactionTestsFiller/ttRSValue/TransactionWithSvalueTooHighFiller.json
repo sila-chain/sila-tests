@@ -1,7 +1,7 @@
 {
     "TransactionWithSvalueTooHigh" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "InvalidVRS"
         },

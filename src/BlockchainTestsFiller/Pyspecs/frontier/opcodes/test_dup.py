@@ -4,8 +4,8 @@ abstract: Test DUP
     Test the DUP opcodes.
 
 """
-from ethereum_test_forks import Frontier, Homestead
-from ethereum_test_tools import (
+from sila_test_forks import Frontier, Homestead
+from sila_test_tools import (
     Account,
     Environment,
     StateTestFiller,
@@ -21,7 +21,7 @@ def test_dup(state_test: StateTestFiller, fork: str):
 
     note: Test case ported from:
 
-        - [ethereum/tests/GeneralStateTests/VMTests/vmTests/dup.json](https://github.com/ethereum/tests/blob/develop/GeneralStateTests/VMTests/vmTests/dup.json)
+        - [sila/tests/GeneralStateTests/VMTests/vmTests/dup.json](https://github.com/sila/tests/blob/develop/GeneralStateTests/VMTests/vmTests/dup.json)
         by Ori Pomerantz.
     """  # noqa: E501
     env = Environment()

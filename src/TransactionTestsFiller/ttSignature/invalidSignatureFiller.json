@@ -1,7 +1,7 @@
 {
     "invalidSignature" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "InvalidVRS"
         },

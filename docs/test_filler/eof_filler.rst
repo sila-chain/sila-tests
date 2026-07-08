@@ -1,10 +1,10 @@
 .. _eof_filler:
 
 ==================================
-Ethereum Test Format Source Code
+Sila Test Format Source Code
 ==================================
 Location: `src/EOFTestsFiller
-<https://github.com/ethereum/tests/tree/develop/src/EOFTestsFiller>`_
+<https://github.com/sila/tests/tree/develop/src/EOFTestsFiller>`_
 
 
 .. _eof_struct:

@@ -1,6 +1,6 @@
 {
     "returndatacopyPythonBug_Tue_03_48_41-1432": {
-        "_info" : { 
+        "_info" : {
             "comment" : "Fuzzer generated bug. No code source."
         },
         "env": {
@@ -23,7 +23,7 @@
 		            "0xffffffffffffffffffffffffffffffffffffffff" : {
         				"storage": {
         				    "0x01" : "0x00"
-        				}						
+        				}
     			    },
     			    "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
         				"nonce": "0x01"

@@ -28,7 +28,7 @@ add11_yml:
         gas:  !!int 0
         value: !!int -1
 
-      # hard fork order Frontier, Homestead, EIP150, EIP155, Byzantium, Constantinople, Istanbul
+      # hard fork order Frontier, Homestead, SIP150, SIP155, Byzantium, Constantinople, Istanbul
       network:
         - '>=Berlin'
       result:
@@ -50,7 +50,7 @@ add11_yml:
           nonce: '1'
 
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-           # Avoid checking balance field as it actually affected by many EIPs that can break the test
+           # Avoid checking balance field as it actually affected by many SIPs that can break the test
            # balance 999999999999856888
           code: '0x'
           nonce: '1'
@@ -79,7 +79,7 @@ add11_yml:
       code: |
           {
              ; Can also add lll style comments here
-             [[0]] (ADD 1 1) 
+             [[0]] (ADD 1 1)
           }
       nonce: '0'
       storage: {}
@@ -93,7 +93,7 @@ add11_yml:
 
 
 
-  # Multiple transaction description that will be applied on a pre state      
+  # Multiple transaction description that will be applied on a pre state
   transaction:
     # foreach d in `data` { foreach g in `gasLimit` { foreach v in `value`  {  pre.applyTransaction(d, g, v)  }}}
     # each element of the data array is treated same as account's code field. You could use LLL here

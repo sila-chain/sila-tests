@@ -1,7 +1,7 @@
 expPower2:
 
   # For n where n=2^m
-  # Test 2^n, 2^(n-1), 2^(n+1) 
+  # Test 2^n, 2^(n-1), 2^(n+1)
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: 0x20000
@@ -15,12 +15,12 @@ expPower2:
 
   pre:
 
-      
+
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (def 'storageJump 0x10)
 
             (def 'calc (m) {
@@ -50,7 +50,7 @@ expPower2:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
   transaction:
     data:
     - :abi f(uint) 0
@@ -62,8 +62,8 @@ expPower2:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: !!int -1

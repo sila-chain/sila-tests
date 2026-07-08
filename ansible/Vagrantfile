@@ -53,22 +53,22 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   # Use VBoxManage to customize the VM. For example to change memory:
   #   vb.customize ["modifyvm", :id, "--memory", "1024"]
   # end
-  
 
-  config.vm.provider "virtualbox" do |vb| 
-  		# Ubuntu / Virtualbox workaround. 
+
+  config.vm.provider "virtualbox" do |vb|
+  		# Ubuntu / Virtualbox workaround.
   		# see http://askubuntu.com/questions/238040/how-do-i-fix-name-service-for-vagrant-client
 	    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
 
 		# cpp client needs a lot of RAM to build
         vb.customize ["modifyvm", :id, "--memory", "2048"]
   end
-  
+
   #
   # View the documentation for the provider you're using for more
   # information on available options.
- 
-  
+
+
   # Ansible
   config.vm.provision "ansible" do |ansible|
     	ansible.playbook = "site.yml"

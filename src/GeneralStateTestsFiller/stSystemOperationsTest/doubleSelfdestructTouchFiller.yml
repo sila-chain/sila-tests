@@ -41,7 +41,7 @@ doubleSelfdestructTouch:
       balance: 0
       storage: {}
       code: |
-        :yul berlin 
+        :yul berlin
         {
           let index := sload(0)
           sstore(0, add(index, 1))

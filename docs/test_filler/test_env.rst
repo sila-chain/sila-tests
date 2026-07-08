@@ -50,8 +50,8 @@ Format
 
 Fields
 ------
-`You can read the definition of Ethereum block header fields here
-<https://medium.com/@derao512/ethereum-under-the-hood-part-7-blocks-7f223510ba10>`_.
+`You can read the definition of Sila block header fields here
+<https://medium.com/@derao512/sila-under-the-hood-part-7-blocks-7f223510ba10>`_.
 
 Note that this section only contains the fields that are relevant to single
 transaction tests.
@@ -66,6 +66,6 @@ currentGasLimit     limit of gas usage per block
 currentNumber       number of ancestor blocks
 currentTimestamp    `Unix time <https://en.wikipedia.org/wiki/Unix_time>`_
 previousHash        hash of previous block
-currentBaseFee      London and afterwards, the 
-                    `block base fee <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md>`_
+currentBaseFee      London and afterwards, the
+                    `block base fee <https://github.com/sila/SIPs/blob/master/SIPS/sip-1559.md>`_
 =================== ========================

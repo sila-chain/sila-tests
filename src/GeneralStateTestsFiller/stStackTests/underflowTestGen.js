@@ -138,7 +138,7 @@ const boilerPlate2 = `
     data:
     # The parameter's value is the contract to call. It is
     # <opcode>*0x100 + <number of parameters>
-    # For example, 0x0100 is ADD with zero parameters and 0x0101 is ADD with 
+    # For example, 0x0100 is ADD with zero parameters and 0x0101 is ADD with
     # one parameter
 `
 

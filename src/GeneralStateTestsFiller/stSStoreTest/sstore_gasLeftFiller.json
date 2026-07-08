@@ -1,7 +1,7 @@
 {
   "sstore_gasLeft": {
     "_info": {
-      "comment": "Checks EIP-1706/EIP-2200 out of gas requirement for non-mutating SSTOREs."
+      "comment": "Checks SIP-1706/SIP-2200 out of gas requirement for non-mutating SSTOREs."
     },
     "env": {
       "currentCoinbase": "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

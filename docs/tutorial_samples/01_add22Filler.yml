@@ -1,7 +1,7 @@
 # The name of the test
 01_add22:
 
-# The general Ethereum environment
+# The general Sila environment
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: 0x20000
@@ -41,7 +41,7 @@
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 # The transaction to check
   transaction:
     data:
@@ -59,8 +59,8 @@
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
 # The expected result
   expect:
     - indexes:

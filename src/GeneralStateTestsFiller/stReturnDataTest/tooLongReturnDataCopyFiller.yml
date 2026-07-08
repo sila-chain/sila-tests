@@ -73,10 +73,10 @@ tooLongReturnDataCopy:
              mstore(0, lengthReturned)
 
              // The length of the buffer to be returned is part of the calldata
-             // for this contract. However, it is necessary to send it to the 
+             // for this contract. However, it is necessary to send it to the
              // contract we're calling (either 0xC0DE or 0x0BAD) so it will know
              // what size of buffer to return to us
-             let retVal := call(gas(), contract, 0, 
+             let retVal := call(gas(), contract, 0,
                 0, 0x20,    // input buffer with lengthReturned
                 0, 0x100)    // output buffer
 
@@ -90,7 +90,7 @@ tooLongReturnDataCopy:
              extcodecopy(0xC0DE, 0,0, add(0x20,extcodesize(0xC0DE)))
              calldatacopy(0,0, add(0x20,calldatasize()))
              codecopy(0,0, add(0x20,codesize()))
-             
+
 
              // If we get here, kill the goat to show success
              sstore(0, 0xDEAD)
@@ -115,58 +115,58 @@ tooLongReturnDataCopy:
 # 1. The length of the returned buffer
 # 2. The offset for the RETURNDATACOPY opcode
 # 3. The length for the RETURNDATACOPY opcode
-# 4. The contract call. 
+# 4. The contract call.
 #    0xC0DE - contract that returns a buffer
 #    0x0BAD - contract that reverts with a buffer
 #    In both cases, the returned buffer is the length specified in the first parameter
 
     # Receive an empty buffer, copy zero bytes from offset zero.
     - :label success :abi f(uint,uint,uint,uint) 0x00 0x00 0x00 0xC0DE
-      
+
 
     # Receive an empty buffer, copy the first byte from it
     - :label fail    :abi f(uint,uint,uint,uint) 0x00 0x00 0x01 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy the first eight
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x00 0x08 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy the first sixteen
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x00 0x10 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy the first seventeen
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x00 0x11 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy fifteen (except for the first one)
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x01 0x0f 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy sixteen (except for the first one)
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x01 0x10 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy numbers 8-15
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x08 0x08 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy numbers 9-16
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x09 0x08 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy numbers 16-23
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x10 0x08 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy numbers 16-31
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x10 0x10 0xC0DE
-      
+
 
     # Receive sixteen bytes, copy numbers 32-47
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x20 0x10 0xC0DE
-      
+
 
 
 
@@ -174,51 +174,51 @@ tooLongReturnDataCopy:
 
     # Receive an empty buffer, copy zero bytes from offset zero.
     - :label success :abi f(uint,uint,uint,uint) 0x00 0x00 0x00 0x0BAD
-      
+
 
     # Receive an empty buffer, copy the first byte from it
     - :label fail    :abi f(uint,uint,uint,uint) 0x00 0x00 0x01 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy the first eight
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x00 0x08 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy the first sixteen
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x00 0x10 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy the first seventeen
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x00 0x11 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy fifteen (except for the first one)
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x01 0x0f 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy sixteen (except for the first one)
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x01 0x10 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy numbers 8-15
     - :label success :abi f(uint,uint,uint,uint) 0x10 0x08 0x08 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy numbers 9-16
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x09 0x08 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy numbers 16-23
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x10 0x08 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy numbers 16-31
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x10 0x10 0x0BAD
-      
+
 
     # Receive sixteen bytes, copy numbers 32-47
     - :label fail    :abi f(uint,uint,uint,uint) 0x10 0x20 0x10 0x0BAD
-      
+
 
 
 
@@ -249,7 +249,7 @@ tooLongReturnDataCopy:
             0x00: 0x60A7
 
 
-    # If we attempt to copy RETURNDATASIZE() or less, we get to the 
+    # If we attempt to copy RETURNDATASIZE() or less, we get to the
     # capraicide code and the goat dies
     - indexes:
         data: :label success

@@ -221,10 +221,10 @@
                         "ConstantinopleFix": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "EIP150": {
+                        "SIP150": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "EIP158": {
+                        "SIP158": {
                             "$ref": "#/definitions/TransactionResults"
                         },
                         "Frontier": {

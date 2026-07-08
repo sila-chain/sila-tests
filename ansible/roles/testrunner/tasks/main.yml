@@ -2,7 +2,7 @@
 - name: update C++ client
   docker_image:
       path: /home/{{ ansible_ssh_user }}/git/ansible/test-files/docker-cppjit
-      name: ethereum/cppjit-testrunner
+      name: sila/cppjit-testrunner
       state: build
   async: 1200
   poll: 5
@@ -10,7 +10,7 @@
 - name: update Go client
   docker_image:
       path: /home/{{ ansible_ssh_user }}/git/ansible/test-files/docker-go
-      name: ethereum/go-testrunner
+      name: sila/go-testrunner
       state: build
   async: 1200
   poll: 5
@@ -18,14 +18,14 @@
 - name: update Python client
   docker_image:
       path: /home/{{ ansible_ssh_user }}/git/ansible/test-files/docker-python
-      name: ethereum/python-testrunner
+      name: sila/python-testrunner
       state: build
   async: 1200
   poll: 5
 
-- name: Run infinite tests 
+- name: Run infinite tests
   shell: seq {{ ansible_processor_vcpus }} | parallel --max-args=0 /home/{{ ansible_ssh_user }}/git/ansible/test-files/testrunner.sh
-  # run for two months 
+  # run for two months
   async: "{{ 60 * 60 * 24 * 30 * 2 }}"
   poll: 0
   register: log_runner

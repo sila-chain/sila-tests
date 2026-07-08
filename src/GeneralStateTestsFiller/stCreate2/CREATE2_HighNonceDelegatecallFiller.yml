@@ -538,7 +538,7 @@ CREATE2_HighNonceDelegatecall:
           'shouldnotexist': '1'
        6a0a5d50d0a1ce10943b64ee28752a1314f45c39:
           'shouldnotexist': '1'
-    
+
     - indexes:
        data:
        - ':label A_MaxNonceMinus1_DelegateCall_B_MaxNonce_Create2'
@@ -625,7 +625,7 @@ CREATE2_HighNonceDelegatecall:
           'shouldnotexist': '1'
        6a0a5d50d0a1ce10943b64ee28752a1314f45c39:
           'shouldnotexist': '1'
-    
+
     - indexes:
        data:
        - ':label A_MaxNonceMinus1_Call_B_MaxNonce_Create2'

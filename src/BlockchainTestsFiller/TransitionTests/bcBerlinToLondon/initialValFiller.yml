@@ -1,4 +1,4 @@
-# Check that the initial values for EIP1559 (baseFee and gasLimit) are the 
+# Check that the initial values for SIP1559 (baseFee and gasLimit) are the
 # correct ones. Also check that type 2 transactions are accepted only
 # after London, and types 0-1 are accepted all the time.
 
@@ -13,7 +13,7 @@ initialVal:
     nonce: '0x0102030405060708'
     number: '0'
     parentHash: '0x0000000000000000000000000000000000000000000000000000000000000000'
-    receiptTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
+    recsiptTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
     stateRoot: '0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a'
     timestamp: '0x03b6'
     transactionsTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
@@ -59,7 +59,7 @@ initialVal:
         }
       storage: {}
 
-# 0x30aef158fab404b766b50db4618b2231ba4e39148a563dc69d80927cd620cfe5 
+# 0x30aef158fab404b766b50db4618b2231ba4e39148a563dc69d80927cd620cfe5
     0xe2AFf99a29fADcd427b47b514b42ee5394913A01:
       balance: 100000000000
       nonce: 1
@@ -67,7 +67,7 @@ initialVal:
       storage: {}
 
 
-# 0x69d66403e6a54b18c2a768af4a8de554df133550d4dfa37a377ec8c0e85b9ef4 
+# 0x69d66403e6a54b18c2a768af4a8de554df133550d4dfa37a377ec8c0e85b9ef4
     0x6c5F5b28B10d021bf947e626Bf4565C8957162B4 :
       balance: 100000000000
       nonce: 1
@@ -76,7 +76,7 @@ initialVal:
 
 
 
-# 0x46093816a2161080e010e4973379e22386888bb80395f387d95342a773a7e7d7 
+# 0x46093816a2161080e010e4973379e22386888bb80395f387d95342a773a7e7d7
     0x3D0fE89106005C4Dfe13b1DfdDFa6c012F0FbC45 :
       balance: 100000000000
       nonce: 1
@@ -90,9 +90,9 @@ initialVal:
   blocks:
 
   # Block 1
-  - transactions: []  
+  - transactions: []
   # Block 2
-  - transactions: []  
+  - transactions: []
   # Block 3
   - transactions:
     # This call to cc..cd should be successful (type 0 transaction)
@@ -151,9 +151,9 @@ initialVal:
       value: 0x0
 
 
-  # Block 5     
+  # Block 5
   - blockHeader:
-      # Post EIP-1559 the block gasLimit is doubled, so the new 
+      # Post SIP-1559 the block gasLimit is doubled, so the new
       # gasTarget will be the old gasLimit
       gasLimit: 0x20000000000
       baseFeePerGas: 1000000000
@@ -202,7 +202,7 @@ initialVal:
 
 
 
-  # Block 6   
+  # Block 6
   - blocknumber: 6
     transactions:
     # This call to cc..cc shows us that subsequent London blocks have a different
@@ -269,7 +269,7 @@ initialVal:
 
     # This type 0 transaction has gasPrice < baseFee. It won't happen
     # Invalid transactions mess up the nonce calculation, so I prefer to do them
-    # with otherwise unused accounts  
+    # with otherwise unused accounts
     - data: :abi f(uint) 0x6060
       expectException:
         BerlinToLondonAt5: TR_FeeCapLessThanBlocks
@@ -304,7 +304,7 @@ initialVal:
 
     # This type 1 transaction has gasPrice < baseFee. It won't happen
     # Invalid transactions mess up the nonce calculation, so I prefer to do them
-    # with otherwise unused accounts  
+    # with otherwise unused accounts
     - data: :abi f(uint) 0x6090
       expectException:
         BerlinToLondonAt5: TR_FeeCapLessThanBlocks
@@ -340,7 +340,7 @@ initialVal:
 
     # This type 2 transaction has gasPrice < baseFee. It won't happen
     # Invalid transactions mess up the nonce calculation, so I prefer to do them
-    # with otherwise unused accounts  
+    # with otherwise unused accounts
     - data: :abi f(uint) 0x60C0
       expectException:
         BerlinToLondonAt5: TR_FeeCapLessThanBlocks
@@ -351,7 +351,7 @@ initialVal:
       to: 0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
       value: 0x0
 
-  # Block 7, except it's a pre EIP1559 block so it fails
+  # Block 7, except it's a pre SIP1559 block so it fails
   - blockHeader:
       remove:
       - baseFeePerGas
@@ -402,7 +402,7 @@ initialVal:
           0x5012:             0  # Tip
           0x5013: 0x20000000000  # Block gas limit
 
-          # Type 2 transaction 
+          # Type 2 transaction
           0x5020:    1000001000  # Gas price
           0x5021:    1000000000  # baseFee
           0x5022:          1000  # Tip
@@ -430,7 +430,7 @@ initialVal:
           0x6012:     124999956  # Tip
           0x6013: 0x020000000000 # Block gas limit
 
-          # Type 2 transaction 
+          # Type 2 transaction
           0x6020:     875001044  # Gas price
           0x6021:     875000044  # baseFee
           0x6022:          1000  # Tip

@@ -17,7 +17,7 @@ sha3:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (sha3 0 0)
         }
       nonce: '0'
@@ -29,7 +29,7 @@ sha3:
     0000000000000000000000000000000000000101:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (sha3 4 5)
         }
       nonce: '0'
@@ -41,7 +41,7 @@ sha3:
     0000000000000000000000000000000000000102:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (sha3 10 10)
         }
       nonce: '0'
@@ -52,7 +52,7 @@ sha3:
     0000000000000000000000000000000000000103:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (sha3 1000 0xFFFFF)
         }
       nonce: '0'
@@ -63,7 +63,7 @@ sha3:
     0000000000000000000000000000000000000104:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             ; The result here is zero, because we run out of gas
             [[0]] (sha3 0xfffffffff  100)
         }
@@ -75,7 +75,7 @@ sha3:
     0000000000000000000000000000000000000105:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             ; The result here is zero, because we run out of gas
             [[0]] (sha3 10000 0xfffffffff)
         }
@@ -89,7 +89,7 @@ sha3:
     0000000000000000000000000000000000000106:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (def 'neg1 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
             [[0]] (sha3 neg1 neg1)
         }
@@ -103,7 +103,7 @@ sha3:
     0000000000000000000000000000000000000107:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (def 'neg1 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
             [[0]] (sha3 neg1 2)
         }
@@ -115,7 +115,7 @@ sha3:
     0000000000000000000000000000000000000108:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (sha3 0x1000000 2)
         }
       nonce: '0'
@@ -221,10 +221,10 @@ sha3:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-            (call (- 0 1) (+ 0x100 $4) 0 
+        {
+            (call (- 0 1) (+ 0x100 $4) 0
                0x0F 0x10   ; arg offset and length to get the 0x1234...f0 value
-               0x20 0x40)  ; return offset and length 
+               0x20 0x40)  ; return offset and length
         }
       nonce: '0'
       storage: {}
@@ -235,7 +235,7 @@ sha3:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -277,8 +277,8 @@ sha3:
     - :label sha3_2016_1      :abi f(uint) 0x0d
     # sha3_memSizeQuadraticCost64_2
     - :label sha3_2016_32     :abi f(uint) 0x10
-    
- 
+
+
 
     # sha3_memSizeQuadraticCost65
     - :label sha3_2048_1      :abi f(uint) 0x0e
@@ -298,8 +298,8 @@ sha3:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: :label sha3_nodata
@@ -453,8 +453,8 @@ sha3:
 
 
     - indexes:
-        data: :label sha3_992_1 
-        gas: !!int -1 
+        data: :label sha3_992_1
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -464,8 +464,8 @@ sha3:
             0: 0xbc36789e7a1e281436464229828f817d6612f7b477d66591ff96a9e064bcc98a
 
     - indexes:
-        data: :label sha3_992_1 
-        gas: !!int -1 
+        data: :label sha3_992_1
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'
@@ -477,8 +477,8 @@ sha3:
 
 
     - indexes:
-        data: :label sha3_1024_1 
-        gas: !!int -1 
+        data: :label sha3_1024_1
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -488,8 +488,8 @@ sha3:
             0: 0xbc36789e7a1e281436464229828f817d6612f7b477d66591ff96a9e064bcc98a
 
     - indexes:
-        data: :label sha3_1024_1 
-        gas: !!int -1 
+        data: :label sha3_1024_1
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'
@@ -502,8 +502,8 @@ sha3:
 
 
     - indexes:
-        data: :label sha3_1984_1 
-        gas: !!int -1 
+        data: :label sha3_1984_1
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -513,8 +513,8 @@ sha3:
             0: 0xbc36789e7a1e281436464229828f817d6612f7b477d66591ff96a9e064bcc98a
 
     - indexes:
-        data: :label sha3_1984_1 
-        gas: !!int -1 
+        data: :label sha3_1984_1
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'
@@ -528,8 +528,8 @@ sha3:
 
 
     - indexes:
-        data: :label sha3_2016_1 
-        gas: !!int -1 
+        data: :label sha3_2016_1
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -539,8 +539,8 @@ sha3:
             0: 0xbc36789e7a1e281436464229828f817d6612f7b477d66591ff96a9e064bcc98a
 
     - indexes:
-        data: :label sha3_2016_1 
-        gas: !!int -1 
+        data: :label sha3_2016_1
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'
@@ -553,8 +553,8 @@ sha3:
 
 
     - indexes:
-        data: :label sha3_2048_1 
-        gas: !!int -1 
+        data: :label sha3_2048_1
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -564,8 +564,8 @@ sha3:
             0: 0xbc36789e7a1e281436464229828f817d6612f7b477d66591ff96a9e064bcc98a
 
     - indexes:
-        data: :label sha3_2048_1 
-        gas: !!int -1 
+        data: :label sha3_2048_1
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'
@@ -578,7 +578,7 @@ sha3:
     # Different cost from sha3_1024_1
     - indexes:
         data: :label sha3_1024_0
-        gas: !!int -1 
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -588,8 +588,8 @@ sha3:
             0: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
 
     - indexes:
-        data: :label sha3_1024_0 
-        gas: !!int -1 
+        data: :label sha3_1024_0
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'
@@ -602,7 +602,7 @@ sha3:
     # Same cost as sha3_2016_1
     - indexes:
         data: :label sha3_2016_32
-        gas: !!int -1 
+        gas: !!int -1
         value: !!int -1
       network:
         - Istanbul
@@ -613,7 +613,7 @@ sha3:
 
     - indexes:
         data: :label sha3_2016_32
-        gas: !!int -1 
+        gas: !!int -1
         value: !!int -1
       network:
         - '>=Berlin'

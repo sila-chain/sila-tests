@@ -6,7 +6,7 @@ Custom compiler support
 
 `Ori Pomerantz <mailto://qbzzt1@gmail.com>`_
 
-In this tutorial you learn how to use a custom compiler with retesteth tests.
+In this tutorial you learn how to use a custom compiler with retestsil tests.
 We do this by following the steps to write and execute a test written in
 `the Huff programming language <https://github.com/huff-language/huff-rs>`_.
 
@@ -14,27 +14,27 @@ We do this by following the steps to write and execute a test written in
 Why Do This?
 =============
 Sometimes it is convenient to write a test using a different language than the three supported ones
-(`LLL <https://lll-docs.readthedocs.io/en/latest/lll_introduction.html>`_, 
-`Solidity <https://docs.soliditylang.org/en/v0.8.15/solidity-by-example.html>`_, 
-and `Yul <https://docs.soliditylang.org/en/v0.8.15/yul.html>`_). 
+(`LLL <https://lll-docs.readthedocs.io/en/latest/lll_introduction.html>`_,
+`Solidity <https://docs.soliditylang.org/en/v0.8.15/solidity-by-example.html>`_,
+and `Yul <https://docs.soliditylang.org/en/v0.8.15/yul.html>`_).
 While such tests are unlikely to be accepted as standard tests, they can help debug client changes.
 
 
 
 Install Huff as part of the Docker
 =======================================
-One way to do this is to run **restetheth** 
-`in a docker container you build <retesteth-tutorial.html#using-the-latest-version>`_.
+One way to do this is to run **restetheth**
+`in a docker container you build <retestsil-tutorial.html#using-the-latest-version>`_.
 
 #. Get the **Dockerfile** and the script:
 
    ::
 
-      mkdir ~/retestethBuild
-      cd ~/retestethBuild
-      wget https://raw.githubusercontent.com/ethereum/retesteth/develop/dretesteth.sh
-      chmod +x dretesteth.sh
-      wget https://raw.githubusercontent.com/ethereum/retesteth/develop/Dockerfile
+      mkdir ~/retestsilBuild
+      cd ~/retestsilBuild
+      wget https://raw.githubusercontent.com/sila/retestsil/develop/dretestsil.sh
+      chmod +x dretestsil.sh
+      wget https://raw.githubusercontent.com/sila/retestsil/develop/Dockerfile
 
 #. Edit **Dockerfile**:
 
@@ -42,15 +42,15 @@ One way to do this is to run **restetheth**
      This step is necessary because the C libraries on Ubuntu 18.04 are too old for the Huff compiler.
 
       ::
-     
-         FROM ubuntu:20.04 as retesteth
 
-   * On the line that downloads the **retesteth** source from github change the branch from master 
+         FROM ubuntu:20.04 as retestsil
+
+   * On the line that downloads the **retestsil** source from github change the branch from master
      to **develop**.
 
       ::
 
-          RUN git clone --depth 1 -b develop https://github.com/ethereum/retesteth.git /retesteth
+          RUN git clone --depth 1 -b develop https://github.com/sila/retestsil.git /retestsil
 
    * Before the entry point definition add a command to download and configure the Huff compiler.
 
@@ -60,9 +60,9 @@ One way to do this is to run **restetheth**
           RUN curl -L get.huff.sh | bash \
               && ~/.huff/bin/huffup
 
-#. Issue **./dretesteth.sh build**.
+#. Issue **./dretestsil.sh build**.
 
-   You will receive these errors. 
+   You will receive these errors.
    Ignore them, they are merely an artifact of **npm** and **yarn** not being installed on the Docker image.
 
     ::
@@ -91,7 +91,7 @@ Custom compiler information is provided as part of the client configuration.
 #. Copy the **t8ntool** configuration to **t8ntool-huff**:
 
    ::
-   
+
       cd tests/config
       cp -R t8ntool/ t8ntool-huff
 
@@ -139,9 +139,9 @@ Use this syntax for the **code:** definition of a contract, such as:
           }
 
 
-The **:huff** keyword matches the one in **tests/config/t8ntool-huff/config**, 
-so the **retesteth** tool knows to call **huff.sh**. 
+The **:huff** keyword matches the one in **tests/config/t8ntool-huff/config**,
+so the **retestsil** tool knows to call **huff.sh**.
 It is followed by the Huff code.
 
-You can see a sample test `here 
-<https://github.com/ethereum/tests/blob/develop/docs/tutorial_samples/13_huffFiller.yml>`_.
+You can see a sample test `here
+<https://github.com/sila/tests/blob/develop/docs/tutorial_samples/13_huffFiller.yml>`_.

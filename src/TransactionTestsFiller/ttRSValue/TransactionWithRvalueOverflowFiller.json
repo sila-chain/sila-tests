@@ -1,7 +1,7 @@
 {
     "TransactionWithRvalueOverflow" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "InvalidVRS"
         },

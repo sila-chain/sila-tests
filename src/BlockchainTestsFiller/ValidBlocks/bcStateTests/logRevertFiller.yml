@@ -1,4 +1,4 @@
-# This test verifies that if we LOGn and then abort 
+# This test verifies that if we LOGn and then abort
 # the transaction the logs don't happen.
 #
 # We can't observe logs directly from the EVM, so this is somewhat complicated:
@@ -8,30 +8,30 @@
 #         the test fails if the block hash isn't what we expect.
 #
 #
-# This test is extremely sensitive. Anything that changes in a block, even 
+# This test is extremely sensitive. Anything that changes in a block, even
 # the gas balance due to an opcode repricing will break it. When you get a failure
 # here run the command:
 #
 # <run the test> --verbosity 6 | | grep '\"logs\": \['
 #
-# If you don't see any lines it means that this fork simply generates a different hash. 
+# If you don't see any lines it means that this fork simply generates a different hash.
 # Replace it in the storage for 0x6E70DA7A0.....0 / 0x01.
 #
-# 
+#
 #
 # Contract addresses are ccccccc.....cccX.
 # X is the type of revert:
 #     0 - REVERT opcode
 #     1 - gas cost overflow (> 2^64)
 #     2 - invalid opcode
-#     3 - stack underflow 
+#     3 - stack underflow
 #     4 - stack overflow
 #     5 - jump to addr0 (not a JUMPDEST)
 #
 #     6 is supposed to be a normal out of gas (< 2^64), but that causes an
-#     invalid transaction and kills the test     
+#     invalid transaction and kills the test
 #
-# suggested in https://github.com/ethereum/tests/issues/348
+# suggested in https://github.com/sila/tests/issues/348
 
 
 logRevert:
@@ -46,7 +46,7 @@ logRevert:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -129,7 +129,7 @@ logRevert:
       # n+4  58    PC
       # n+5  03    SUB
       # n+6  56    JUMP
-      #       
+      #
       # Same code as c....c0, except the REVERT is replaced by the above code
       # that generates a stack overflow
       code: :raw 0x60206000a061beef60206000a161beef6160a760206000a261beef6160a761dead60206000a361beef6160a761dead61600d60206000a45B586004580356

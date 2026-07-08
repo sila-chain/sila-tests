@@ -52,7 +52,7 @@ validInvalid:
   # EOF1V0001 check that simple EOF1 deploys
   - data: |
      :label EOF1V0001 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -64,7 +64,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -77,7 +77,7 @@ validInvalid:
   # EOF1I0006 check that EOF1 with too many or too few bytes fails
   - data: |
      :label EOF1I0006 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -89,7 +89,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -103,7 +103,7 @@ validInvalid:
   # EOF1I0006 check that EOF1 with too many or too few bytes fails
   - data: |
      :label EOF1I0006 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -115,7 +115,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -128,7 +128,7 @@ validInvalid:
   # EOF1V0001 Valid
   - data: |
      :label EOF1V0001 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -140,7 +140,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -153,7 +153,7 @@ validInvalid:
   # EOF1I0008 check that EOF1 with an illegal opcode fails
   - data: |
      :label EOF1I0008 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -165,7 +165,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            EF #  2 INVALID
            00 #  3 STOP
               # Data segment
@@ -179,7 +179,7 @@ validInvalid:
   # EOF1V0004 check that valid EOF1 can include 0xFE, the designated invalid opcode
   - data: |
      :label EOF1V0004 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -191,7 +191,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            FE #  3 Designated invalid opcode
               # Data segment
@@ -203,7 +203,7 @@ validInvalid:
   # EOF1I0005 check that EOF1 with a bad end of sections number fails
   - data: |
      :label EOF1I0005 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -215,7 +215,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -228,7 +228,7 @@ validInvalid:
   # EOF1V0008 check that code that uses a new style relative jump (5C) succeeds
   - data: |
      :label EOF1V0008 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -252,7 +252,7 @@ validInvalid:
   # EOF1I0023 sections with unreachable code fail
   - data: |
      :label EOF1I0023 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -276,7 +276,7 @@ validInvalid:
   # EOF1V0011 check that code that uses a new style conditional jump (5D) succeeds
   - data: |
      :label EOF1V0011 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -301,7 +301,7 @@ validInvalid:
   # EOF1V0014 sections that end with a legit terminating opcode are OK
   - data: |
      :label EOF1V0014 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010014  # Four code segments
       020005  # Four code segments
@@ -355,7 +355,7 @@ validInvalid:
   # EOF1V0013 jump tables work
   - data: |
      :label EOF1V0013 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -384,7 +384,7 @@ validInvalid:
   # EOF1I0019 check that jumps into the middle on an opcode are not allowed
   - data: |
      :label EOF1I0019 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -415,7 +415,7 @@ validInvalid:
   # EOF1I0020 check that you can't get to the same opcode with two different stack heights
   - data: |
      :label EOF1I0020 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -443,7 +443,7 @@ validInvalid:
   # EOF1I0019 check that jumps into the middle on an opcode are not allowed
   - data: |
      :label EOF1I0019 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -468,7 +468,7 @@ validInvalid:
   # EOF1I0019 check that jumps into the middle on an opcode are not allowed
   - data: |
      :label EOF1I0019 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -498,7 +498,7 @@ validInvalid:
   # EOF1I0018 inconsistent number of code sections (between types and code)
   - data: |
      :label EOF1I0018 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020001  # One code segment
@@ -514,7 +514,7 @@ validInvalid:
           00  # Zero outputs
         0000  # Max stack height 0
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -526,7 +526,7 @@ validInvalid:
   # EOF1I0018 inconsistent number of code sections (between types and code)
   - data: |
      :label EOF1I0018 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020001  # One code segment
@@ -538,7 +538,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -550,7 +550,7 @@ validInvalid:
   # EOF1I0015 check that code that uses removed opcodes fails
   - data: |
      :label EOF1I0015 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -575,7 +575,7 @@ validInvalid:
   # EOF1I0015 check that code that uses removed opcodes fails
   - data: |
      :label EOF1I0015 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -601,7 +601,7 @@ validInvalid:
   # EOF1I0015 check that code that uses removed opcodes fails
   - data: |
      :label EOF1I0015 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -625,7 +625,7 @@ validInvalid:
   # EOF1I0015 check that code that uses removed opcodes fails
   - data: |
      :label EOF1I0015 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -644,7 +644,7 @@ validInvalid:
   # EOF1I0015 check that code that uses removed opcodes fails
   - data: |
      :label EOF1I0015 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -674,7 +674,7 @@ validInvalid:
   # EOF1I0016 check that code that uses new relative jumps to outside the section fails
   - data: |
      :label EOF1I0016 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -701,7 +701,7 @@ validInvalid:
   # EOF1V0006 check that return values are allowed on code sections that aren't zero
   - data: |
      :label EOF1V0002 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -718,7 +718,7 @@ validInvalid:
           01  # Zero outputs
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
@@ -733,7 +733,7 @@ validInvalid:
   # EOF1V0012 return values on code sections affect maxStackHeight of the caller
   - data: |
      :label EOF1V0012 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -750,8 +750,8 @@ validInvalid:
           01  # Zero outputs
         0001  # Max stack height 1
               # Code segment 0 code
-      E30001  #  0 CALLF #1 
-          00  #  3 STOP 
+      E30001  #  0 CALLF #1
+          00  #  3 STOP
               # Code segment 1 code
           30  #  0 ADDRESS
           E4  #  1 RETF
@@ -763,7 +763,7 @@ validInvalid:
   # EOF1I0024 sections that end with a non-terminator opcode fail
   - data: |
      :label EOF1I0024 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -780,7 +780,7 @@ validInvalid:
           01  # One output
         0001  # Max stack height 1
               # Code segment 0 code
-      E30001  #  0 CALLF #1 
+      E30001  #  0 CALLF #1
               # Code segment 1 code
           30  #  0 ADDRESS
               # Data segment
@@ -793,7 +793,7 @@ validInvalid:
   # EOF1I0022 stack underflow caused by a function call
   - data: |
      :label EOF1I0022 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -810,8 +810,8 @@ validInvalid:
           00  # Zero outputs
         0001  # Max stack height 1
               # Code segment 0 code
-      E30001  #  0 CALLF #1 
-          00  #  3 STOP 
+      E30001  #  0 CALLF #1
+          00  #  3 STOP
               # Code segment 1 code
           50  #  0 POP
           E4  #  1 RETF
@@ -825,7 +825,7 @@ validInvalid:
   # EOF1V0015 data stack height of 1023 is valid
   - data: |
      :label EOF1V0015 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       01000C  # Three code segments
       020003  # Three code segments
@@ -895,7 +895,7 @@ validInvalid:
   # EOF1I0025 data stack height of 1024 is invalid
   - data: |
      :label EOF1I0025 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       01000C  # Three code segments
       020003  # Three code segments
@@ -967,7 +967,7 @@ validInvalid:
   # EOF1V0003 check that valid EOF1 with four code sections deploys
   - data: |
      :label EOF1V0003 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010010  # Two code segments
       020004  # Two code segments
@@ -994,7 +994,7 @@ validInvalid:
           01  # Zero outputs
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
@@ -1002,7 +1002,7 @@ validInvalid:
            30 #  2 ADDRESS
            E4 #  3 RETF
               # Code segment 2 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            E4 #  3 RETF
               # Code segment 3 code
@@ -1019,7 +1019,7 @@ validInvalid:
   # EOF1V0005 check that EOF1 with the right maxStackDepth deploys
   - data: |
      :label EOF1V0005 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010010  # Four code segments
       020004  # Four code segments
@@ -1046,17 +1046,17 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            30 #  2 ADDRESS
            50 #  3 POP
            50 #  4 POP
            00 #  5 STOP
               # Code segment 2 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            30 #  2 ADDRESS
            30 #  3 ADDRESS
            50 #  4 POP
@@ -1064,7 +1064,7 @@ validInvalid:
            50 #  6 POP
            00 #  7 STOP
               # Code segment 3 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            30 #  3 ADDRESS
            50 #  4 POP
@@ -1080,7 +1080,7 @@ validInvalid:
   # EOF1V0007 check that function calls to code sections that exist are allowed
   - data: |
      :label EOF1V0007 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010010  # Four code segments
       020004  # Four code segments
@@ -1107,14 +1107,14 @@ validInvalid:
           00  # Zero outputs
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  0 ADDRESS 
+           30 #  0 ADDRESS
            50 #  1 POP
            00 #  2 STOP
               # Code segment 1 code
        B00002 #  0 CALL code segment 02
            00 #  3 STOP
               # Code segment 2 code
-           30 #  0 ADDRESS 
+           30 #  0 ADDRESS
            30 #  1 ADDRESS
            30 #  2 ADDRESS
            50 #  3 POP
@@ -1122,7 +1122,7 @@ validInvalid:
            50 #  5 POP
            00 #  6 STOP
               # Code segment 3 code
-           30 #  0 ADDRESS 
+           30 #  0 ADDRESS
            50 #  1 POP
            30 #  2 ADDRESS
            50 #  3 POP
@@ -1139,7 +1139,7 @@ validInvalid:
   # EOF1I0011 check that function calls to code sections that don't exist fail
   - data: |
      :label EOF1I0011 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010010  # Four code segments
       020004  # Four code segments
@@ -1166,14 +1166,14 @@ validInvalid:
           00  # Zero outputs
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  0 ADDRESS 
+           30 #  0 ADDRESS
            50 #  1 POP
            00 #  2 STOP
               # Code segment 1 code
        B0000F #  0 CALL code segment 15
            00 #  3 STOP
               # Code segment 2 code
-           30 #  0 ADDRESS 
+           30 #  0 ADDRESS
            30 #  1 ADDRESS
            30 #  2 ADDRESS
            50 #  3 POP
@@ -1181,7 +1181,7 @@ validInvalid:
            50 #  5 POP
            00 #  6 STOP
               # Code segment 3 code
-           30 #  0 ADDRESS 
+           30 #  0 ADDRESS
            50 #  1 POP
            30 #  2 ADDRESS
            50 #  3 POP
@@ -1198,7 +1198,7 @@ validInvalid:
   # EOF1I0012 check that code sections that cause stack underflow fail
   - data: |
      :label EOF1I0012 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -1215,7 +1215,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
@@ -1232,7 +1232,7 @@ validInvalid:
   # EOF1I0013 check that we can't return more values than we declare
   - data: |
      :label EOF1I0013 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -1249,7 +1249,7 @@ validInvalid:
           01  # One output
         0002  # Max stack height 2
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
@@ -1265,7 +1265,7 @@ validInvalid:
   # EOF1I0014 check that code that looks deeper in the stack than the parameters fails
   - data: |
      :label EOF1I0014 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -1282,7 +1282,7 @@ validInvalid:
           01  # One output
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
@@ -1298,7 +1298,7 @@ validInvalid:
   # EOF1I0010 check that return values are not allowed on section 0
   - data: |
      :label EOF1I0010 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1310,7 +1310,7 @@ validInvalid:
           01  # One output (not allowed in section 0)
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            FE #  3 Designated invalid opcode
               # Data segment
@@ -1323,7 +1323,7 @@ validInvalid:
   # EOF1V0010 parameters are part of the max stack height
   - data: |
      :label EOF1V0010 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010008  # Two code segments
       020002  # Two code segments
@@ -1340,7 +1340,7 @@ validInvalid:
           80  # Non-Returning Function
         0002  # Max stack height 2
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Code segment 1 code
@@ -1355,7 +1355,7 @@ validInvalid:
   # EOF1I0017 check that parameters are not allowed on section 0
   - data: |
      :label EOF1I0017 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1367,7 +1367,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            FE #  3 Designated invalid opcode
               # Data segment
@@ -1380,7 +1380,7 @@ validInvalid:
   # EOF1I0009 check that EOF1 with the wrong maxStackDepth fails
   - data: |
      :label EOF1I0009 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1392,7 +1392,7 @@ validInvalid:
           80  # Non-Returning Function
         0003  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1404,7 +1404,7 @@ validInvalid:
   # EOF1I0009 check that EOF1 with the wrong maxStackDepth fails
   - data: |
      :label EOF1I0009 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1416,9 +1416,9 @@ validInvalid:
           80  # Non-Returning Function
         0005  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
-           30 #  3 ADDRESS 
+           30 #  3 ADDRESS
            50 #  4 POP
            00 #  5 STOP
               # Data segment
@@ -1430,7 +1430,7 @@ validInvalid:
   # EOF1I0007 check that EOF1 with a malformed code section fails
   - data: |
      :label EOF1I0007 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1442,7 +1442,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            62 #  3 PUSH3 (without a value)
               # Data segment
@@ -1455,7 +1455,7 @@ validInvalid:
   # check that EOF1 with a bad end of sections number fails
   - data: |
      :label badsectionnumber :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1467,7 +1467,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1480,7 +1480,7 @@ validInvalid:
   # EOF1I0001 check that EOF1 with a bad magic number fails
   - data: |
       :label EOF1I0001 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0201  # Bad magic followed by version
       010004  # One code segment
       020001  # One code segment
@@ -1492,7 +1492,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1504,7 +1504,7 @@ validInvalid:
   # EOF1I0002 check that EOF1 with a bad version number fails (ver 0)
   - data: |
      :label EOF1I0002 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0000  # Magic followed by bad version
       010004  # One code segment
       020001  # One code segment
@@ -1516,7 +1516,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1528,7 +1528,7 @@ validInvalid:
   # EOF1I0002 check that EOF1 with a bad version number fails (ver 2)
   - data: |
      :label EOF1I0002 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0002  # Magic followed by bad version
       010004  # One code segment
       020001  # One code segment
@@ -1540,7 +1540,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1552,7 +1552,7 @@ validInvalid:
   # EOF1I0003 check that EOF1 with a bad section order fails
   - data: |
      :label EOF1I0003 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by bad version
       020001  # One code segment
         0003  #   code seg 0: 3 bytes
@@ -1564,7 +1564,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1576,7 +1576,7 @@ validInvalid:
   # EOF1I0003 check that EOF1 with a bad section order fails
   - data: |
      :label EOF1I0003 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by bad version
       020001  # One code segment
         0003  #   code seg 0: 3 bytes
@@ -1588,7 +1588,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1601,7 +1601,7 @@ validInvalid:
   # EOF1I0004 check that EOF1 missing a section fails
   - data: |
      :label EOF1I0004 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by bad version
       020001  # One code segment
         0003  #   code seg 0: 3 bytes
@@ -1612,7 +1612,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1624,7 +1624,7 @@ validInvalid:
   # EOF1I0004 check that EOF1 missing a section fails
   - data: |
      :label EOF1I0004 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by bad version
       010004  # One code segment
       040001  # One byte data segment
@@ -1634,7 +1634,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1646,7 +1646,7 @@ validInvalid:
   # EOF1I0004 check that EOF1 missing a section fails
   - data: |
      :label EOF1I0004 :raw 0x
-      # EOF deployed code 
+      # EOF deployed code
       ef0001  # Magic followed by bad version
       010004  # One code segment
       020001  # One code segment
@@ -1657,7 +1657,7 @@ validInvalid:
           80  # Non-Returning Function
         0001  # Max stack height 1
               # Code segment 0 code
-           30 #  1 ADDRESS 
+           30 #  1 ADDRESS
            50 #  2 POP
            00 #  3 STOP
               # Data segment
@@ -1669,13 +1669,13 @@ validInvalid:
 
   # EOF1 constructor returning an EOF1 contract
   - data: |
-      :label eofreof1 :raw 
+      :label eofreof1 :raw
       0xEF0001  # Magic and version
         010004  # One code segment
         020001  # One code segment
           000a  # Code segment zero length: 10 bytes
         040016  # Data segment length (the code being deployed): 0x16=22 bytes
-        00      # End of header 
+        00      # End of header
 
         # Code segment zero (header)
             00 # No inputs
@@ -1689,19 +1689,19 @@ validInvalid:
         6000  #  3   PUSH1 0    0,0,<codesize>
         39    #  5   CODECOPY (from the code to memory, copy everything)
         38    #  6   CODESIZE  <codesize>
-        601D  #  7   PUSH1 0x1d (= 22)  <codesize>,0x1d 
+        601D  #  7   PUSH1 0x1d (= 22)  <codesize>,0x1d
         F3    #  9   RETURN   (the deployed code is code size long, starting at byte 22)
-              # 10        
+              # 10
 
         # Data segment (which happens to also be EOF1 code)
         EF0001 # Magic and version
         010004 # One code segment
         020001 # One code segment
-          0003 # Code segment zero's length: 3 bytes 
-        04001d # Data segment length: 22 bytes 
+          0003 # Code segment zero's length: 3 bytes
+        04001d # Data segment length: 22 bytes
                # (not specified here, but part of the buffer returned by the init code)
         00     # End of header
-        # Code segment 0 header         
+        # Code segment 0 header
             00 # No inputs
             00 # No outputs
           0001 # Max stack height 1

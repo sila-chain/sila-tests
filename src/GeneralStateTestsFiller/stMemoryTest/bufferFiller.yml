@@ -34,7 +34,7 @@ buffer:
                (def 'offset $0x20)
 
                [[0]] 0    ; capricide
-               (return offset length) 
+               (return offset length)
         }
       nonce: 0
       storage:
@@ -50,7 +50,7 @@ buffer:
                (def 'length $0)
                (def 'offset $0x20)
 
-               (revert offset length) 
+               (revert offset length)
         }
       nonce: 0
       storage: {}
@@ -65,10 +65,10 @@ buffer:
            (def 'bufferType $36)
            (def 'NOP 0)
 
-           ; Variables           
+           ; Variables
            (def 'length     0x2020)
            (def 'offset     0x2040)
-         
+
            ; bufferTypes  0 is normal, 1 is length zero, 2 is negative length
            ; bufferType 3 is excessively long, for opcodes with bounds checking
            ; Add 0 for offset 0x100, 10 for offset 0x0
@@ -88,15 +88,15 @@ buffer:
                    [offset] 0x100
              } NOP)
            (if (= bufferType 1) {
-                   [length] 0 
+                   [length] 0
                    [offset] 0x100
              } NOP)
            (if (= bufferType 2) {
-                   [length] (- 0 10) 
+                   [length] (- 0 10)
                    [offset] 0x100
              } NOP)
-           (if (= bufferType 3) { 
-                   [length] 0x1000 
+           (if (= bufferType 3) {
+                   [length] 0x1000
                    [offset] 0x100
              } NOP)
            (if (= bufferType 10) {
@@ -104,60 +104,60 @@ buffer:
                    [offset] 0x0
              } NOP)
            (if (= bufferType 11) {
-                   [length] 0 
+                   [length] 0
                    [offset] 0x0
              } NOP)
            (if (= bufferType 12) {
-                   [length] (- 0 10) 
+                   [length] (- 0 10)
                    [offset] 0x0
              } NOP)
-           (if (= bufferType 13) { 
-                   [length] 0x1000 
+           (if (= bufferType 13) {
+                   [length] 0x1000
                    [offset] 0x0
              } NOP)
 
            ; High memory offsets, should fail with out of gas
-           (if (= bufferType 20) { 
+           (if (= bufferType 20) {
                    [length] 5
                    [offset] (- 0 10)
              } NOP)
 
-           (if (= bufferType 21) { 
+           (if (= bufferType 21) {
                    [length] 5
                    [offset] 0x7FFFFFFF
              } NOP)
 
-           (if (= bufferType 22) { 
+           (if (= bufferType 22) {
                    [length] 5
                    [offset] 0x80000000
              } NOP)
 
-           (if (= bufferType 23) { 
+           (if (= bufferType 23) {
                    [length] 5
                    [offset] 0xFFFFFFFF
              } NOP)
 
-           (if (= bufferType 24) { 
+           (if (= bufferType 24) {
                    [length] 5
                    [offset] 0x0100000000
              } NOP)
 
-           (if (= bufferType 25) { 
+           (if (= bufferType 25) {
                    [length] 5
                    [offset] 0x7FFFFFFFFFFFFFFF
              } NOP)
 
-           (if (= bufferType 26) { 
+           (if (= bufferType 26) {
                    [length] 5
                    [offset] 0x8000000000000000
              } NOP)
 
-           (if (= bufferType 27) { 
+           (if (= bufferType 27) {
                    [length] 5
                    [offset] 0xFFFFFFFFFFFFFFFF
              } NOP)
 
-           (if (= bufferType 28) { 
+           (if (= bufferType 28) {
                    [length] 5
                    [offset] 0x010000000000000000
              } NOP)
@@ -187,7 +187,7 @@ buffer:
            ; RETURNDATACOPY, after making sure there is return data
            (if (= opcode 0x13E) {
                (call 0x1000 0xc0de 0 0 0 0x100 0x100)
-               (returndatacopy @offset 0 @length) 
+               (returndatacopy @offset 0 @length)
            } NOP)
 
            ; check return, requires special handling
@@ -214,7 +214,7 @@ buffer:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
   transaction:
     data:
     # Param #1: The opcode
@@ -243,9 +243,9 @@ buffer:
     # 26 for 2^63
     # 27 for 2^64-1
     # 28 for 2^64
-    #  
+    #
 
-    # SHA3       
+    # SHA3
     - :label ok   :abi f(uint,uint) 0x20 0
     - :label ok   :abi f(uint,uint) 0x20 1
     - :label fail :abi f(uint,uint) 0x20 2
@@ -615,7 +615,7 @@ buffer:
     - :label fail :abi f(uint,uint) 0x1fa 27
     - :label fail :abi f(uint,uint) 0x1fa 28
 
-  
+
     # RETURN, needs special handling
     - :label ok-f3   :abi f(uint,uint) 0xf3 0   # Valid buffer length
     - :label ok-f3   :abi f(uint,uint) 0xf3 1   # Buffer length zero
@@ -660,8 +660,8 @@ buffer:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     # No revert, valid value
     - indexes:
@@ -673,7 +673,7 @@ buffer:
       result:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
-            0x100: 0 
+            0x100: 0
 
 
     # Revert, invalid value. The goat survives

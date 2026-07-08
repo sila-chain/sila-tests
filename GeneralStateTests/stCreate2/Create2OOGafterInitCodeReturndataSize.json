@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Calls a contract that runs CREATE2 which deploy a code. then OOG happens upon deployment of the actual code. check the RETURNDATASIZE after create. fails with OOG if RETURNDATASIZE != 0",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "158d0efbf24480c7bf53e390375fbe675aacaa2191ceeb2922b5eccb3036cffd",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

@@ -1,5 +1,5 @@
 {
-    "difficultyGrayGlacierMinus1" : 
+    "difficultyGrayGlacierMinus1" :
     {
         "_info" : {
             "comment" : "Difficulty Gray Glacier Combination Check: 100k steps, starting from block pushback number minus 1 (11,399,999) for Gray Glacier"

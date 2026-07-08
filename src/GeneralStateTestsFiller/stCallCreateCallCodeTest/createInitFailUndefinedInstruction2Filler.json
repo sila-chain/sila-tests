@@ -1,7 +1,7 @@
 {
     "createInitFailUndefinedInstruction2" : {
         "_info" : {
-            "comment" : "original test of createInitFailUndefinedInstruction, interesting expect section" 
+            "comment" : "original test of createInitFailUndefinedInstruction, interesting expect section"
         },
         "env" : {
             "currentCoinbase" : "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

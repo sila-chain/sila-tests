@@ -18,7 +18,7 @@ exp:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            [[0]] (exp 2 2)
         }
       nonce: '0'
@@ -29,10 +29,10 @@ exp:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
         {  ; (-1)^(-2)
-           ; 2^256-1 = -1 
-           ; 2^256-1 = -2 
-           [[0]] (exp 
-            0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
+           ; 2^256-1 = -1
+           ; 2^256-1 = -2
+           [[0]] (exp
+            0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
             0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe
           )
         }
@@ -139,12 +139,12 @@ exp:
       storage: {}
 
 
-      
+
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call 0xffffff (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -156,7 +156,7 @@ exp:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 # The transaction to check
@@ -181,16 +181,16 @@ exp:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
 
 
 
-    
+
+
   expect:
 
     # All the zeros can go together
     - indexes:
-        data: 
+        data:
         - :label exp_0_big
         - :label exp_2_257
         - :label exp_2_big

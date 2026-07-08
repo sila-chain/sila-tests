@@ -44,17 +44,17 @@ Fields
 
 - **data**:
 
-  The data, either in hexadecimal or an 
+  The data, either in hexadecimal or an
   `ABI call <https://solidity.readthedocs.io/en/v0.7.1/abi-spec.html>`_
   with this format:
-  
+
   ::
 
       :abi <function signature> <function parameters separated by spaces>
 
 
 - **gas**:
-  
+
   Gas limit for the transaction
 
 

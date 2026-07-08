@@ -1,6 +1,6 @@
 {
     "callcodecallcodecall_110_OOGMAfter" : {
-        "_info" : { 
+        "_info" : {
             "comment" : "callcode -> callcode (oog) -> call -> code"
         },
         "env" : {

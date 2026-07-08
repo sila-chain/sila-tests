@@ -1,7 +1,7 @@
 {
     "suicideThenCheckBalance" : {
 	"_info" : {
-	    "comment" : "[2:22:42] Vitalik Buterin: another one is: (i) self-destruct contract C, (ii) in the next transaction, send 1 wei to C, (iii) verify that C's balance is 1 wei. [2:23:01] Vitalik Buterin: the reason this is important now is that with EIP98, clients will be switching to not 'committing' their caches to the trie at the end of every tx. [2:23:18] Vitalik Buterin: and this means that selfdestruct has to be handled more carefully than before. [2:23:49] Vitalik Buterin: pyethereum screwed it up and it had to get fixed, though pyethereum's bug had to do with pre-spurious dragon 'existence' so it may not be relevant now."
+	    "comment" : "[2:22:42] Vitalik Buterin: another one is: (i) self-destruct contract C, (ii) in the next transaction, send 1 wei to C, (iii) verify that C's balance is 1 wei. [2:23:01] Vitalik Buterin: the reason this is important now is that with SIP98, clients will be switching to not 'committing' their caches to the trie at the end of every tx. [2:23:18] Vitalik Buterin: and this means that selfdestruct has to be handled more carefully than before. [2:23:49] Vitalik Buterin: pysila screwed it up and it had to get fixed, though pysila's bug had to do with pre-spurious dragon 'existence' so it may not be relevant now."
 	},
         "genesisBlockHeader" : {
             "bloom" : "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
@@ -14,7 +14,7 @@
             "nonce" : "0x0102030405060708",
             "number" : "0",
             "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
-            "receiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "recsiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "stateRoot" : "0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a",
             "timestamp" : "0x54c98c81",
             "transactionsTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",

@@ -43,7 +43,7 @@ log1:
       code: |
         {        ; memSizeTooHigh
            [0] 0xaabbffffffffffffffffffffffffffffffffffffffffffffffffffffffffccdd
-           (log1 1 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 0) 
+           (log1 1 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 0)
            [[0]] 0x600D
         }
       nonce: '0'
@@ -67,8 +67,8 @@ log1:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
         {        ; nonEmptyMem
-           [0] 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 
-           (log1 0 32 0) 
+           [0] 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+           (log1 0 32 0)
            [[0]] 0x600D
         }
       nonce: '0'
@@ -131,7 +131,7 @@ log1:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (delegatecall (gas) (+ 0x100 $4) 0 0 0 0)
         }
       nonce: '0'
@@ -144,7 +144,7 @@ log1:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -169,19 +169,19 @@ log1:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
 
-  # Log tests do two things that are visible to retesteth:
-  # 
+  # Log tests do two things that are visible to retestsil:
+  #
   # 1. Cost gas
   # 2. Abort or don't above the contract call
   #
   # This test checks the second one by having an SSTORE that either happens
-  # (success) or not (failure) 
+  # (success) or not (failure)
   expect:
 
 
   # All the successes
     - indexes:
-        data: 
+        data:
         - :label emptyMem
         - :label memSizeZero
         - :label nonEmptyMem
@@ -202,7 +202,7 @@ log1:
 
   # All the failures
     - indexes:
-        data: 
+        data:
         - :label memStartTooHigh
         - :label memSizeTooHigh
         gas:  !!int -1

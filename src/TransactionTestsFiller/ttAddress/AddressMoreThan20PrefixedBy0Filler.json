@@ -1,7 +1,7 @@
 {
     "AddressMoreThan20PrefixedBy0" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "AddressTooLong"
         },

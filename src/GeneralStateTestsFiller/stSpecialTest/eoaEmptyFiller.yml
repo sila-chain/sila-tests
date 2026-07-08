@@ -1,5 +1,5 @@
 # When an externally owned account empties itself by sending all its wei to a contract, what happens?
-# Based on https://github.com/ethereumjs/ethereumjs-monorepo/pull/2383
+# Based on https://github.com/silajs/silajs-monorepo/pull/2383
 
 eoaEmpty:
   env:
@@ -87,13 +87,13 @@ eoaEmpty:
            // Gas cost of selfdestruct going to the EOA (should also be warm)
            gas0 := gas()
            pop(call(gas(), 0xDEAD, 0, 0, 0, 0, 0))
-           sstore(0xFF, sub(gas0, gas()))           
+           sstore(0xFF, sub(gas0, gas()))
         }
       nonce: 1
       storage: {}
 
   transaction:
-    data: 
+    data:
       # First parameter - value to send when calling our caller
       - :abi f(uint) 0
       - :abi f(uint) 1
@@ -120,7 +120,7 @@ eoaEmpty:
           nonce: 1
 
        000000000000000000000000000000000000C0DE:
-          storage: 
+          storage:
             0: 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b   # EOA account
             0x31: 0    # Balance (zero)
             0x3B: 0    # EXTCODESIZE
@@ -129,7 +129,7 @@ eoaEmpty:
             0xF1: 127  # CALL to a warm address (100) + misc. costs
             0xFF: 7631 # CALL to an address that then SELFDESTRUCTS sending the EOA its balance + misc. costs
 
-            # EXTHASHCODE for various nearly empty EOAs 
+            # EXTHASHCODE for various nearly empty EOAs
             0xBAD1: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance only
             0xBAD2: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Nonce only
             0xBAD3: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance and nonce
@@ -148,7 +148,7 @@ eoaEmpty:
           nonce: 1
 
        000000000000000000000000000000000000C0DE:
-          storage: 
+          storage:
             0: 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b   # EOA account
             0x31: 0    # Balance (zero)
             0x3B: 0    # EXTCODESIZE
@@ -157,12 +157,12 @@ eoaEmpty:
             0xF1: 6827  # Call with a value costs 6700 more + misc. costs
             0xFF: 7631 # CALL to an address that then SELFDESTRUCTS sending the EOA its balance + misc. costs
 
-            # EXTHASHCODE for various nearly empty EOAs 
+            # EXTHASHCODE for various nearly empty EOAs
             0xBAD1: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance only
             0xBAD2: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Nonce only
             0xBAD3: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance and nonce
             0xBAD4: 0 # Storage only, which can't happen in an EOA
-        
+
 
 
     - indexes:
@@ -172,7 +172,7 @@ eoaEmpty:
       network:
         - '>=London'
       result: {}
-      expectException: 
+      expectException:
         '>=London': TR_NoFunds
 
 
@@ -188,7 +188,7 @@ eoaEmpty:
           nonce: 1
 
        000000000000000000000000000000000000C0DE:
-          storage: 
+          storage:
             0: 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b   # EOA account
             0x31: 100  # Balance (100 wei at this point)
             0x3B: 0    # EXTCODESIZE
@@ -197,7 +197,7 @@ eoaEmpty:
             0xF1: 127  # CALL to a warm address (100) + misc. costs
             0xFF: 7631 # CALL to an address that then SELFDESTRUCTS sending the EOA its balance + misc. costs
 
-            # EXTHASHCODE for various nearly empty EOAs 
+            # EXTHASHCODE for various nearly empty EOAs
             0xBAD1: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance only
             0xBAD2: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Nonce only
             0xBAD3: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance and nonce
@@ -215,7 +215,7 @@ eoaEmpty:
           nonce: 1
 
        000000000000000000000000000000000000C0DE:
-          storage: 
+          storage:
             0: 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b   # EOA account
             0x31: 100  # Balance (100 wei at this point)
             0x3B: 0    # EXTCODESIZE
@@ -224,12 +224,12 @@ eoaEmpty:
             0xF1: 6827  # CALL to a warm address (100) + sending a value + misc. costs
             0xFF: 7631 # CALL to an address that then SELFDESTRUCTS sending the EOA its balance + misc. costs
 
-            # EXTHASHCODE for various nearly empty EOAs 
+            # EXTHASHCODE for various nearly empty EOAs
             0xBAD1: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance only
             0xBAD2: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Nonce only
             0xBAD3: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance and nonce
             0xBAD4: 0 # Storage only, which can't happen in an EOA
-        
+
 
     - indexes:
        data: !!int 0
@@ -242,7 +242,7 @@ eoaEmpty:
           nonce: 1
 
        000000000000000000000000000000000000C0DE:
-          storage: 
+          storage:
             0: 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b   # EOA account
             0x31: 0    # Balance (zero)
             0x3B: 0    # EXTCODESIZE
@@ -251,7 +251,7 @@ eoaEmpty:
             0xF1: 127  # CALL to a warm address (100) + misc. costs
             0xFF: 7631 # CALL to an address that then SELFDESTRUCTS sending the EOA its balance + misc. costs
 
-            # EXTHASHCODE for various nearly empty EOAs 
+            # EXTHASHCODE for various nearly empty EOAs
             0xBAD1: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance only
             0xBAD2: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Nonce only
             0xBAD3: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance and nonce
@@ -270,7 +270,7 @@ eoaEmpty:
           nonce: 1
 
        000000000000000000000000000000000000C0DE:
-          storage: 
+          storage:
             0: 0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b   # EOA account
             0x31: 0    # Balance (zero)
             0x3B: 0    # EXTCODESIZE
@@ -279,7 +279,7 @@ eoaEmpty:
             0xF1: 6827  # CALL to a warm address (100) + cost of sending value + misc. costs
             0xFF: 7631 # CALL to an address that then SELFDESTRUCTS sending the EOA its balance + misc. costs
 
-            # EXTHASHCODE for various nearly empty EOAs 
+            # EXTHASHCODE for various nearly empty EOAs
             0xBAD1: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance only
             0xBAD2: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Nonce only
             0xBAD3: 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 # Balance and nonce

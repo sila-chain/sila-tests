@@ -1,7 +1,7 @@
 {
     "TransactionWithLeadingZerosNonce" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "LeadingZerosNonce"
         },

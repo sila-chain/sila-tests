@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Difficulty Gray Glacier Combination Check: 100k steps, starting from block pushback number (11,400,000) for GrayGlacier",
             "filling-rpc-server" : "evm version 1.11.4-unstable-564db9a9-20230310",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.324bcf39.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.324bcf39.Linux.g++",
             "generatedTestHash" : "691f09114144d987889ae7fd747f358ccf9766478f232246fb25273840ed95f2",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

@@ -1,7 +1,7 @@
 # Identify which precompiles exist on a node
 #
-# The list of precompiles in GETH is at 
-#     https://github.com/ethereum/go-ethereum/blob/master/core/vm/contracts.go#L83
+# The list of precompiles in GETH is at
+#     https://github.com/sila/go-sila/blob/master/core/vm/contracts.go#L83
 
 
 idPrecomps:
@@ -21,7 +21,7 @@ idPrecomps:
     comment: Ori Pomerantz qbzzt1@gmail.com
 
 
-  pre:  
+  pre:
 
 
     # Call different contracts depending on the parameter. Write in [[0]] whether
@@ -30,7 +30,7 @@ idPrecomps:
     # This is done by calling the precompile and then 0x10000 and seeing if the
     # difference is gas cost is consistent. I chose this somewhat complicated
     # method because it is almost immune to opcode gas cost changes (not 100% immune
-    # because there are opcodes that appear in one and not the other, that's the 
+    # because there are opcodes that appear in one and not the other, that's the
     # reason we ignore differences of less than 256 gas)
     cccccccccccccccccccccccccccccccccccccccc:
       code: |
@@ -60,7 +60,7 @@ idPrecomps:
             [gasTest] (- @gasTest (gas))
 
 
-            ; Figure the cost of calling 0x10000 (which is above the 
+            ; Figure the cost of calling 0x10000 (which is above the
             ; precompile range)
             [gas10000] (gas)
             (call (gas) 0x10000 0 inputBuf @length outputBuf @length)
@@ -71,7 +71,7 @@ idPrecomps:
             [[0]]  (< @@0 0x10)
             ; [[1]] @gasTest
             ; [[2]] @gas10000
-        }  
+        }
       nonce: '0'
       storage: {}
       balance: 0
@@ -90,7 +90,7 @@ idPrecomps:
     # :label yes - there is precompile here
     # :label no  - there is no precompile here
     # :label from_<fork> - no prior to <fork>, yes afterwards.
- 
+
     # Accounts where we expect to find precompiles
     - :label yes :abi f(uint) 0x01
     - :label yes :abi f(uint) 0x02
@@ -383,25 +383,25 @@ idPrecomps:
   expect:
 
   - indexes:
-      data: 
+      data:
       - :label yes
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>=Berlin'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
           # High gas cost when there's a precompile
-          0x00: 0x00 
+          0x00: 0x00
 
 
   - indexes:
-      data: 
+      data:
       - :label no
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>=Berlin'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -413,11 +413,11 @@ idPrecomps:
 
   # For precompiles that only become available in Cancun.
   - indexes:
-      data: 
+      data:
       - :label from_cancun
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - Berlin
     - London
     - Merge
@@ -433,11 +433,11 @@ idPrecomps:
   # Uncomment here when we add the Cancun fork
 
 #  - indexes:
-#      data: 
+#      data:
 #      - :label from_cancun
 #      gas: !!int -1
 #      value: !!int -1
-#    network: 
+#    network:
 #    - '>=Cancun'
 #    result:
 #      cccccccccccccccccccccccccccccccccccccccc:

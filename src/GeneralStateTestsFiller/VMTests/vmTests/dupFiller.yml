@@ -3,8 +3,8 @@
 # NOTE: The functionality of the old dup2errorFiller.json is available in
 # GeneralStateTests/stStackTests/underflowTest
 #
-# We can't use lll with dup, swap, or push (lll needs to manage the stack 
-# on its own). Instead, we do 
+# We can't use lll with dup, swap, or push (lll needs to manage the stack
+# on its own). Instead, we do
 #  [1] PUSH1 0x00
 #  [3] PUSH1 0x01
 #  [5] PUSH1 0x02
@@ -231,7 +231,7 @@ dup:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call (gas) (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -243,7 +243,7 @@ dup:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -274,8 +274,8 @@ dup:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: :label dup1
@@ -302,7 +302,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -331,7 +331,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup3
@@ -358,7 +358,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup4
@@ -385,7 +385,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -414,7 +414,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -443,7 +443,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup7
@@ -470,7 +470,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup8
@@ -497,7 +497,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -526,7 +526,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -555,7 +555,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup11
@@ -582,7 +582,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup12
@@ -609,7 +609,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -638,7 +638,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
 
 
@@ -667,7 +667,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup15
@@ -694,7 +694,7 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 
     - indexes:
         data: :label dup16
@@ -721,5 +721,5 @@ dup:
             0x0D: 0x04
             0x0E: 0x03
             0x0F: 0x02
-     
+
 

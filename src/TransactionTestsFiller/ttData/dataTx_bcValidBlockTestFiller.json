@@ -1,7 +1,7 @@
 {
     "dataTx_bcValidBlockTest" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
         },
         "transaction": {

@@ -1,5 +1,5 @@
 mul:
-  
+
   # Multiplication
 
   env:
@@ -18,7 +18,7 @@ mul:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (* 2 3)
         }
       nonce: '0'
@@ -28,7 +28,7 @@ mul:
     0000000000000000000000000000000000000101:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             ; -1 * -1
             ; -1 = 2^256-1 in evm arithmetic
             [[0]] (*
@@ -66,10 +66,10 @@ mul:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
         {
-           ; 2^255 * -1 (the expected answer is 2^255, 
+           ; 2^255 * -1 (the expected answer is 2^255,
            ;             because -2^255 = 2^256-2^255 in evm arithmetic)
-           [[0]] (* 
-               0x8000000000000000000000000000000000000000000000000000000000000000 
+           [[0]] (*
+               0x8000000000000000000000000000000000000000000000000000000000000000
                0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
            )
         }
@@ -83,11 +83,11 @@ mul:
       code: |
         {
            ; 2^255 * 2^255
-           ; 
+           ;
            ; the expected answer is 0, because 2^510 % 2^256 = 0
-           [[0]] (* 
-               0x8000000000000000000000000000000000000000000000000000000000000000 
-               0x8000000000000000000000000000000000000000000000000000000000000000 
+           [[0]] (*
+               0x8000000000000000000000000000000000000000000000000000000000000000
+               0x8000000000000000000000000000000000000000000000000000000000000000
            )
         }
       nonce: '0'
@@ -99,9 +99,9 @@ mul:
       code: |
         {
            ; (2^255-1) * (2^255-1)
-           ; 
+           ;
            ; = 2^510 - 2*2^255 + 1 = 2^510 - 2^256 + 1 = 1
-           [[0]] (* 
+           [[0]] (*
                0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
                0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
            )
@@ -149,7 +149,7 @@ mul:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call 0xffffff (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -161,7 +161,7 @@ mul:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 # The transaction to check
   transaction:
     data:
@@ -182,11 +182,11 @@ mul:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
-        data: 
+        data:
         - :label mul_0_23
         - :label mul_2pow255_2pow255
         - :label stack_underflow

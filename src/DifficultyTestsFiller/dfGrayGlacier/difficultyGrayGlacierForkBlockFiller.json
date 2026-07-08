@@ -1,8 +1,8 @@
 {
-    "difficultyGrayGlacierForkBlock" : 
+    "difficultyGrayGlacierForkBlock" :
     {
         "_info" : {
-            "comment" : "Gray Glacier Difficulty Combination Check at Fork Block (15,050,000): Difficulty range start uses current mainnet difficulty, range end uses approximate value with constant 13 second block, 5% uncle rate"
+            "comment" : "Gray Glacier Difficulty Combination Check at Fork Block (15,050,000): Difficulty range start uses current sila-sila-mainnet difficulty, range end uses approximate value with constant 13 second block, 5% uncle rate"
         },
         "network" : [ "GrayGlacier" ],
         "blocknumber" : ["0xe5a510"],

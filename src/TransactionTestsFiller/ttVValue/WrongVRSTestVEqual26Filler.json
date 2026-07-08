@@ -1,10 +1,10 @@
 {
     "WrongVRSTestVEqual26" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
-            "<=EIP150" : "InvalidVRS",
-            ">=EIP158" : "InvalidChainID"
+            "<=SIP150" : "InvalidVRS",
+            ">=SIP158" : "InvalidChainID"
         },
         "transaction" :
         {

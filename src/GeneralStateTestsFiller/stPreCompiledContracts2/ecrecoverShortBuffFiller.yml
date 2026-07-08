@@ -1,9 +1,9 @@
 # Call the ecrecover precompile with a short (<128 bytes) buffer, or an excessively long one.
 # These tests are >=TangerineWhistle for using the 63/64th rule, but let's use >=Byzantium. Should be >=FRontier otherwise.
 
-# Using 
+# Using
 #     wallet = ethers.Wallet.createRandom()
-# 
+#
 # SigningKey {
 #  curve: 'secp256k1',
 #  privateKey: '0xaedd8fff1fea5cc2513c2db88712d7e2345cd9ba6bcebdd745ec77640961695e',
@@ -34,7 +34,7 @@
 #       compact: '0x184870a8e4faa6065ddf65c873935d3e48e3d1c7b7853f25cd79b8247f771910226140b6b66554c7fcfa38589e$
 #    }
 #
-# ethers.utils.recoverAddress(zero, 
+# ethers.utils.recoverAddress(zero,
 #      "0x184870a8e4faa6065ddf65c873935d3e48e3d1c7b7853f25cd79b8247f771910226140b6b66554c7fcfa38589e433cc148eb$
 #
 # '0x3f9Ecb7B25fa567AFB2a4c7B633749bdA578B593'
@@ -50,18 +50,18 @@ ecrecoverShortBuff:
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
 
 
-  pre:  
+  pre:
 
 
     cccccccccccccccccccccccccccccccccccccccc:
       code: |
         :yul berlin
         {
-          let maxLength := 0xA0     
+          let maxLength := 0xA0
 
           // Initialization
           for { let i := 0 } lt(i, maxLength) { i := add(i, 1) } {
-             // Initialize storage to verify it gets overwritten 
+             // Initialize storage to verify it gets overwritten
              sstore(i, 0xdead60A7)
              sstore(add(0x1000,i), 0xdead60A7)
           }
@@ -74,7 +74,7 @@ ecrecoverShortBuff:
           mstore(0x40, 0x184870a8e4faa6065ddf65c873935d3e48e3d1c7b7853f25cd79b8247f771910) // r
           mstore(0x60, 0x226140b6b66554c7fcfa38589e433cc148ebe5c8482eb3093ab1d9a932c96f58) // s
 
-    
+
 
           // Call ecrecover with every possible length that's too short, the right length
           // (0x80), and some excessive lengths
@@ -143,7 +143,7 @@ ecrecoverShortBuff:
       data: !!int -1
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Byzantium"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -165,7 +165,7 @@ ecrecoverShortBuff:
 
 
           # For buffer lengths 0x61 - 0x7F we get incorrect addresses, because the input is value
-          # but valid for a different address than ours (because s is a non-zero value, 
+          # but valid for a different address than ours (because s is a non-zero value,
           # just not the correct one)
           0x1061: 0x8e5817968f74ffb0255ae41eefa6f89dd0183fa1
           0x1062: 0xb7529ed60a10291754a635ed9fd67c1723f4d83b

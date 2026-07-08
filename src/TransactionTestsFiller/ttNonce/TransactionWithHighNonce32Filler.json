@@ -1,7 +1,7 @@
 {
     "TransactionWithHighNonce32" :
     {
-        "expectException" : 
+        "expectException" :
         {
         },
         "transaction" :

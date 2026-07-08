@@ -23,7 +23,7 @@ costRevert:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (revert 0 0x10)
         }
       nonce: '0'
@@ -35,7 +35,7 @@ costRevert:
     0000000000000000000000000000000000000101:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (while 1 (sha3 0 0x1000000))
         }
       nonce: '0'
@@ -47,14 +47,14 @@ costRevert:
     0000000000000000000000000000000000000102:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (sha3 0 (- 0 1))
         }
       nonce: '0'
       storage: {}
 
     # The next invalid states are difficult/impossible to do in LLL
-    # so they use the assembled version of contract 0x0101, except change the 
+    # so they use the assembled version of contract 0x0101, except change the
     # last part from (revert 0 0x10) to whatever is needed
 
     # Invalid opcode
@@ -99,17 +99,17 @@ costRevert:
     CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (if (= $36 0) {     ; CALL
                [0x00] (gas)
 
               ; Leave us some gas even if the call takes all of it
               (call (- (gas) 30000) $4 0 0 0 0 0)
-            
+
               [0x20] (gas)
 
               ; Opcodes between the two gas measurements cost 42 gas
-  
+
               ; 0-1            GAS         2         0  79978808
               ; 1-1          PUSH1         3         2  79978806
               ; 2-1         MSTORE         6         5  79978803
@@ -140,7 +140,7 @@ costRevert:
 
               ; Leave us some gas even if the call takes all of it
               (delegatecall (- (gas) 30000) $4 0 0 0 0)
-            
+
               [0x20] (gas)
 
               ; Opcodes between the two gas measurements cost 39 gas,
@@ -159,7 +159,7 @@ costRevert:
 
               ; Leave us some gas even if the call takes all of it
               (staticcall (- (gas) 30000) $4 0 0 0 0)
-            
+
               [0x20] (gas)
 
               ; Opcodes between the two gas measurements cost 39 gas,
@@ -176,7 +176,7 @@ costRevert:
 
               ; Leave us some gas even if the call takes all of it
               (call (- (gas) 30000) $4 0 0 0 0 0)
-            
+
               [0x20] (gas)
 
               ; Calculate gas cost
@@ -184,7 +184,7 @@ costRevert:
 
             } 0)
 
-          
+
             ; If the gas cost is above 0x04000000, assume it means "all the gas"
             [[0]] (if (> @@0 0x04000000) 0xFFFFFF @@0)
         }
@@ -197,7 +197,7 @@ costRevert:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -206,7 +206,7 @@ costRevert:
     # CALL
     - :label revert     :abi f(uint,uint) 0x0100 0
     - :label outOfGas   :abi f(uint,uint) 0x0101 0
-    - :label xtremeOOG  :abi f(uint,uint) 0x0102 0 
+    - :label xtremeOOG  :abi f(uint,uint) 0x0102 0
     - :label badOpcode  :abi f(uint,uint) 0x0103 0
     - :label jumpBadly  :abi f(uint,uint) 0x0104 0
     - :label stackUnder :abi f(uint,uint) 0x0105 0
@@ -215,7 +215,7 @@ costRevert:
     # DELEGATECALL
     - :label revert     :abi f(uint,uint) 0x0100 1
     - :label outOfGas   :abi f(uint,uint) 0x0101 1
-    - :label xtremeOOG  :abi f(uint,uint) 0x0102 1 
+    - :label xtremeOOG  :abi f(uint,uint) 0x0102 1
     - :label badOpcode  :abi f(uint,uint) 0x0103 1
     - :label jumpBadly  :abi f(uint,uint) 0x0104 1
     - :label stackUnder :abi f(uint,uint) 0x0105 1
@@ -224,7 +224,7 @@ costRevert:
     # STATICCALL
     - :label revert     :abi f(uint,uint) 0x0100 2
     - :label outOfGas   :abi f(uint,uint) 0x0101 2
-    - :label xtremeOOG  :abi f(uint,uint) 0x0102 2 
+    - :label xtremeOOG  :abi f(uint,uint) 0x0102 2
     - :label badOpcode  :abi f(uint,uint) 0x0103 2
     - :label jumpBadly  :abi f(uint,uint) 0x0104 2
     - :label stackUnder :abi f(uint,uint) 0x0105 2
@@ -234,7 +234,7 @@ costRevert:
     # CALLCODE
     - :label revert     :abi f(uint,uint) 0x0100 3
     - :label outOfGas   :abi f(uint,uint) 0x0101 3
-    - :label xtremeOOG  :abi f(uint,uint) 0x0102 3 
+    - :label xtremeOOG  :abi f(uint,uint) 0x0102 3
     - :label badOpcode  :abi f(uint,uint) 0x0103 3
     - :label jumpBadly  :abi f(uint,uint) 0x0104 3
     - :label stackUnder :abi f(uint,uint) 0x0105 3
@@ -248,8 +248,8 @@ costRevert:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data:

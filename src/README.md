@@ -1,5 +1,5 @@
 # List of test vectors ids that can be found in tests
-## Withdrawals tests EIP-4895
+## Withdrawals tests SIP-4895
 
 - ID: **BSHA0001** check that Shanghai block rejected before transition
 - ID: **BSHA0002** check that Merge block rejected after transition
@@ -396,7 +396,7 @@
 - ID: **EOF1C0019** legacy contact > CREATE[2] > nonsense init code (fail)
 
 
-## Warm COINBASE EIP-3651 
+## Warm COINBASE SIP-3651
 
 - ID: **WRMCB0001** check EXTCODESIZE gas cost on coinbase
 - ID: **WRMCB0002** check EXTCODECOPY gas cost on coinbase
@@ -429,7 +429,7 @@
 - ID: **SUC008.2** Same txn, same addr, different frames. Frame1 DELEGATECALLs frame2, frame2 SELFDESTRUCTs into contract's own ADDR, and then frame1 SELFDESTRUCTs into another address. Balance disappears.
 - ID: **SUC008.3** Same txn, same addr, different frames. Frame1 STATICCALLs frame2, frame2 SELFDESTRUCTs into contract's own ADDR, and then frame1 SELFDESTRUCTs into the same address. Balance ends up where frame1 sent it (static frames can't SELFDESTRUCT).
 
-## BLOBHASH EIP4844
+## BLOBHASH SIP4844
 - ID: **BLOB000** empty blobhash list transaction is rejected
 - ID: **BLOB001** blobhash list element with wrong version byte transaction is rejected
 - ID: **BLOB002** blobhash create transaction is rejected

@@ -1,7 +1,7 @@
 {
     "TransactionWithHighValueOverflow" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "InvalidValue"
         },

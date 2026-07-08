@@ -21,9 +21,9 @@ extCodeHashDeletedAccount2:
         {
           (MSTORE 0 0x01)
           (CALL 150000 0xbbbbbbbb00000000000000000000000000000000 0 0 32 0 32)
-          
+
           (CALL 150000 0xaaaaaaaa00000000000000000000000000000000 0 0 0  0 32)
-          
+
           (MSTORE 32 0x04)
           (CALL 150000 0xbbbbbbbb00000000000000000000000000000000 0 32 32 0 32)
         }
@@ -49,7 +49,7 @@ extCodeHashDeletedAccount2:
           (SSTORE (MLOAD 0) (EXTCODEHASH 0xaaaaaaaa00000000000000000000000000000000))
 
           (MSTORE 32 (EXTCODESIZE 0xaaaaaaaa00000000000000000000000000000000))
-          
+
           (MSTORE 0 (ADD (MLOAD 0) 1))
           (SSTORE (MLOAD 0) (MLOAD 32))
 

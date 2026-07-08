@@ -1,7 +1,7 @@
 {
     "TransactionWithRvalueHigh" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "ECRecoveryFail"
         },

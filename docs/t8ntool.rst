@@ -8,14 +8,14 @@ Adding Transition Tool Support to your Execution Layer Client
 
 .. note::
     This document is a tutorial. For reference on the **t8ntool** options
-    `look here <https://ethereum-tests.readthedocs.io/en/latest/retesteth-ref.html>`__.
+    `look here <https://sila-tests.readthedocs.io/en/latest/retestsil-ref.html>`__.
 
 
 Why Do This?
 =============
-Typically you would add transition tools (t8ntool) support to a client to run the state 
-transition and blockchain tests from `the standard repository <https://github.com/ethereum/tests>`_
-using the `retesteth <./retesteth-tutorial.html>`_ tool.
+Typically you would add transition tools (t8ntool) support to a client to run the state
+transition and blockchain tests from `the standard repository <https://github.com/sila/tests>`_
+using the `retestsil <./retestsil-tutorial.html>`_ tool.
 
 
 Configuration
@@ -35,13 +35,13 @@ The easiest way to configure a new **t8ntool** client is to start by duplicating
    - If you need any outputs to help with debugging, add them to a log file
 
      ::
-  
+
         echo t8ntool $* > /tests/t8ntool.log
 
 
 #. Add your client to the docker image. To do that:
 
-   #. `Recreate the docker container <https://ethereum-tests.readthedocs.io/en/latest/retesteth-tutorial.html#using-the-latest-version>`_.
+   #. `Recreate the docker container <https://sila-tests.readthedocs.io/en/latest/retestsil-tutorial.html#using-the-latest-version>`_.
    #. When you get to step 3, add the lines to download and compile your own client.
 
 
@@ -58,7 +58,7 @@ If **t8ntool** is called with **-v**:
 - This string goes into **<test>._info.filling-rpc-server** in the filled test files.
 
 
-Otherwise, you are supposed to run an actal test (or part of one). In that case your parameters 
+Otherwise, you are supposed to run an actal test (or part of one). In that case your parameters
 depends on the exact test type.
 
 
@@ -89,12 +89,12 @@ The command line looks like this (but all in one line)
 
 ::
 
-   start.sh --state.fork Merged 
-        --input.alloc /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5/alloc.json 
-        --input.txs /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5/txs.rlp 
-        --input.env /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5/env.json 
-        --output.basedir /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5 
-        --output.result out.json 
+   start.sh --state.fork Merged
+        --input.alloc /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5/alloc.json
+        --input.txs /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5/txs.rlp
+        --input.env /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5/env.json
+        --output.basedir /dev/shm/a12b28a5-e0d2-48c5-9744-6428173af2a5
+        --output.result out.json
         --output.alloc outAlloc.json
 
 
@@ -103,8 +103,8 @@ Optionally, there may be EVM tracing turned on, in which case you get the additi
 
 ::
 
-        --trace 
-        --trace.memory 
+        --trace
+        --trace.memory
         --trace.returndata
 
 
@@ -131,9 +131,9 @@ Parameter name       Value                                   More details
 
 Traces
 ^^^^^^
-If **-\\-trace** is specified, you need to reate a file (or files) called 
-trace-<transaction number>-<transaction hash>.jsonl. The format of this file is specified in 
-`EIP 3155 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-3155.md>`_.
+If **-\\-trace** is specified, you need to reate a file (or files) called
+trace-<transaction number>-<transaction hash>.jsonl. The format of this file is specified in
+`SIP 3155 <https://github.com/sila/SIPs/blob/master/SIPS/sip-3155.md>`_.
 
 This file should include the content of the memory only if **-\\-trace.memory** is specified.
 It should include the content of the return buffer only if **-\\-trace.returndata** is specified.
@@ -153,9 +153,9 @@ Blockchain tests are very similar to state transition tests, with these differen
 
 Minimal t8ntool client
 ======================
-This is a minimal **t8ntool** client, written in Python (the retesteth docker image already has Python, 
+This is a minimal **t8ntool** client, written in Python (the retestsil docker image already has Python,
 and we'd need to change it to get Node.js). It writes the two files that **t8ntool** requires, the
-output file and the output allocations file. The values it writes are nonsensical, but they pass the 
+output file and the output allocations file. The values it writes are nonsensical, but they pass the
 minimal requirements.
 
 
@@ -194,8 +194,8 @@ minimal requirements.
        "currentDifficulty" : "0x020000",
        "logsBloom": "0x""" + '01'*256 + """",
        "logsHash": "0x0102030405060708091011121314151617181920212223242526272829303132",
-       "receipts": [],
-       "receiptsRoot": "0x0102030405060708091011121314151617181920212223242526272829303132",
+       "recsipts": [],
+       "recsiptsRoot": "0x0102030405060708091011121314151617181920212223242526272829303132",
        "stateRoot": "0x0102030405060708091011121314151617181920212223242526272829303132",
        "txRoot": "0x0102030405060708091011121314151617181920212223242526272829303132"
      }

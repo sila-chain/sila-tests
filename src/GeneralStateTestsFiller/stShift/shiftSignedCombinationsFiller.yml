@@ -1,4 +1,4 @@
-# https://github.com/ethereum/tests/issues/564
+# https://github.com/sila/tests/issues/564
 ---
 shiftSignedCombinations:
   env:
@@ -9,7 +9,7 @@ shiftSignedCombinations:
     currentTimestamp: "1000"
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
   _info:
-    comment: "https://github.com/ethereum/tests/issues/564"
+    comment: "https://github.com/sila/tests/issues/564"
   pre:
     095e7baea6a6c7c4c2dfeb977efac326af552d87:
       balance: '1000000000000000000'
@@ -54,10 +54,10 @@ shiftSignedCombinations:
 
           (def 'increment_storage (MSTORE sstore_n (ADD 1 (MLOAD sstore_n))))
           (def 'sstore_debug
-            ;; put debug information about which opcode was called with what arguments. 0x80 is put instead of 0x00 
-            (seq 
+            ;; put debug information about which opcode was called with what arguments. 0x80 is put instead of 0x00
+            (seq
                 increment_storage
-                (IF 
+                (IF
                     (EQ (MLOAD (ADD data_istart (MUL 32 (MLOAD counter_i)))) 0)
                     (SSTORE (MLOAD sstore_n) 0x80)
                     (SSTORE (MLOAD sstore_n) (MLOAD (ADD data_istart (MUL 32 (MLOAD counter_i)))))
@@ -68,12 +68,12 @@ shiftSignedCombinations:
                     (SSTORE (MLOAD sstore_n) 0x80)
                     (SSTORE (MLOAD sstore_n) (MLOAD (ADD data_jstart (MUL 32 (MLOAD counter_j)))))
                 )
-            )    
+            )
           )
 
-          (FOR 
+          (FOR
             ;; init
-            (MSTORE counter_i 0) 
+            (MSTORE counter_i 0)
 
             ;; condition
             (LT (MLOAD counter_i) counter_i_max)
@@ -83,9 +83,9 @@ shiftSignedCombinations:
 
             ;; body
             (seq
-                (FOR 
+                (FOR
                     ;; init
-                    (MSTORE counter_j 0) 
+                    (MSTORE counter_j 0)
 
                     ;; condition
                     (LT (MLOAD counter_j) counter_j_max)
@@ -96,49 +96,49 @@ shiftSignedCombinations:
                     ;; body
                     (seq
                         ;; put debug  1d - SAR, 1b - SHL, 1c - SHR
-                        increment_storage 
+                        increment_storage
                         (SSTORE (MLOAD sstore_n) 0x1000001d)
                         sstore_debug
 
                         ;; put sar of (i,j)
                         increment_storage
-                        (SSTORE (MLOAD sstore_n) 
-                           (SAR 
+                        (SSTORE (MLOAD sstore_n)
+                           (SAR
                             (MLOAD (ADD data_istart (MUL 32 (MLOAD counter_i))))
                             (MLOAD (ADD data_jstart (MUL 32 (MLOAD counter_j))))
                            )
                         )
 
                         ;; put debug  1d - SAR, 1b - SHL, 1c - SHR
-                        increment_storage 
+                        increment_storage
                         (SSTORE (MLOAD sstore_n) 0x1000001b)
                         sstore_debug
 
                         ;; put shl of (i,j)
                         increment_storage
-                        (SSTORE (MLOAD sstore_n) 
-                           (SHL 
+                        (SSTORE (MLOAD sstore_n)
+                           (SHL
                             (MLOAD (ADD data_istart (MUL 32 (MLOAD counter_i))))
                             (MLOAD (ADD data_jstart (MUL 32 (MLOAD counter_j))))
                            )
                         )
 
                         ;; put debug  1d - SAR, 1b - SHL, 1c - SHR
-                        increment_storage 
+                        increment_storage
                         (SSTORE (MLOAD sstore_n) 0x1000001c)
                         sstore_debug
 
                         ;; put shr of (i,j)
                         increment_storage
-                        (SSTORE (MLOAD sstore_n) 
-                           (SHR 
+                        (SSTORE (MLOAD sstore_n)
+                           (SHR
                             (MLOAD (ADD data_istart (MUL 32 (MLOAD counter_i))))
                             (MLOAD (ADD data_jstart (MUL 32 (MLOAD counter_j))))
                            )
                         )
                     )
                 ) ;;//FOR
-            )         
+            )
           ) ;;//FOR
 
           (STOP)

@@ -1,7 +1,7 @@
 {
     "TransactionWithLeadingZerosGasPrice" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "LeadingZerosGasPrice"
         },

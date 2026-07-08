@@ -1,6 +1,6 @@
 Expect
 ======
-This section contains the information we expect to see after the test is 
+This section contains the information we expect to see after the test is
 concluded.
 
 
@@ -46,7 +46,7 @@ Format
                    { <forks & results> }
                  ]
               }
-           }          
+           }
 
 
      -
@@ -73,15 +73,15 @@ Format
                     storage:
                       0x0:  12345
                       10: 0x121212
-                    code: 0x00      
-                  address 2: 
+                    code: 0x00
+                  address 2:
                      <address fields go here>
               - <forks & results>
 
 
 The Network Specification
 -------------------------
-The string that identifies a fork (version) within a **network:** 
+The string that identifies a fork (version) within a **network:**
 list is one of three option:
 
 - The specific version: **Istanbul**
@@ -92,10 +92,10 @@ list is one of three option:
 
 The Indexes
 -----------
-The transaction can have multiple values for **data**, **gasLimit**, and 
-**value**. The **indexes:** section specifies which of these values 
+The transaction can have multiple values for **data**, **gasLimit**, and
+**value**. The **indexes:** section specifies which of these values
 are covered by a particular item in **expect**, for each field it can be
-either a single specification or a list of specifications. Each of those 
+either a single specification or a list of specifications. Each of those
 specifications uses any of these options:
 
 .. list-table::
@@ -108,9 +108,9 @@ specifications uses any of these options:
      - Meaning
 
    * - -1
- 
+
      - !!int -1
-  
+
      - All the (**data**, **gas**, or **value**) values in the transaction.
        Note that this line can be omitted, **-1** is the default value.
 

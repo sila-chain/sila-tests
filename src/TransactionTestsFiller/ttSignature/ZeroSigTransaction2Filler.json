@@ -1,7 +1,7 @@
 {
     "ZeroSigTransaction2" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "InvalidVRS"
         },

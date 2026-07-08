@@ -11,9 +11,9 @@ stateTestDir=../../GeneralStateTestsFiller
 ./templateGen.js invalidDiffPlaces invalid.yul 0x60A7 \
           > $stateTestDir/stBadOpcode/invalidDiffPlacesFiller.yml
 ./templateGen.js gasPriceDiffPlaces gasPrice.yul 2000 \
-          > $stateTestDir/stEIP1559/gasPriceDiffPlacesFiller.yml
+          > $stateTestDir/stSIP1559/gasPriceDiffPlacesFiller.yml
 ./templateGen.js baseFeeDiffPlaces baseFee.yul 10 \
-          > $stateTestDir/stEIP1559/baseFeeDiffPlacesFiller.yml
+          > $stateTestDir/stSIP1559/baseFeeDiffPlacesFiller.yml
 
 
 

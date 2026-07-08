@@ -32,8 +32,8 @@
         "pre" :
         {
 	    "1000000000000000000000000000000000000000" : {
-                "balance" : "0",  
-                "code" : "{   (CALL 0x7ffffffffffffff 0x1000000000000000000000000000000000000001 0 0xffffffff 0xffffffff 0xffffffff 0xffffffff)  }",		      
+                "balance" : "0",
+                "code" : "{   (CALL 0x7ffffffffffffff 0x1000000000000000000000000000000000000001 0 0xffffffff 0xffffffff 0xffffffff 0xffffffff)  }",
                 "nonce" : "0",
                 "storage" : {
                 }

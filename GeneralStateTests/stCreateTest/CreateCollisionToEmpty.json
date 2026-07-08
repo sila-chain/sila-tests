@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "data0 - create collision to empty, data1 - to empty but nonce, data2 - to contract with code",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "1c8bc6888a0cb54baa572770bbbf60b3d16570d2bfb125f37e410be82fb84671",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

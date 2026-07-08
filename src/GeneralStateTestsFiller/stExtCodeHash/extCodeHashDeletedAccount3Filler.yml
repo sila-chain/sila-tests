@@ -55,7 +55,7 @@ extCodeHashDeletedAccount3:
           ;; Stores Account A hash to 1
           [[1]] (EXTCODEHASH 0x554e36262c0e0ab156397c32444e4a018fe93b18)
           [[2]] (EXTCODESIZE 0x554e36262c0e0ab156397c32444e4a018fe93b18)
-          
+
           (EXTCODECOPY 0x554e36262c0e0ab156397c32444e4a018fe93b18 0 0 (SLOAD 2))
           [[3]] (MLOAD 0)
           ;; Run self destruct on Account A
@@ -118,4 +118,4 @@ extCodeHashDeletedAccount3:
     to: 095e7baea6a6c7c4c2dfeb977efac326af552d87
     value:
     - '1'
-    
+

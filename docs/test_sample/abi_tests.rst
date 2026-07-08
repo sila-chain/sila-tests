@@ -5,13 +5,13 @@
 ABI Tests
 =================================
 
-Location `/ABITests/basic_abi_tests.json 
-<https://github.com/ethereum/tests/blob/develop/ABITests/basic_abi_tests.json>`_
+Location `/ABITests/basic_abi_tests.json
+<https://github.com/sila/tests/blob/develop/ABITests/basic_abi_tests.json>`_
 
 A number of test cases for the `application binary interface
-<https://solidity.readthedocs.io/en/v0.7.1/abi-spec.html>`_. These test cases only 
-include the encoded arguments, not the the first four bytes, which are a hash of the function 
-name and parameter types. 
+<https://solidity.readthedocs.io/en/v0.7.1/abi-spec.html>`_. These test cases only
+include the encoded arguments, not the the first four bytes, which are a hash of the function
+name and parameter types.
 
 The format of each test value is:
 
@@ -21,7 +21,7 @@ The format of each test value is:
 
 The data types of the arguments, a list of strings.
 
-:: 
+::
 
        "types": [
           "uint256",

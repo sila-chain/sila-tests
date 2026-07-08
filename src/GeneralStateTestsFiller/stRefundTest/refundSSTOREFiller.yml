@@ -1,7 +1,7 @@
 # Calculate the refund provided by a single SSTORE that replaces a value with zero
 #
 # Berlin: 13005 gas
-# London:  4800 gas (as per EIP 3529)
+# London:  4800 gas (as per SIP 3529)
 
 
 refundSSTORE:
@@ -21,7 +21,7 @@ refundSSTORE:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '1000000000000000000'
       code: |
-          :yul berlin 
+          :yul berlin
           {
              sstore(0,0x0)
           }
@@ -48,7 +48,7 @@ refundSSTORE:
     - 0
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
     gasPrice: 1000
-    
+
 
   expect:
     - indexes:
@@ -61,7 +61,7 @@ refundSSTORE:
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           # Without a refund, the balance would be 1000000000000
-          # The London refund is 4800000 wei, which is 4800 gas 
+          # The London refund is 4800000 wei, which is 4800 gas
           balance: 1000004800000
 
 
@@ -75,5 +75,5 @@ refundSSTORE:
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           # Without a refund, the balance would be 1000000000000
-          # The Berlin refund is 13005000 wei, which is 13005 gas 
+          # The Berlin refund is 13005000 wei, which is 13005 gas
           balance: 1000013005000

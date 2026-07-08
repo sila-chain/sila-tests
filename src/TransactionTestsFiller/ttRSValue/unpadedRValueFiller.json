@@ -1,7 +1,7 @@
 {
     "unpadedRValue":
     {
-	    "expectException" : 
+	    "expectException" :
         {
         },
         "transaction": {

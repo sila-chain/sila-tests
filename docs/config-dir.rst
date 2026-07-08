@@ -1,12 +1,12 @@
 .. config_dir:
 
 #################################
-The Retesteth Config Directory
+The Retestsil Config Directory
 #################################
 
-The retesteth **config** directory contains the **retesteth** configuration. If it is
-empty **retesteth** creates one with the default values. Every directory under it 
-contains either the default configuration, or configuration for a specific 
+The retestsil **config** directory contains the **retestsil** configuration. If it is
+empty **retestsil** creates one with the default values. Every directory under it
+contains either the default configuration, or configuration for a specific
 client (to override the default for that client).
 
 These directories can contain this information:
@@ -21,12 +21,12 @@ These directories can contain this information:
     The first three are self explanatory. The **transition-tool** "socket" is used
     by **t8ntool**, which runs a separate instance of **evm t8n** for each test.
 
-    You can find more information about the communication between **retesteth**
-    and clients in `the t8ntool tutorial <t8ntool.html>`_. 
+    You can find more information about the communication between **retestsil**
+    and clients in `the t8ntool tutorial <t8ntool.html>`_.
 
 .. _socketAddress:
 
-  - **socketAddress**, the address of the socket, either a list of TCP ports (in 
+  - **socketAddress**, the address of the socket, either a list of TCP ports (in
     the format **<ip>:<port>**), a file for IPC, or an executable to run (for
     **transition-tool**).
 
@@ -38,15 +38,15 @@ These directories can contain this information:
 
   - **forks**, the main supported forks.
 
-  - **additionalForks**, additional forks, which are supported but only if they 
-    are specified explicitly. 
+  - **additionalForks**, additional forks, which are supported but only if they
+    are specified explicitly.
 
     For example, if a client's **config** file specifies:
 
     ::
 
       "forks" : [
-        "EIP158",
+        "SIP158",
         "Byzantium",
         "Constantinople",
         "ConstantinopleFix",
@@ -54,13 +54,13 @@ These directories can contain this information:
         "Berlin"
       ],
       "additionalForks" : [
-        "EIP158ToByzantiumAt5",
+        "SIP158ToByzantiumAt5",
         "HomesteadToDaoAt5",
         "ByzantiumToConstantinopleFixAt5"
-      ],        
+      ],
 
     And the test specifies **>=Byzantium**, it will test these forks:
-   
+
     - Byzantium
     - Constantinople
     - ConstantinopleFix
@@ -68,7 +68,7 @@ These directories can contain this information:
     - Berlin
 
     But not additional forks such as **ByzantiumToConstantinopleFixAt5**.
-    
+
   - **exceptions**, the exception messages that the client emits for blocks that
     are invalid in various ways. The key is the string used to identify the exception
     in the **expectException** field of invalid block tests. The value is the message
@@ -78,27 +78,27 @@ These directories can contain this information:
 
        The exception is only checked if:
 
-       #. **-\\-filltests** is specified. 
+       #. **-\\-filltests** is specified.
 
        #. The test is in **BlockchainTests/InvalidBlocks**.
 
        Otherwise, either
-       **retesteth** only checks that an exception occurred, not which exception it 
+       **retestsil** only checks that an exception occurred, not which exception it
        was (without **-\\-filltests**), or treats any exception as an abort (if the
-       test is not for invalid blocks).  
+       test is not for invalid blocks).
 
 
 - **start.sh**  the meaning of this script varies depending on the
   method used to communicate with the client.
 
   - With **tcp** and **ipc** clients the script
-    starts the client and possibly provides it with the port or pipe on 
-    which it should listen. In both cases it is possible to start multiple clients 
+    starts the client and possibly provides it with the port or pipe on
+    which it should listen. In both cases it is possible to start multiple clients
     to run tests in parallel.
 
     .. note::
 
-       If there is no **start.sh** script at all **retesteth** assumes that it 
+       If there is no **start.sh** script at all **retestsil** assumes that it
        needs to connect to an existing client rather than run its own.
 
   - With **ipc-debug** clients the script is ignored, because it is assumed that the
@@ -110,12 +110,12 @@ These directories can contain this information:
 
 - **stop.sh** stop the client.
 
-- In the case of **transition-tool** clients, this directory also contains the 
-  script that runs the client for each test. This script's name is specified in the 
-  **socketAddress** field. 
+- In the case of **transition-tool** clients, this directory also contains the
+  script that runs the client for each test. This script's name is specified in the
+  **socketAddress** field.
 
   In the case of **t8ntool**, at writing the only client that uses the **transition-tool**
-  socket type, this script is **start.sh**. 
+  socket type, this script is **start.sh**.
 
 - **mycompiler.sh**, a sample custom compiler script.
     You can find more information about using custom compilers in `the tutorial <custom-compiler.html>`_.
@@ -125,12 +125,12 @@ These directories can contain this information:
   the way to specify for the client what fork it is running. The forkname value is
   matched with the value for the **network:** field in the test file.
   This file is necessary
-  because different clients refer to the forks by different names. 
+  because different clients refer to the forks by different names.
 
   This file may
   also contain an **accounts** field. This is legacy and can be ignored.
 
 - **genesis/correctMiningReward.json**, a file that includes the mining reward for
-  each fork. 
+  each fork.
 
 

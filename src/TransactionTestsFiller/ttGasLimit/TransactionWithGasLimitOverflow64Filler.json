@@ -1,7 +1,7 @@
 {
     "TransactionWithGasLimitOverflow64" :
 	{
-		"expectException" : 
+		"expectException" :
         {
             ">=Frontier" : "InvalidGasLimit4"
         },

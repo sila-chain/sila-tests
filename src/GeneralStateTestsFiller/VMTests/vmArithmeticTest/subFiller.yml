@@ -1,7 +1,7 @@
 sub:
 
   # This test deals with addition, mostly addition that causes an overflow.
-  # It is based on the fact that arithmetic in the evm is modulu 2^256. 
+  # It is based on the fact that arithmetic in the evm is modulu 2^256.
 
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
@@ -19,38 +19,38 @@ sub:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            [[0]] (- 23 1)
         }
       nonce: '0'
       storage: {}
 
-      
+
     0000000000000000000000000000000000000101:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            [[0]] (- 2 3)
         }
       nonce: '0'
       storage: {}
 
-      
+
     0000000000000000000000000000000000000102:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            [[0]] (- 0 23)
         }
       nonce: '0'
       storage: {}
 
-      
+
     0000000000000000000000000000000000000103:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-           ; 0 - (-1)  
+        {
+           ; 0 - (-1)
            [[0]] (-   0
                     0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
 
@@ -58,12 +58,12 @@ sub:
       nonce: '0'
       storage: {}
 
-      
+
     0000000000000000000000000000000000000104:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-           ; (-1) - 0 
+        {
+           ; (-1) - 0
            ; evm arithmetic is mod 2^256, and the big number is 2^256-1
           [[0]] (- 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
                      0)
@@ -71,12 +71,12 @@ sub:
       nonce: '0'
       storage: {}
 
-      
+
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call 0xffffff (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -88,7 +88,7 @@ sub:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 # The transaction to check
   transaction:
     data:
@@ -105,8 +105,8 @@ sub:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: :label sub_23_1

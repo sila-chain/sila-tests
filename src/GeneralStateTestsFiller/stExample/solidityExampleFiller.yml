@@ -1,5 +1,5 @@
 # An example of using solidity contracts in the test
-# More examples at https://ethereum-tests.readthedocs.io/en/latest/state-transition-tutorial.html#solidity-tests
+# More examples at https://sila-tests.readthedocs.io/en/latest/state-transition-tutorial.html#solidity-tests
 solidityExample:
   _info:
     comment: An example test for using solidity contracts in the test
@@ -29,7 +29,7 @@ solidityExample:
 
   solidity: |
       // SPDX-License-Identifier: GPL-3.0
-      // RETESTETH_SOLC_EVM_VERSION=berlin
+      // RETESTSIL_SOLC_EVM_VERSION=berlin
       pragma solidity >=0.4.16 <0.9.0;
 
       contract TestDependency {
@@ -38,7 +38,7 @@ solidityExample:
         {
           storageVar = val;
           assembly { sstore(addr, val) }
-        } 
+        }
       }
 
       contract Test {
@@ -47,8 +47,8 @@ solidityExample:
         {
           instance = new TestDependency();
           instance.val2Storage(addr, val);
-        } 
-      }  
+        }
+      }
 
   pre:
 
@@ -73,7 +73,7 @@ solidityExample:
             {
               storageVar = val;
               assembly { sstore(addr, val) }
-            } 
+            }
         }
 
       nonce: '0'

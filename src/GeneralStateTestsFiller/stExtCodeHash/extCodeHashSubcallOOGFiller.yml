@@ -64,7 +64,7 @@ extCodeHashSubcallOOG:
     a000000000000000000000000000000000000000:
       balance: '1000000000000000000'
       code: |
-        { 
+        {
           (MSTORE 0
             (CREATE2 0 0
               (lll
@@ -96,7 +96,7 @@ extCodeHashSubcallOOG:
           (SSTORE 1 1) (SSTORE 2 1) (SSTORE 3 1) (SSTORE 4 1) (SSTORE 5 1) (SSTORE 6 1) (SSTORE 7 1)
           (SSTORE 8 1) (SSTORE 9 1) (SSTORE 10 1) (SSTORE 11 1) (SSTORE 12 1) (SSTORE 13 1) (SSTORE 14 1)
           (RETURN 0 32)
-          (STOP) 
+          (STOP)
         }
       nonce: '0'
       storage: {}
@@ -130,7 +130,7 @@ extCodeHashSubcallOOG:
         62ae0b997c8230e321b19d06b7004f25e1ac0637:
           shouldnotexist: '1'
         c566c94b132ce77d6e67add86c5a74e808578876:
-          shouldnotexist: '1' 
+          shouldnotexist: '1'
   transaction:
     data:
     - ':raw 0x0000000000000000000000002000000000000000000000000000000000000000'

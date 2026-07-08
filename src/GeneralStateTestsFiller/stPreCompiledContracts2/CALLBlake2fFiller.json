@@ -184,9 +184,9 @@
     },
     "transaction": {
       "// data": [
-        "Input is Packed as per EIP-152 requirements",
+        "Input is Packed as per SIP-152 requirements",
         "Output is [0] - result - [1] high 256 bits [2] low 256 bits",
-        "Test cases 0 through 7 are from the EIP, case 8 from the EIP is in stTimeConsuming",
+        "Test cases 0 through 7 are from the SIP, case 8 from the SIP is in stTimeConsuming",
         "0 - no bytes",
         "1 - too few bytes",
         "2 - too many bytes",

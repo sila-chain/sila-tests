@@ -24,11 +24,11 @@ Format
                   <other sections>,
                   "transaction":
                      {
-                        "data": ["0xDA7A", "0xDA7A", ":label hex 0xDA7A", 
+                        "data": ["0xDA7A", "0xDA7A", ":label hex 0xDA7A",
                              ":abi f(uint) 0xDA7A",
                              {
-                                  "data": "0xDA7A", 
-                                  "accessList": [ 
+                                  "data": "0xDA7A",
+                                  "accessList": [
                                      {
                                         "address": "0x0000000000000000000000000000000000000101",
                                         "storageKeys": [0x60A7, 0xBEEF]
@@ -61,13 +61,13 @@ Format
                - data: :label acl 0xDA7A
                  accessList:
                  - address: 0x0000000000000000000000000000000000000101
-                   storageKeys: 
+                   storageKeys:
                    - 0x60A7
                    - 0xBEEF
                  - address: 0x0000000000000000000000000000000000000102
                gasLimit:
                - '0xga50ga50'
-               value: 
+               value:
                - "1"
                to: "add13ess01233210add13ess01233210"
                secretKey: "5ec13e7 ... 5ec13e7"
@@ -79,17 +79,17 @@ Format
 Fields
 --------------
 - **data**:
-  The data, either in hexadecimal or an 
+  The data, either in hexadecimal or an
   `ABI call <https://solidity.readthedocs.io/en/v0.7.1/abi-spec.html>`_
   with this format:
   **:abi <function signature> <function parameters separated by spaces>**.
   The value can also be labeled:
-  **:label <value>**. 
+  **:label <value>**.
   This value is specified as a list to enable
   `files with multiple tests <../state-transition-tutorial.html#multitest-files>`_
 
-  The data can also have an `EIP2930 
-  <https://eips.ethereum.org/EIPS/eip-2930>`_ access list. In that case the data
+  The data can also have an `SIP2930
+  <https://sips.sila.org/SIPS/sip-2930>`_ access list. In that case the data
   field itself is a structure with two fields: **data** (the data) and **accessList**.
   The **accessList** is a list of structures, each of which has to have an **address**
   and may have a list of **storageKeys**.
@@ -101,7 +101,7 @@ Fields
 
 
 - **gasPrice**:
-  Gas price in Wei, only in Berlin and earlier 
+  Gas price in Wei, only in Berlin and earlier
   (replaced by maxFeePerGas in London)
 
 
@@ -118,8 +118,8 @@ Fields
 - **secretKey**:
   The secret key for the sending address. That address is derived from the
   secret key and therefore does not need to be specified explicitely
-  (`see here 
-  <https://www.freecodecamp.org/news/how-to-create-an-ethereum-wallet-address-from-a-private-key-ae72b0eee27b/>`_). 
+  (`see here
+  <https://www.freecodecamp.org/news/how-to-create-an-sila-wallet-address-from-a-private-key-ae72b0eee27b/>`_).
 
 - **nonce**:
   The nonce value for the transaction. The first transaction for an address
@@ -128,12 +128,12 @@ Fields
 
 - **maxPriorityFeePerGas**:
   The maximum priority fee per gas (a.k.a. tip) the transaction is willing to pay to
-  be included in the block (London and later, `added by 
-  eip 1559 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md>`_).
+  be included in the block (London and later, `added by
+  sip 1559 <https://github.com/sila/SIPs/blob/master/SIPS/sip-1559.md>`_).
 
 - **maxFeePerGas**:
   The maximum total fee per gas the transaction is willing to pay to
-  be included in the block (London and later, `added by 
-  eip 1559 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md>`_).
+  be included in the block (London and later, `added by
+  sip 1559 <https://github.com/sila/SIPs/blob/master/SIPS/sip-1559.md>`_).
 
 

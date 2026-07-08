@@ -1,7 +1,7 @@
 {
-    "DataTestNotEnoughGAS" : 
+    "DataTestNotEnoughGAS" :
     {
-		"expectException" : 
+		"expectException" :
         {
             ">=Frontier" : "TR_IntrinsicGas"
         },

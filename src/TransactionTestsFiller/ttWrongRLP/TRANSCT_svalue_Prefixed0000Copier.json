@@ -25,11 +25,11 @@
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "EIP150": {
+            "SIP150": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },
-            "EIP158": {
+            "SIP158": {
                 "exception": "LeadingZerosS",
 				"intrinsicGas" : "0x00"
             },

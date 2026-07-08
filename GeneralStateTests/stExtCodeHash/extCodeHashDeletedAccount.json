@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Get account A (aaaaaaaa00000000000000000000000000000000) code hash, code size, and code\nCalls Account A's code which causes self destruction of A\nGet account A codehash, code size and code\nIt is still getting the same values because selfdestruct is performed\nat the end of transaction during state finalization stage.\n",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "da9435bb1737a284c8661b4f076966689eb160478d63c62c6ce1f86cdcc75963",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

@@ -37,6 +37,6 @@ Format
              - |
                :raw # or cooked
                0xBAD0 # or good
-                 60A7 
+                 60A7
 
 

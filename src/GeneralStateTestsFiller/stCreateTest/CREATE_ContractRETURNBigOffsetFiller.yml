@@ -1,4 +1,4 @@
-# Use return with big offset, causes BN error in ethereumjs-vm
+# Use return with big offset, causes BN error in silajs-vm
 ---
 CREATE_ContractRETURNBigOffset:
   env:

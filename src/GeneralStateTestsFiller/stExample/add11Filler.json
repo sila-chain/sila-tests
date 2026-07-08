@@ -23,7 +23,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "//comment" : "hard fork order: Frontier, Homestead, EIP150, EIP155, Byzantium, Constantinople, Istanbul",
+                "//comment" : "hard fork order: Frontier, Homestead, SIP150, SIP155, Byzantium, Constantinople, Istanbul",
                 "network" : [">=Berlin"],
                 "result" : {
                     "//comment" : "Account in expect section would be checked for the fields specified here (balance, code, storage)",

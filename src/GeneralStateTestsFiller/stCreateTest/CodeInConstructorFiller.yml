@@ -17,7 +17,7 @@ CodeInConstructor:
     # Record information
     000000000000000000000000000000000000da7a:
       balance: '0x0ba1a9ce0ba1a9ce'
-      code:   | 
+      code:   |
         {
             (def 'counterLoc 0)
             (def 'counterVal @@counterLoc)
@@ -31,7 +31,7 @@ CodeInConstructor:
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
-      code:   | 
+      code:   |
         {
           ; Variables are 0x20 bytes (= 256 bits) apart, except for
           ; code buffers that get 0x100 (256 bytes)
@@ -55,13 +55,13 @@ CodeInConstructor:
           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ; Create the contract and a constructor to pass to CREATE[2]
           ;
-          ; 
-          [contractLength] 
+          ;
+          [contractLength]
             (lll
               (sstore 0 0xFF)
               contractCode
             )
-          [constructorLength] 
+          [constructorLength]
             (lll {
                    ; copy the contract from code to memory
                    (codecopy contractCode contractCode bufLength)
@@ -85,9 +85,9 @@ CodeInConstructor:
                    (sendData (pc))
                    ; Return actual code
                    (return contractCode (- (codesize) bufLength))
-                 } 
-                 constructorCode            
-            )   
+                 }
+                 constructorCode
+            )
           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ; Actually create the contract
           ;

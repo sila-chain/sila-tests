@@ -15,7 +15,7 @@ sstoreGas:
 
   pre:
 
-    
+
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
@@ -23,8 +23,8 @@ sstoreGas:
         {
            // Use storage of 0x1000 and above for gas figures
            let storageLoc := 0x1000
-           
-           // Gas spent on the measurement (two PUSHs, GAS, and SWAPs as 
+
+           // Gas spent on the measurement (two PUSHs, GAS, and SWAPs as
            // needed for the variables)
            let measureGas := 13
 
@@ -34,63 +34,63 @@ sstoreGas:
            gas0 := gas()
            sstore(0, 0xBEEF)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Warm storage, non-zero to non-zero
            gas0 := gas()
            sstore(0, 0xDEADBEEF)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Warm storage, non-zero to zero
            gas0 := gas()
-           sstore(0, 0)  
+           sstore(0, 0)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Warm storage, zero to zero
            gas0 := gas()
-           sstore(0, 0)  
+           sstore(0, 0)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Warm storage, zero to non-zero
            gas0 := gas()
-           sstore(0, 0x1234)  
+           sstore(0, 0x1234)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Cold storage, non-zero to zero
            gas0 := gas()
-           sstore(1, 0) 
+           sstore(1, 0)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Cold storage, zero to non-zero
            gas0 := gas()
-           sstore(2, 0x60A7) 
+           sstore(2, 0x60A7)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Cold storage, zero to zero
            gas0 := gas()
            sstore(3, 0)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Warm storage, zero to non-zero (cell started as zero)
            gas0 := gas()
            sstore(3, 0x60A7)
            gas1 := gas()
-           sstore(storageLoc, sub(sub(gas0, gas1), measureGas)) 
+           sstore(storageLoc, sub(sub(gas0, gas1), measureGas))
            storageLoc := add(storageLoc, 1)
 
            // Cleanup
@@ -100,7 +100,7 @@ sstoreGas:
            sstore(3, 0)
         }
       nonce: 1
-      storage: 
+      storage:
           0: 0x60A7
           1: 0x60A7
 

@@ -1,7 +1,7 @@
 ---
 # default config for ec2 instances
 
-instance_type:      c4.8xlarge  
+instance_type:      c4.8xlarge
 security_group:     client-tests
 
 image:              ami-9eaa1cf6
@@ -12,6 +12,6 @@ keypair:            christoph
 ip_access_range:    0.0.0.0/0
 
 
-project_description: https://github.com/ethereum/tests
+project_description: https://github.com/sila/tests
 
 total_no_instances: 3

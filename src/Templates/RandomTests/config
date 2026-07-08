@@ -8,8 +8,8 @@
     "forks" : [
         "Frontier",
         "Homestead",
-        "EIP150",
-        "EIP158",
+        "SIP150",
+        "SIP158",
         "Byzantium",
         "Constantinople",
         "ConstantinopleFix",
@@ -19,8 +19,8 @@
     ],
     "additionalForks" : [
         "FrontierToHomesteadAt5",
-        "HomesteadToEIP150At5",
-        "EIP158ToByzantiumAt5",
+        "HomesteadToSIP150At5",
+        "SIP158ToByzantiumAt5",
         "HomesteadToDaoAt5",
         "ByzantiumToConstantinopleFixAt5",
         "BerlinToLondonAt5"

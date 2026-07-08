@@ -25,11 +25,11 @@
                 "exception": "InvalidGasLimit5",
 				"intrinsicGas" : "0x00"
             },
-            "EIP150": {
+            "SIP150": {
                 "exception": "InvalidGasLimit5",
 				"intrinsicGas" : "0x00"
             },
-            "EIP158": {
+            "SIP158": {
                 "exception": "InvalidGasLimit5",
 				"intrinsicGas" : "0x00"
             },

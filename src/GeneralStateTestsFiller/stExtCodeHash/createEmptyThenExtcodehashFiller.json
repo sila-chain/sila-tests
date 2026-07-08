@@ -1,7 +1,7 @@
 {
     "createEmptyThenExtcodehash" : {
 		"_info" : {
-			"comment" : "https://github.com/ethereum/tests/issues/652"
+			"comment" : "https://github.com/sila/tests/issues/652"
 		},
         "env" : {
             "currentCoinbase" : "0x2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

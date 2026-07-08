@@ -36,7 +36,7 @@ Transaction tests, which only test transaction parsing, only have the **-\\-inpu
 
 .. note::
 
-   If you want to specify any of this information in `stdin`, either 
+   If you want to specify any of this information in `stdin`, either
    omit the parameter or use the value **stdin**.
 
 Output Files
@@ -63,13 +63,13 @@ Transaction File
 ----------------
 This file is a single line `"0x<rlp encoded transaction><rlp encoded transaction>..."`.
 If there are no transactions, the line is `"0xc0"`.
-This is an input to the tool, which `retesteth` calls `txs.rlp` for state transition and blockchain tests and `tx.rlp` for transaction tests.
+This is an input to the tool, which `retestsil` calls `txs.rlp` for state transition and blockchain tests and `tx.rlp` for transaction tests.
 
 
 Environment File
 ----------------
-This file is a map with the execution environment. 
-This is an input to the tool, which `retesteth` calls `env.json`.
+This file is a map with the execution environment.
+This is an input to the tool, which `retestsil` calls `env.json`.
 It has these fields:
 
 
@@ -83,8 +83,8 @@ It has these fields:
 
 .. note::
 
-   Some tests include multiple blocks. In that case, the test software runs 
-   `t8ntool` multiple times, one per block. 
+   Some tests include multiple blocks. In that case, the test software runs
+   `t8ntool` multiple times, one per block.
 
 
 Example
@@ -108,14 +108,14 @@ Example
 Allocation Files
 ----------------
 These files show the state of various accounts and contracts on the blockchain.
-In `retesteth` there are two of these files:
+In `retestsil` there are two of these files:
 `alloc.json` which is the input state and `outAlloc.json`
 which is the output state.
 
-The file is a map of `address` values to account information. The account 
+The file is a map of `address` values to account information. The account
 information that can be provided is:
 
-* `balance` 
+* `balance`
 * `code` (in machine language format)
 * `nonce`
 * `storage`
@@ -131,7 +131,7 @@ Example
            "code": "0x5854505854",
            "nonce": "0xac",
            "storage": {
-              "0x0000000000000000000000000000000000000000000000000000000000000000": 
+              "0x0000000000000000000000000000000000000000000000000000000000000000":
               "0x0000000000000000000000000000000000000000000000000000000000000004"
            }
         },
@@ -148,17 +148,17 @@ Example
 
 Result File
 -----------
-In `retesteth` this file is called `out.json`. It is the post state after 
+In `retestsil` this file is called `out.json`. It is the post state after
 processing the block. It should include the following fields:
 
 * `stateRoot`
 * `txRoot`
-* `receiptRoot`
+* `recsiptRoot`
 * `logsHash`
 * `logsBloom`, the `bloom filter <https://en.wikipedia.org/wiki/Bloom_filter>`_ for
   the logs.
-* `receipts`, a list of maps, one for each transaction, with the transaction receipt.
-  Each of those receipts includes these fields:
+* `recsipts`, a list of maps, one for each transaction, with the transaction recsipt.
+  Each of those recsipts includes these fields:
 
   * `root`
   * `status`
@@ -180,10 +180,10 @@ Example
    {
      "stateRoot": "0x1c99b01120e7a2fa1301b3505f20100e72362e5ac3f96854420e56ba8984d716",
      "txRoot": "0xb5eee60b45801179cbde3781b9a5dee9b3111554618c9cda3d6f7e351fd41e0b",
-     "receiptRoot": "0x86ceb80cb6bef8fe4ac0f1c99409f67cb2554c4432f374e399b94884eb3e6562",
+     "recsiptRoot": "0x86ceb80cb6bef8fe4ac0f1c99409f67cb2554c4432f374e399b94884eb3e6562",
      "logsHash": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-     "receipts": [
+     "recsipts": [
         {
             "root": "0x",
             "status": "0x1",
@@ -203,10 +203,10 @@ Example
 
 Trace Files
 -----------
-If **-\\-trace** is specified, the t8ntool creates a file (or files) called 
+If **-\\-trace** is specified, the t8ntool creates a file (or files) called
 `trace-<transaction number>-<transaction hash>.jsonl`. The format of this file
-is specified in 
-`EIP 3155 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-3155.md>`_.
+is specified in
+`SIP 3155 <https://github.com/sila/SIPs/blob/master/SIPS/sip-3155.md>`_.
 
 If the transaction fails and does not produce a hash, the name of the file is
 still `trace-<transaction number>-<value that is a legitimate hash>.jsonl`.
@@ -222,7 +222,7 @@ the output is all one object.
 
 Input
 -----
-When the input is provided using `stdin`, it can have any combination 
+When the input is provided using `stdin`, it can have any combination
 of these three fields (whichever ones aren't provided in file form)
 
 * `txs`, a list of transactions
@@ -236,5 +236,5 @@ When the output goes to `stdout`, it can have any combination of these fields
 (whichever ones don't have a specified output file):
 
 * `result`, the post state (the blockchain state after processing)
-* `body`, the transactions and their results 
+* `body`, the transactions and their results
 

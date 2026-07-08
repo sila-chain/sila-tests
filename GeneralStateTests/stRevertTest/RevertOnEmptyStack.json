@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Calling a runtime code that contains only a single `REVERT` should consume all gas.",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "fbd612c80bb445037e1de9f19103a8a312e50128c142240fc2789e89a1a2c5fd",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

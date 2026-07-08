@@ -36,7 +36,7 @@ This should check that code hash cache is correctly updated during the transacti
                              (MLOAD 0))
                 (RETURN 32 (MLOAD 0))
               }
-              0) 
+              0)
           0)
 
           ;; Check stats of same account after overwrite

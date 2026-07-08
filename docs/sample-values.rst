@@ -1,7 +1,7 @@
 Sample Values
 =================
 
-These tests cannot be executed automatically by **retesteth**. Instead, they are
+These tests cannot be executed automatically by **retestsil**. Instead, they are
 known valid values that client programmers can plug into their own unit tests to
 check various aspects of their client.
 

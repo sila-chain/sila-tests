@@ -1,5 +1,5 @@
-# These are tests for precomp 5, modexp 
-# (specified in https://github.com/ethereum/EIPs/blob/master/EIPS/eip-198.md)
+# These are tests for precomp 5, modexp
+# (specified in https://github.com/sila/SIPs/blob/master/SIPS/sip-198.md)
 #
 # For every case there are two parameters to test:
 # 1. The result
@@ -21,14 +21,14 @@ modexpTests:
 
   pre:
 
-    # Test for cases where all three parameters are <2^256. 
+    # Test for cases where all three parameters are <2^256.
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
        :yul berlin
        {
           // Our input values, 20 bytes each
-          // This is not the most efficient use of gas, but 
+          // This is not the most efficient use of gas, but
           // this is a test. Readability is more important
           let base := calldataload(0x04)
           let expV := calldataload(0x24)
@@ -59,7 +59,7 @@ modexpTests:
 
 
   transaction:
-    data: 
+    data:
     - :label m_n_01 :abi f(uint,uint,uint) 0 0 0
     - :label m_n_01 :abi f(uint,uint,uint) 0 0 1
     - :label 0_0_n :abi f(uint,uint,uint) 0 0 2
@@ -178,7 +178,7 @@ modexpTests:
     - :label 3_28948_11579 :abi f(uint,uint,uint) 3 28948 11579
     - :label 9_37111_37111 :abi f(uint,uint,uint) 9 37111 37111
     - :label 9_3711_37111 :abi f(uint,uint,uint) 9 3711 37111
-    - :label 49_2401_2401 :abi f(uint,uint,uint) 49 2401 2401 
+    - :label 49_2401_2401 :abi f(uint,uint,uint) 49 2401 2401
     - :label 37120_22411_22000 :abi f(uint,uint,uint) 37120 22411 22000
     - :label 37120_37111_0 :abi f(uint,uint,uint) 37120 37111 0
     - :label 37120_37111_1 :abi f(uint,uint,uint) 37120 37111 1

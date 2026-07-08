@@ -18,10 +18,10 @@ suicide:
     0000000000000000000000000000000000000100:
       balance: 0xFF000000000000
       code: |
-        { 
+        {
            (selfdestruct (caller))
         }
-      nonce: '0' 
+      nonce: '0'
       storage: {}
 
 
@@ -29,7 +29,7 @@ suicide:
     0000000000000000000000000000000000000101:
       balance: 0x100000000000
       code: |
-        { 
+        {
            (selfdestruct 0xdead)
         }
       nonce: '0'
@@ -37,11 +37,11 @@ suicide:
 
 
 
-    # suicideEtherToMe
+    # suicideSilaToMe
     0000000000000000000000000000000000000102:
       balance: 0x100000000000
       code: |
-        { 
+        {
            (selfdestruct (address))
         }
       nonce: '0'
@@ -52,7 +52,7 @@ suicide:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: 0x100000000000
       code: |
-        { 
+        {
            (call (gas) $4 0 0 0 0 0)
         }
       nonce: '0'
@@ -64,7 +64,7 @@ suicide:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -81,8 +81,8 @@ suicide:
     value:
     - 0
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: :label caller
@@ -92,7 +92,7 @@ suicide:
         - '>=London'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: 99999999711710 
+          balance: 99999999711710
         cccccccccccccccccccccccccccccccccccccccc:
           balance: 0xff100000000000
 
@@ -104,7 +104,7 @@ suicide:
         - 'Berlin'
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: 99999999855850 
+          balance: 99999999855850
         cccccccccccccccccccccccccccccccccccccccc:
           balance: 0xff100000000000
 
@@ -118,9 +118,9 @@ suicide:
         - Istanbul
       result:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
-          balance: 99999999865350 
+          balance: 99999999865350
         cccccccccccccccccccccccccccccccccccccccc:
-          balance: 0xff100000000000 
+          balance: 0xff100000000000
 
 
 

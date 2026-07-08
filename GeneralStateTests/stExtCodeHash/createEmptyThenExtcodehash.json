@@ -1,9 +1,9 @@
 {
     "createEmptyThenExtcodehash" : {
         "_info" : {
-            "comment" : "https://github.com/ethereum/tests/issues/652",
+            "comment" : "https://github.com/sila/tests/issues/652",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "ad42f8885079f4dcddd6aa67fb23c9135d36f2a936a8337a2524999f73003c92",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

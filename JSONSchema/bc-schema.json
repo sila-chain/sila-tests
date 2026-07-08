@@ -37,10 +37,10 @@
                 "expectExceptionConstantinopleFix": {
                     "type": "string"
                 },
-                "expectExceptionEIP150": {
+                "expectExceptionSIP150": {
                     "type": "string"
                 },
-                "expectExceptionEIP158": {
+                "expectExceptionSIP158": {
                     "type": "string"
                 },
                 "expectExceptionFrontier": {
@@ -102,7 +102,7 @@
                 "parentHash": {
                     "$ref": "#/definitions/ConfusedHexType"
                 },
-                "receiptTrie": {
+                "recsiptTrie": {
                     "$ref": "#/definitions/ConfusedHexType"
                 },
                 "stateRoot": {

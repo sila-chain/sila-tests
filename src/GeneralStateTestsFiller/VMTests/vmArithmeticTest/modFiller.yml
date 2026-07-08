@@ -18,7 +18,7 @@ mod:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            [[0]] (% 2 3)
         }
       nonce: '0'
@@ -28,9 +28,9 @@ mod:
     0000000000000000000000000000000000000101:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-           ; -1 % 2  (2^256-1 = -1 in evm arithmetic) 
-           [[0]] (% 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 2) 
+        {
+           ; -1 % 2  (2^256-1 = -1 in evm arithmetic)
+           [[0]] (% 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff 2)
         }
       nonce: '0'
       storage: {}
@@ -39,7 +39,7 @@ mod:
     0000000000000000000000000000000000000102:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            ; 0 % -1
            [[0]] (% 0 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
         }
@@ -50,7 +50,7 @@ mod:
     0000000000000000000000000000000000000103:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
               [[0]] (% 3 0)
         }
       nonce: '0'
@@ -60,7 +60,7 @@ mod:
     0000000000000000000000000000000000000104:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
               ; The expected result is 2, which is counter
               ; intuitive. The reason is that MOD uses unsigned
               ; arithmetic. -2 % 3 is indeed 1, but 2^256 % 3 = 1
@@ -75,8 +75,8 @@ mod:
     0000000000000000000000000000000000000105:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-              ; The original test was (3%0)-1, but since we're 
+        {
+              ; The original test was (3%0)-1, but since we're
               ; already checking 3%0 (contract 0...0103), I decided
               ; it would be better to check a different number
               [[0]] (- (% 16 0) 1)
@@ -85,12 +85,12 @@ mod:
       storage: {}
 
 
-      
+
 
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call 0xffffff (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -102,7 +102,7 @@ mod:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 # The transaction to check
   transaction:
     data:
@@ -120,8 +120,8 @@ mod:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: :label mod_2_3
@@ -151,7 +151,7 @@ mod:
 
 
     - indexes:
-        data: 
+        data:
         - :label mod_0_neg1
         - :label mod_3_0
         gas:  !!int -1
@@ -190,6 +190,6 @@ mod:
       result:
         0000000000000000000000000000000000000105:
           storage:
-            # The expression is actually (16 % 0) - 1, so 
+            # The expression is actually (16 % 0) - 1, so
             # The result here is -1 = 256^2-1
             0: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff

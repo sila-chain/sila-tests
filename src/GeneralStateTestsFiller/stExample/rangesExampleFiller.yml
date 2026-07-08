@@ -1,5 +1,5 @@
 # An example how to use ranges in expect section
-# More info: https://ethereum-tests.readthedocs.io/en/latest/test_filler/test_expect_state.html?highlight=labels
+# More info: https://sila-tests.readthedocs.io/en/latest/test_filler/test_expect_state.html?highlight=labels
 
 rangesExample:
   _info:
@@ -47,8 +47,8 @@ rangesExample:
             0x00: 0x0100000000000000000000000000000000000000000000000000000000000000
 
     # be careful not to cover the same transaction with 2 different expect section as blockchain tests does not like it
-    # also if you have an expect section that does not cover any existing transaction you will see a retesteth error
-    # if you have a transaction without expect section coverage you will se a retesteth error
+    # also if you have an expect section that does not cover any existing transaction you will see a retestsil error
+    # if you have a transaction without expect section coverage you will se a retestsil error
 
     - indexes:
         data: !!int 3
@@ -68,7 +68,7 @@ rangesExample:
       balance: '1000000000000000000'
       code: |
           {
-             [[0]] (CALLDATALOAD 0) 
+             [[0]] (CALLDATALOAD 0)
           }
       nonce: '0'
       storage: {}

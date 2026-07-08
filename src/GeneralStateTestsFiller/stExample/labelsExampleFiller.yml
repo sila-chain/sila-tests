@@ -1,5 +1,5 @@
 # An example how to use labels in expect section
-# More info: https://ethereum-tests.readthedocs.io/en/latest/test_filler/test_expect_state.html?highlight=labels
+# More info: https://sila-tests.readthedocs.io/en/latest/test_filler/test_expect_state.html?highlight=labels
 
 labelsExample:
   _info:
@@ -17,8 +17,8 @@ labelsExample:
     - indexes:
         # now we can reference specific transaction by human readable label
         # this label will also be available for debug at already generated test
-        # as well as it will be possible to select specific transaction in retesteth by label
-        # ./retesteth -t GeneralStateTests/stExample --  --singletest labelsExample --poststate -d ":label transaction1"
+        # as well as it will be possible to select specific transaction in retestsil by label
+        # ./retestsil -t GeneralStateTests/stExample --  --singletest labelsExample --poststate -d ":label transaction1"
         data: ':label transaction1'
         gas:  !!int 0
         value: !!int -1
@@ -62,7 +62,7 @@ labelsExample:
       balance: '1000000000000000000'
       code: |
           {
-             [[0]] (CALLDATALOAD 0) 
+             [[0]] (CALLDATALOAD 0)
           }
       nonce: '0'
       storage: {}

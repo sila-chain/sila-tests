@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Contract B calls contract A.\nContract A staticcalls contract CALL-00X.\nContract CALL-00X calls precompiled contracts with non zero value.\nIt should interrupt for each precompiled contract.\n",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "5c9bdfa6176e2df4bb21e601684894d30ef14744daae420f406bc948c50289eb",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

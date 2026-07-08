@@ -25,7 +25,7 @@ measureGas:
       code: |
        :yul berlin {
           pop(create(0, 0, 0x200))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -37,19 +37,19 @@ measureGas:
        :yul berlin {
           // SALT needs to be different each time
           pop(create2(0, 0, 0x200, add(0x5A17, gas())))
-       }        
+       }
       nonce: 1
       storage: {}
 
     # Contract to be called. It can't be an empty contract because
-    # then the first successful call adds it and therefore costs 
+    # then the first successful call adds it and therefore costs
     # a lot more
     000000000000000000000000000000000000CA11:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
        :yul berlin {
           stop()
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -60,7 +60,7 @@ measureGas:
       code: |
        :yul berlin {
           let retval := call(gas(), 0xCA11, 0, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -73,7 +73,7 @@ measureGas:
       code: |
        :yul berlin {
           let retval := callcode(gas(), 0xCA11, 0, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -84,7 +84,7 @@ measureGas:
       code: |
        :yul berlin {
           let retval := delegatecall(gas(), 0xCA11, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -95,7 +95,7 @@ measureGas:
       code: |
        :yul berlin {
           let retval := staticcall(gas(), 0xCA11, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -108,7 +108,7 @@ measureGas:
       code: |
        :yul berlin {
           let useless := mload(0xB000)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -120,7 +120,7 @@ measureGas:
       code: |
        :yul berlin {
           mstore(0xB000, 0xFF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -132,7 +132,7 @@ measureGas:
       code: |
        :yul berlin {
           mstore8(0xB000, 0xFF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -142,7 +142,7 @@ measureGas:
       code: |
        :yul berlin {
           let useless := keccak256(0,0xBEEF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -154,7 +154,7 @@ measureGas:
        :yul berlin {
          let addr := 0xCA11
          extcodecopy(addr, 0, 0, extcodesize(addr))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -183,7 +183,7 @@ measureGas:
             if eq(result, 1) { max := middle }
          }
          sstore(0, max)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -227,7 +227,7 @@ measureGas:
   expect:
     # CREATE
     - indexes:
-        data: 
+        data:
         - :label CREATE
         gas:  !!int -1
         value: !!int -1
@@ -241,10 +241,10 @@ measureGas:
 
 
     # CREATE
-    # Starting the Shanghai the cost of a CREATE[2] transaction 
+    # Starting the Shanghai the cost of a CREATE[2] transaction
     # includes a cost of 2 gas per initcode word (32 byte chunk)
     - indexes:
-        data: 
+        data:
         - :label CREATE
         gas:  !!int -1
         value: !!int -1
@@ -258,7 +258,7 @@ measureGas:
 
     # CREATE2
     - indexes:
-        data: 
+        data:
         - :label CREATE2
         gas:  !!int -1
         value: !!int -1
@@ -273,7 +273,7 @@ measureGas:
 
     # CREATE2
     - indexes:
-        data: 
+        data:
         - :label CREATE2
         gas:  !!int -1
         value: !!int -1
@@ -286,7 +286,7 @@ measureGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label CALL
         - :label CALLCODE
         gas:  !!int -1
@@ -301,7 +301,7 @@ measureGas:
 
     # Slightly cheaper because there's one less PUSH (one less parameter)
     - indexes:
-        data: 
+        data:
         - :label DELEGATECALL
         - :label STATICCALL
         gas:  !!int -1
@@ -315,7 +315,7 @@ measureGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label MLOAD
         gas:  !!int -1
         value: !!int -1
@@ -328,7 +328,7 @@ measureGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label MSTORE
         - :label MSTORE8
         gas:  !!int -1
@@ -343,7 +343,7 @@ measureGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label EXTCODE
         gas:  !!int -1
         value: !!int -1

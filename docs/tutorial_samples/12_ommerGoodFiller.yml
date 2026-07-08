@@ -9,7 +9,7 @@
     nonce: '0x0102030405060708'
     number: '0'
     parentHash: '0x0000000000000000000000000000000000000000000000000000000000000000'
-    receiptTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
+    recsiptTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
     stateRoot: '0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a'
     timestamp: '0x03b6'
     transactionsTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
@@ -54,20 +54,20 @@
   - network:
     - ">=London"
     result:
-      # Normally miners receive 2 ETH per block. In this case, 11...11 mined
+      # Normally miners receive 2 SIL per block. In this case, 11...11 mined
       # four blocks.
       #
-      # However, miners also receive 1/16 ETH for every uncle block
+      # However, miners also receive 1/16 SIL for every uncle block
       0x1111111111111111111111111111111111111111:
          balance: 8125000000000000000
 
       # The reward for an immediate uncle (another child of the grandfather)
-      # is 1.75 ETH
+      # is 1.75 SIL
       0xBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB:
          balance: 1750000000000000000
- 
-      # With every generation this reward decreases by 0.25 ETH. Old uncles
+
+      # With every generation this reward decreases by 0.25 SIL. Old uncles
       # are worth less
       0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC:
          balance: 1500000000000000000
-  
+

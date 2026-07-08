@@ -276,7 +276,7 @@
                 }
             }
         ],
-        "_info": { 
+        "_info": {
             "comment": "Puts the given data into the ECPAIRING precompile"
         }
     }

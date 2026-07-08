@@ -314,7 +314,7 @@ ${testName}:
                 // contract based on it
                 extcodecopy(0xC0DEC0DE, codeBuffer, 0, codeLength2)
 
-                // Here we don't transfer cc..cc's ETH to the new contract
+                // Here we don't transfer cc..cc's SIL to the new contract
                 // because if we run SELFBALANCE it will run in the context
                 // of CC....CC and therefore return 0
                 addr := create(0, codeBuffer, codeLength2)
@@ -331,7 +331,7 @@ ${testName}:
                 // contract based on it
                 extcodecopy(0xC0DEC0DE, codeBuffer, 0, codeLength2)
 
-                // Here we don't transfer cc..cc's ETH to the new contract
+                // Here we don't transfer cc..cc's SIL to the new contract
                 // because if we run SELFBALANCE it will run in the context
                 // of CC....CC and therefore return 0
                 addr := create2(0, codeBuffer, codeLength2, 0x5a17)
@@ -349,7 +349,7 @@ ${testName}:
                 // contract based on it
                 extcodecopy(0xC0DEC0DE, codeBuffer, 0, codeLength2)
 
-                // Here we don't transfer cc..cc's ETH to the new contract
+                // Here we don't transfer cc..cc's SIL to the new contract
                 // because if we run SELFBALANCE it will run in the context
                 // of CC....CC and therefore return 0
                 addr := create(0, codeBuffer, codeLength2)
@@ -366,7 +366,7 @@ ${testName}:
                 // contract based on it
                 extcodecopy(0xC0DEC0DE, codeBuffer, 0, codeLength2)
 
-                // Here we don't transfer cc..cc's ETH to the new contract
+                // Here we don't transfer cc..cc's SIL to the new contract
                 // because if we run SELFBALANCE it will run in the context
                 // of CC....CC and therefore return 0
                 addr := create2(0, codeBuffer, codeLength2, 0x5a17)

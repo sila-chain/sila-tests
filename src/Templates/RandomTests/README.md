@@ -1,18 +1,18 @@
 # Running Random Tests
 
-1. Install `retesteth` (including `geth`) inside docker
-   [as explained here](https://ethereum-tests.readthedocs.io/en/latest/retesteth-tutorial.html#retesteth-in-a-docker-container).
+1. Install `retestsil` (including `geth`) inside docker
+   [as explained here](https://sila-tests.readthedocs.io/en/latest/retestsil-tutorial.html#retestsil-in-a-docker-container).
 
-1. Clone the tests (https://github.com/ethereum/tests) into ~/tests
+1. Clone the tests (https://github.com/sila/tests) into ~/tests
    ```
    cd ~
-   git clone https://github.com/ethereum/tests
+   git clone https://github.com/sila/tests
    ```
 
 1. Download and run besu
    ```
    docker run -p 8545:8545 -p 13001:30303 \
-      hyperledger/besu:develop retesteth --rpc-http-port 8545 \
+      hyperledger/besu:develop retestsil --rpc-http-port 8545 \
       --host-allowlist '*' # --logging ALL
    ```
 

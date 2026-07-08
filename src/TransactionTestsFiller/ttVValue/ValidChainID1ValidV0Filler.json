@@ -1,9 +1,9 @@
 {
     "ValidChainID1ValidV0" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
-            "<=EIP150" : "InvalidVRS"
+            "<=SIP150" : "InvalidVRS"
         },
         "transaction" :
         {

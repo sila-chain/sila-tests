@@ -1,4 +1,4 @@
-# https://github.com/ethereum/tests/issues/558 (subcall/opcode return more data then expected)
+# https://github.com/sila/tests/issues/558 (subcall/opcode return more data then expected)
 ---
 subcallReturnMoreThenExpected:
   env:
@@ -9,7 +9,7 @@ subcallReturnMoreThenExpected:
     currentTimestamp: "1000"
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
   _info:
-    comment: "https://github.com/ethereum/tests/issues/558 (subcall/opcode return more data then expected)"
+    comment: "https://github.com/sila/tests/issues/558 (subcall/opcode return more data then expected)"
   pre:
     095e7baea6a6c7c4c2dfeb977efac326af552d87:
       balance: '1000000000000000000'
@@ -63,7 +63,7 @@ subcallReturnMoreThenExpected:
           (REVERT 0 64)
         }
       nonce: '0'
-      storage: {} 
+      storage: {}
     a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
       balance: '1000000000000000000'
       code: ''

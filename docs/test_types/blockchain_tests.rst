@@ -4,7 +4,7 @@
 Generated Blockchain Tests
 ==========================
 
-Location `/BlockchainTests <https://github.com/ethereum/tests/tree/develop/BlockchainTests>`_
+Location `/BlockchainTests <https://github.com/sila/tests/tree/develop/BlockchainTests>`_
 
 **Subfolders**
 
@@ -19,7 +19,7 @@ TransitionTests   BC tests with exotic network rules switching forks at block#5
 Test Structure
 ==============
 
-Contains **blocks** that are to be imported on top of **genesisRLP** of network fork rules **network** using sealEngine **NoProof** (Ethash no longer supported) and having genesis state as **pre**.
+Contains **blocks** that are to be imported on top of **genesisRLP** of network fork rules **network** using sealEngine **NoProof** (Silash no longer supported) and having genesis state as **pre**.
 
 The result of block import must be state **postState** or **postStateHash** if  result state is too big. And the last block of chain with maxTotalDifficulty must be block with hash **lastblockhash**
 
@@ -30,7 +30,7 @@ Single blockchain test file might contain many tests as there are many test gene
   {
      "testname": {
        "_info" : { ... },
-       "sealEngine": [ "NoProof" | "Ethash" ]
+       "sealEngine": [ "NoProof" | "Silash" ]
        "network": "Byzantium",
        "pre": { ... },
        "genesisBlockHeader": { ... },
@@ -41,7 +41,7 @@ Single blockchain test file might contain many tests as there are many test gene
      },
      "testname": {
        "_info" : { ... },
-       "sealEngine": [ "NoProof" | "Ethash" ]
+       "sealEngine": [ "NoProof" | "Silash" ]
        "network": "Byzantium",
        "pre": { ... },
        "genesisBlockHeader": { ... },

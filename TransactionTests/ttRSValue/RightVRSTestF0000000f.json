@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "",
             "filling-rpc-server" : "evm version 1.11.4-unstable-564db9a9-20230310",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.324bcf39.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.324bcf39.Linux.g++",
             "generatedTestHash" : "9f8f0b8ff17569229d95aa87f8dda18b918e45f2082c60a2bae82c15c1d3ff8d",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",
@@ -27,11 +27,11 @@
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
-            "EIP150" : {
+            "SIP150" : {
                 "exception" : "InvalidVRS",
                 "intrinsicGas" : "0x00"
             },
-            "EIP158" : {
+            "SIP158" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },

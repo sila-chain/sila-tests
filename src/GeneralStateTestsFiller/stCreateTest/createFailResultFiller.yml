@@ -1,8 +1,8 @@
 # Run CREATE[2] operations with different amounts of gas so they'll go OOG,
 # REVERT, or be successful. This can create a return buffer with information
-# about the failure according to https://eips.ethereum.org/EIPS/eip-211:
+# about the failure according to https://sips.sila.org/SIPS/sip-211:
 #
-# As an exception, CREATE and CREATE2 are considered to return the empty buffer 
+# As an exception, CREATE and CREATE2 are considered to return the empty buffer
 # in the success case and the failure data in the failure case.
 #
 # Requested in issue #942
@@ -31,10 +31,10 @@ createFailResult:
        {
            mstore(0x00, 0xDEADBEEF)
            mstore(0x20, 0x60A7)
- 
+
            // Return with two words of data
            return(0, 0x40)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -47,7 +47,7 @@ createFailResult:
        {
           mstore(0, 0x0BAD0BAD0BAD)
           revert(0, 0x20)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -60,10 +60,10 @@ createFailResult:
        {
           mstore(0, 0x600D)
           return(0, 0x20)
-       }        
+       }
       nonce: 1
       storage: {}
-    
+
 
 
 
@@ -83,7 +83,7 @@ createFailResult:
           // Read the constructor code from the appropriate contract
           let srcAddr := calldataload(0)   // either 600D or BAD
 
-          let codeSize := extcodesize(srcAddr)      
+          let codeSize := extcodesize(srcAddr)
           extcodecopy(srcAddr, 0, 0, codeSize)
 
           // Create
@@ -94,7 +94,7 @@ createFailResult:
           returndatacopy(0x200, 0, returndatasize())
           sstore(2, mload(0x200))
           sstore(3, mload(0x220))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -114,7 +114,7 @@ createFailResult:
           // Read the constructor code from the appropriate contract
           let srcAddr := calldataload(0)   // either 600D or BAD
 
-          let codeSize := extcodesize(srcAddr)      
+          let codeSize := extcodesize(srcAddr)
           extcodecopy(srcAddr, 0, 0, codeSize)
 
           // Create
@@ -125,7 +125,7 @@ createFailResult:
           returndatacopy(0x200, 0, returndatasize())
           sstore(2, mload(0x200))
           sstore(3, mload(0x220))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -146,7 +146,7 @@ createFailResult:
           // Read the constructor code from the appropriate contract
           let srcAddr := calldataload(0)   // either 600D or BAD
 
-          let codeSize := extcodesize(srcAddr)      
+          let codeSize := extcodesize(srcAddr)
           extcodecopy(srcAddr, 0, 0, codeSize)
 
           // Create
@@ -157,7 +157,7 @@ createFailResult:
           returndatacopy(0x200, 0, returndatasize())
           sstore(2, mload(0x200))
           sstore(3, mload(0x220))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -170,7 +170,7 @@ createFailResult:
       storage: {}
 
 
-    # The existing account CREATE2 collides with (BAD) 
+    # The existing account CREATE2 collides with (BAD)
     13c950f8740ffaea1869a88d70b029e8b0c9a8da:
       balance: 0x600D
       code: :raw 0x600100
@@ -193,7 +193,7 @@ createFailResult:
           // Read the constructor code from the appropriate contract
           let srcAddr := calldataload(0)   // either 600D or BAD
 
-          let codeSize := extcodesize(srcAddr)      
+          let codeSize := extcodesize(srcAddr)
           extcodecopy(srcAddr, 0, 0, codeSize)
 
           // Create
@@ -204,7 +204,7 @@ createFailResult:
           returndatacopy(0x200, 0, returndatasize())
           sstore(2, mload(0x200))
           sstore(3, mload(0x220))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -265,7 +265,7 @@ createFailResult:
          // First word of the return data
          sstore(2, mload(0x200))
 
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -304,7 +304,7 @@ createFailResult:
   expect:
     # CREATE[2] runs out of gas
     - indexes:
-        data: 
+        data:
         - :label CREATE--OOG
         - :label CREATE2-OOG
         gas:  !!int -1
@@ -329,7 +329,7 @@ createFailResult:
 
     # CREATE is successful
     - indexes:
-        data: 
+        data:
         - :label CREATE--GOOD
         gas:  !!int -1
         value: !!int -1
@@ -354,7 +354,7 @@ createFailResult:
 
     # CREATE2 is successful
     - indexes:
-        data: 
+        data:
         - :label CREATE2-GOOD
         gas:  !!int -1
         value: !!int -1
@@ -378,7 +378,7 @@ createFailResult:
 
     # CREATE failed (REVERT)
     - indexes:
-        data: 
+        data:
         - :label CREATE--BAD
         gas:  !!int -1
         value: !!int -1
@@ -388,7 +388,7 @@ createFailResult:
         0000000000000000000000000000000000c0def0:
           storage:
             0x00: 0    # No newly created contract
-            0x01: 0x20 # There is returned data 
+            0x01: 0x20 # There is returned data
             0x02: 0x0bad0bad0bad  # Which just says how bad things are
 
             # Verify the DA7A call was OK
@@ -401,7 +401,7 @@ createFailResult:
 
     # CREATE2 failed (REVERT)
     - indexes:
-        data: 
+        data:
         - :label CREATE2-BAD
         gas:  !!int -1
         value: !!int -1
@@ -411,7 +411,7 @@ createFailResult:
         0000000000000000000000000000000000c0def5:
           storage:
             0x00: 0    # No newly created contract
-            0x01: 0x20 # There is returned data 
+            0x01: 0x20 # There is returned data
             0x02: 0x0bad0bad0bad  # Which just says how bad things are
 
             # Verify the DA7A call was OK
@@ -424,7 +424,7 @@ createFailResult:
 
     # CREATE2 failed due to collision
     - indexes:
-        data: 
+        data:
         - :label CREATE2-BOOM
         gas:  !!int -1
         value: !!int -1
@@ -446,7 +446,7 @@ createFailResult:
 
     # CREATE2 failed (REVERT, but it would have failed due to a collision anyway)
     - indexes:
-        data: 
+        data:
         - :label CREATE2-BAD-BOOM
         gas:  !!int -1
         value: !!int -1
@@ -456,7 +456,7 @@ createFailResult:
         0000000000000000000000000000000000c0deff:
           storage:
             0x00: 0    # No newly created contract
-            0x01: 0    # There is no returned data 
+            0x01: 0    # There is no returned data
 
             # Verify the DA7A call was OK
             0x10:    1   # Return value of DA7A call
@@ -472,7 +472,7 @@ createFailResult:
 
     # CREATE failed due to collision
     - indexes:
-        data: 
+        data:
         - :label CREATE--BOOM
         gas:  !!int -1
         value: !!int -1
@@ -494,7 +494,7 @@ createFailResult:
 
     # CREATE failed (REVERT, but it would have failed due to a collision anyway)
     - indexes:
-        data: 
+        data:
         - :label CREATE--BAD-BOOM
         gas:  !!int -1
         value: !!int -1
@@ -504,7 +504,7 @@ createFailResult:
         0000000000000000000000000000000000c0deee:
           storage:
             0x00: 0    # No newly created contract
-            0x01: 0    # There is no returned data 
+            0x01: 0    # There is no returned data
 
             # Verify the DA7A call was OK
             0x10:    1   # Return value of DA7A call

@@ -1,9 +1,9 @@
 {
     "difficultyGrayGlacierForkBlock" : {
         "_info" : {
-            "comment" : "Gray Glacier Difficulty Combination Check at Fork Block (15,050,000): Difficulty range start uses current mainnet difficulty, range end uses approximate value with constant 13 second block, 5% uncle rate",
+            "comment" : "Gray Glacier Difficulty Combination Check at Fork Block (15,050,000): Difficulty range start uses current sila-sila-mainnet difficulty, range end uses approximate value with constant 13 second block, 5% uncle rate",
             "filling-rpc-server" : "evm version 1.11.4-unstable-564db9a9-20230310",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.324bcf39.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.324bcf39.Linux.g++",
             "generatedTestHash" : "4c9afb216a2d78cf6e287645413d4e0bff17968b947d653f7c7ae83339a33477",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

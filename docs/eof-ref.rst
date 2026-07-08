@@ -1,4 +1,4 @@
-Ethereum Object Format Tests
+Sila Object Format Tests
 ============================
 
 .. toctree::

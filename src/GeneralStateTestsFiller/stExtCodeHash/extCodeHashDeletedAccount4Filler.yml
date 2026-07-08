@@ -50,7 +50,7 @@ extCodeHashDeletedAccount4:
           ;; Stores Account B code hash to 4, code size to 5, code to 6
           (MSTORE 64 0x04)
           (CALL 150000 0xbbbbbbbb00000000000000000000000000000000 0 64 32 0 32)
-          
+
           (STOP)
         }
       nonce: '0'
@@ -61,10 +61,10 @@ extCodeHashDeletedAccount4:
         {
           ;; get key from call data
           (CALLDATACOPY 0 0 32)
-          
+
           ;; store Account A code hash
           [[(MLOAD 0)]] (EXTCODEHASH 0xc5691dc90d9fd2a2e9a5fa5bd28bf77ffd60aa78)
-          
+
           (MSTORE 0 (ADD (MLOAD 0) 1))  ;; increments storage key
           [[(MLOAD 0)]] (EXTCODESIZE 0xc5691dc90d9fd2a2e9a5fa5bd28bf77ffd60aa78)
 
@@ -132,4 +132,4 @@ extCodeHashDeletedAccount4:
     to: 095e7baea6a6c7c4c2dfeb977efac326af552d87
     value:
     - '1'
-    
+

@@ -22,8 +22,8 @@ CREATE2_FirstByte_loop:
         {
           // initcode: { mstore8(0, 0x00) return(0, 1) }
           mstore(0, 0x600060005360016000f300000000000000000000000000000000000000000000)
-          for { let code := 0 } lt(code, 256) { code := add(code, 1) } 
-          { 
+          for { let code := 0 } lt(code, 256) { code := add(code, 1) }
+          {
             mstore8(1, code) // change returned byte in initcode
             if iszero(create2(0, 0, 10, 0)) { sstore(code, 1) }
           }
@@ -33,7 +33,7 @@ CREATE2_FirstByte_loop:
       storage: {}
 
   transaction:
-    data: 
+    data:
       - ''
     gasLimit:
       - 70000000
@@ -86,7 +86,7 @@ CREATE2_FirstByte_loop:
        b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 256
           storage:
-            'ef': '1'  # EIP-3541 forbids deploying contracts starting with 0xef
+            'ef': '1'  # SIP-3541 forbids deploying contracts starting with 0xef
             '256': 1
        7243c189900bddbc8e39c9115f7030dbc86a2b15:
           nonce: 1

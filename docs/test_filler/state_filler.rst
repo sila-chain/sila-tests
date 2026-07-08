@@ -4,9 +4,9 @@
 State Transition Tests Source Code
 ==================================
 Location: `src/GeneralStateTestsFiller
-<https://github.com/ethereum/tests/tree/develop/src/GeneralStateTestsFiller>`_
+<https://github.com/sila/tests/tree/develop/src/GeneralStateTestsFiller>`_
 
-State transition tests include a single transaction that is supposed to change 
+State transition tests include a single transaction that is supposed to change
 the state of the blockchain from the **pre** state to the **expect** state.
 
 .. _state_src:

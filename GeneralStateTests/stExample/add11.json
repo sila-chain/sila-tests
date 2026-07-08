@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "A test for (add 1 1) opcode result",
             "filling-rpc-server" : "evm version 1.11.5-unstable-5d23d21f-20230320",
-            "filling-tool-version" : "retesteth-0.3.1-shanghai+commit.71b1c7bb.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.1-shanghai+commit.71b1c7bb.Linux.g++",
             "generatedTestHash" : "b33fbe39b474b9d63fe4e2e493a997818c4d3b33c9dc085954d482ecf3db6da9",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

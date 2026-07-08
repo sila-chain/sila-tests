@@ -2,9 +2,9 @@ CreateAddressWarmAfterFail:
   _info:
     comment: |
       Invokes failing CREATE (because initcode fails) and checks
-      if the create address is considered warm in the follow up call as required by EIP-2929.
-      Addresses taken from https://toolkit.abdk.consulting/ethereum#contract-address
-   
+      if the create address is considered warm in the follow up call as required by SIP-2929.
+      Addresses taken from https://toolkit.abdk.consulting/sila#contract-address
+
       Written primarily by Paweł Bylica (@chfast). Somewhat modified by Ori (@qbzzt)
 
   env:
@@ -34,7 +34,7 @@ CreateAddressWarmAfterFail:
           object "C" {
             code {
               let failType := calldataload(4)
-              let initcode_size 
+              let initcode_size
 
               // The return values of various actions. Done twice to see if there is a difference
               let create_1 := 0
@@ -64,8 +64,8 @@ CreateAddressWarmAfterFail:
               let addrEmpty := 0xd4e7ae083132925a4927c1f5816238ba17b82a00
 
               // The address where the contract should have been created had things worked out
-              // Can be calculated at https://toolkit.abdk.consulting/ethereum#contract-address
-              let addrCreated 
+              // Can be calculated at https://toolkit.abdk.consulting/sila#contract-address
+              let addrCreated
 
               switch failType
               case 0 {    // REVERT inside the constructor
@@ -114,7 +114,7 @@ CreateAddressWarmAfterFail:
                 mstore(0, 0xfe60106000f30000000000000000000000000000000000000000000000000000)
                 sstore(create_1, create2(0, 0, initcode_size, 0))
               }
-              case 3 {    // Out of gas (due to constructor returning a huge contract) 
+              case 3 {    // Out of gas (due to constructor returning a huge contract)
                           // We need it to be a called contract
                           // so the transaction will be overall successful
                 addrCreated := 0xa5a6a95fd9554f15ab6986a57519092be2095125
@@ -132,7 +132,7 @@ CreateAddressWarmAfterFail:
                 addrCreated := 0xB2050fc27aB6d6D42dc0CE6f7C0BF9481a4c3Fc3
                 sstore(create_1, call(0x10000, 0xC0DEFFFF, 0, 0, 0, 0, 0))
               }
-              case 13 {    // Out of gas (due to constructor returning a huge contract) 
+              case 13 {    // Out of gas (due to constructor returning a huge contract)
                           // We need it to be a called contract
                           // so the transaction will be overall successful
                 addrCreated := 0xd70dF326038a3c7cA8FAc785a99162BFe75CCc46
@@ -146,13 +146,13 @@ CreateAddressWarmAfterFail:
                           // gas amount calculated to cause failure after the CREATE
                 sstore(create_1, call(0x10000, 0x20C0DE1006, 0, 0, 0, 0, 0))
               }
-              case 6 {    // Creating a contract that starts with 0xEF, which is not allowed EIP-3541
+              case 6 {    // Creating a contract that starts with 0xEF, which is not allowed SIP-3541
                 addrCreated := 0xd4e7ae083132925a4927c1f5816238ba17b82a65
                 initcode_size := datasize("start-ef")
                 datacopy(0, dataoffset("start-ef"), initcode_size)
                 sstore(create_1, create(0, 0, initcode_size))
               }
-              case 16 {    // Create2 a contract that starts with 0xEF, which is not allowed EIP-3541
+              case 16 {    // Create2 a contract that starts with 0xEF, which is not allowed SIP-3541
                 addrCreated := 0x562D97e3E4d6d3C6e791EA64bB73d820871Aa219
                 initcode_size := datasize("start-ef")
                 datacopy(0, dataoffset("start-ef"), initcode_size)
@@ -175,7 +175,7 @@ CreateAddressWarmAfterFail:
 
 
               default { revert(0,0) }   // Not supposed to ever happen
-      
+
 
               // Call the create address and measure the gas cost
               sstore(call_created_1_cost, gas())
@@ -218,7 +218,7 @@ CreateAddressWarmAfterFail:
             }
             object "start-ef" {        // Data 6, 16
               code {
-                 mstore8(0, 0xEF)    // Cannot be the first byte as per https://eips.ethereum.org/EIPS/eip-3541
+                 mstore8(0, 0xEF)    // Cannot be the first byte as per https://sips.sila.org/SIPS/sip-3541
                  return(0, 0x10)
               }
             }
@@ -255,7 +255,7 @@ CreateAddressWarmAfterFail:
                 return(0,0x6000)
             }
           }
-         }  
+         }
 
 
     # Data 13 - Out of gas through a constructor that returns too much
@@ -277,7 +277,7 @@ CreateAddressWarmAfterFail:
                 return(0,0x6000)
             }
           }
-         }  
+         }
 
 
 
@@ -300,8 +300,8 @@ CreateAddressWarmAfterFail:
                 return(0,0x20)
             }
           }
-         }  
-  
+         }
+
   transaction:
     data:
       - :label create-contructor-revert  :abi fail(uint) 0   # Revert in the constructor
@@ -333,7 +333,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE executed directly by c0deC (and fails)
     - indexes:
-        data: 
+        data:
           - :label create-contructor-revert
           - :label create-code-too-big
           - :label create-invalid-opcode
@@ -366,7 +366,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE executed directly by c0deC (and fails)
     - indexes:
-        data: 
+        data:
           - :label create-contructor-revert
           - :label create-code-too-big
           - :label create-invalid-opcode
@@ -387,22 +387,22 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 32028    # Gas cost of call to created address (warm address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
 
-        # Create address, filled when ETH is sent to it
+        # Create address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a65:
           nonce: 0
           balance: 2   # Funded with two calls after failed create.
           code: ""     # No code
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls
@@ -414,7 +414,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because of REVERT)
     - indexes:
-        data: 
+        data:
           - :label create2-contructor-revert
         gas: !!int -1
         value:
@@ -442,7 +442,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because of REVERT)
     - indexes:
-        data: 
+        data:
           - :label create2-contructor-revert
         value:
           - !!int 1
@@ -460,22 +460,22 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 32028    # Gas cost of call to created address (warm address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
 
-        # Create address, filled when ETH is sent to it
+        # Create address, filled when SIL is sent to it
         43255eE039968E0254887FC8c7172736983d878C:
           nonce: 0
           balance: 2   # Funded with two calls after failed create.
           code: ""     # No code
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls
@@ -487,7 +487,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because the code starts with 0xEF)
     - indexes:
-        data: 
+        data:
           - :label create2-0xef
         gas: !!int -1
         value:
@@ -515,7 +515,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because the code starts with 0xef)
     - indexes:
-        data: 
+        data:
           - :label create2-0xef
         value:
           - !!int 1
@@ -533,22 +533,22 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 32028    # Gas cost of call to created address (warm address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
 
-        # Create address, filled when ETH is sent to it
+        # Create address, filled when SIL is sent to it
         562D97e3E4d6d3C6e791EA64bB73d820871Aa219:
           nonce: 0
           balance: 2   # Funded with two calls after failed create.
           code: ""     # No code
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls
@@ -559,7 +559,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because code is too big)
     - indexes:
-        data: 
+        data:
           - :label create2-code-too-big
         gas: !!int -1
         value:
@@ -587,7 +587,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because the returned code is too big)
     - indexes:
-        data: 
+        data:
           - :label create2-code-too-big
         value:
           - !!int 1
@@ -605,22 +605,22 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 32028    # Gas cost of call to created address (warm address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
 
-        # Create address, filled when ETH is sent to it
+        # Create address, filled when SIL is sent to it
         014001fDbeDE82315F4B8C2a7D45E980A8a4A12e:
           nonce: 0
           balance: 2   # Funded with two calls after failed create.
           code: ""     # No code
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls
@@ -632,7 +632,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because of invalid opcode)
     - indexes:
-        data: 
+        data:
           - :label create2-invalid-opcode
         gas: !!int -1
         value:
@@ -662,7 +662,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (and fails because of invalid opcode)
     - indexes:
-        data: 
+        data:
           - :label create2-invalid-opcode
         value:
           - !!int 1
@@ -680,22 +680,22 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 32028    # Gas cost of call to created address (warm address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
 
-        # Create address, filled when ETH is sent to it
+        # Create address, filled when SIL is sent to it
         A13d43586820E5D97a3Fd1960625d537c86DC4E7:
           nonce: 0
           balance: 2   # Funded with two calls after failed create.
           code: ""     # No code
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls
@@ -707,7 +707,7 @@ CreateAddressWarmAfterFail:
 
     # Call to a different account to do CREATE, which fails because of the extremely high nonce
     - indexes:
-        data: 
+        data:
           - :label create-high-nonce
         gas: !!int -1
         value:
@@ -744,7 +744,7 @@ CreateAddressWarmAfterFail:
 
     # Call to a different account to do CREATE, which fails because of the extremely high nonce
     - indexes:
-        data: 
+        data:
           - :label create-high-nonce
         value:
           - !!int 1
@@ -761,10 +761,10 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 34528    # Gas cost of call to created address (cold address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
@@ -790,11 +790,11 @@ CreateAddressWarmAfterFail:
 
     # Call to a different account to do CREATE[2], which reverts as out of gas
     - indexes:
-        data: 
+        data:
           - :label create-oog-constructor
-          - :label create-oog-post-constr   
+          - :label create-oog-post-constr
           - :label create2-oog-constructor
-          - :label create2-oog-post-constr   
+          - :label create2-oog-post-constr
         gas: !!int -1
         value:
           - !!int 0
@@ -825,11 +825,11 @@ CreateAddressWarmAfterFail:
 
     # Call to a different account to do CREATE[2], which reverts
     - indexes:
-        data: 
+        data:
           - :label create-oog-constructor
-          - :label create-oog-post-constr   
+          - :label create-oog-post-constr
           - :label create2-oog-constructor
-          - :label create2-oog-post-constr   
+          - :label create2-oog-post-constr
         value:
           - !!int 1
       network:
@@ -845,10 +845,10 @@ CreateAddressWarmAfterFail:
             3: 1    # Call to create address successful
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
-            # The first call is expensive because when sending eth to an empty address it has to be
+            # The first call is expensive because when sending sil to an empty address it has to be
             # created, which is an extra cost
             12: 34528    # Gas cost of call to created address (cold address)
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
@@ -865,7 +865,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE executed directly by c0deC (successfully)
     - indexes:
-        data: 
+        data:
           - :label create-ok
         gas: !!int -1
         value:
@@ -876,7 +876,7 @@ CreateAddressWarmAfterFail:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
         00000000000000000000000000000000000c0deC:
-          nonce: 1 
+          nonce: 1
           storage:
             0: 0xd4e7ae083132925a4927c1f5816238ba17b82a65  # Create successful, created this address
             2: 1    # Call to create address successful
@@ -893,7 +893,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE executed directly by c0deC (successfully)
     - indexes:
-        data: 
+        data:
           - :label create-ok
         value:
           - !!int 1
@@ -912,7 +912,7 @@ CreateAddressWarmAfterFail:
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
             12:  7028    # Gas cost of call to created address, no need to create it
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
@@ -924,7 +924,7 @@ CreateAddressWarmAfterFail:
           code: 0x00     # One byte of code
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls
@@ -937,7 +937,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (successfully)
     - indexes:
-        data: 
+        data:
           - :label create2-ok
         gas: !!int -1
         value:
@@ -948,7 +948,7 @@ CreateAddressWarmAfterFail:
         a94f5374fce5edbc8e2a8697c15331677e6ebf0b:
           nonce: 1
         00000000000000000000000000000000000c0deC:
-          nonce: 1 
+          nonce: 1
           storage:
             0: 0xf7fef4b66b1570a057d7d5cec5c58846befa5b5c # Address created by CREATE2
             2: 1    # Call to create address successful
@@ -967,7 +967,7 @@ CreateAddressWarmAfterFail:
 
     # CREATE2 executed directly by c0deC (successfully)
     - indexes:
-        data: 
+        data:
           - :label create2-ok
         value:
           - !!int 1
@@ -986,7 +986,7 @@ CreateAddressWarmAfterFail:
             4: 1    # Call to random address successful
             5: 1    # Call to random address successful
             12:  7028    # Gas cost of call to created address, no need to create it
-            13:  7028    # Gas cost of 2nd call to created address, much cheaper because 
+            13:  7028    # Gas cost of 2nd call to created address, much cheaper because
             14: 34528    # Gas cost of call to empty random (cold) address
             15:  7028    # Gas cost of second call to (now warm) address
 
@@ -998,7 +998,7 @@ CreateAddressWarmAfterFail:
           balance: 2     # Funded with two calls after create.
 
 
-        # Empty address, filled when ETH is sent to it
+        # Empty address, filled when SIL is sent to it
         d4e7ae083132925a4927c1f5816238ba17b82a00:
           nonce: 0
           balance: 2   # Funded with two calls

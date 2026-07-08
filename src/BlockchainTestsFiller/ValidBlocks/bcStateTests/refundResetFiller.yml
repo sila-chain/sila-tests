@@ -12,7 +12,7 @@ refundReset:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -36,8 +36,8 @@ refundReset:
       code: :yul berlin
         {
            let data := calldataload(0)
-           for { let i := 0} lt(i, 0x10) 
-               { i := add(i, 1) } 
+           for { let i := 0} lt(i, 0x10)
+               { i := add(i, 1) }
                { sstore(i, data) }
         }
       storage: {}
@@ -106,7 +106,7 @@ refundReset:
     0x0000000000000000000000000000000000ca1104:
       balance: 0
       nonce: 1
-      code: :yul berlin 
+      code: :yul berlin
         {
            mstore(0, calldataload(0))
            pop(call(gas(), 0x0FEE, 0, 0, 0x20, 0, 0))
@@ -147,7 +147,7 @@ refundReset:
       storage: {}
 
 
-    # Get a refund through calling a different contract, then call a contract 
+    # Get a refund through calling a different contract, then call a contract
     # where CREATE has an invalid opcode
     0x0000000000000000000000000000000000ca1106:
       balance: 0
@@ -179,7 +179,7 @@ refundReset:
              }
              sstore(sub(slot,1), 0)
              sstore(slot, 0)
-           }            
+           }
         }
       storage:
         0: 1
@@ -754,8 +754,8 @@ refundReset:
 
 
   - network:
-    - EIP150
-    - EIP158
+    - SIP150
+    - SIP158
     result:
       0x000000000000000000000000000000000000DA7A:
         storage:
@@ -796,7 +796,7 @@ refundReset:
 
 
   - network:
-    - <EIP150
+    - <SIP150
     result:
       0x000000000000000000000000000000000000DA7A:
         storage:

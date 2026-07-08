@@ -1,7 +1,7 @@
 # Check various weird V values on ecRecover, see they don't work even though the signature is legal.
 # These tests are >=Byzantium because using staticcall, but should be >=Frontier otherwise.
 
-# Using (on hardhat console): 
+# Using (on hardhat console):
 #     wallet = ethers.Wallet.createRandom()
 #     zero = "0x0000000000000000000000000000000000000000000000000000000000000000"
 #     wallet._signingKey().signDigest(zero)
@@ -15,7 +15,7 @@
 #  _mnemonic: [Function (anonymous)],
 #  provider: null
 # }
-#  
+#
 # wallet._mnemonic()
 # {
 #  phrase: 'unveil tower patrol spike aerobic vague frown crew agree motor tilt elevator',
@@ -25,7 +25,7 @@
 
 
 ecrecoverWeirdV:
-  _info: 
+  _info:
     comment: Ori Pomerantz qbzzt1@gmail.com
 
   env:
@@ -55,10 +55,10 @@ ecrecoverWeirdV:
              // Not the most efficient code, but it is more readable to see what each parameter means
              mstore(0x00, calldataload(0x04))    // msgHash
              mstore(0x20, calldataload(0x24))    // v
-             mstore(0x40, calldataload(0x44))    // r  
-             mstore(0x60, calldataload(0x64))    // s 
+             mstore(0x40, calldataload(0x44))    // r
+             mstore(0x60, calldataload(0x64))    // s
              let res := staticcall(gas(), ecRecoverAddr, 0, 0x80, 0x100, 0x100)
-             
+
              // write results
              sstore(0, res)
              sstore(1, mload(0x100))
@@ -86,14 +86,14 @@ ecrecoverWeirdV:
     - :label good :abi f(uint,uint,uint,uint) 0x01 28 0x541c4ce1565a646ddde26e1b483a88a6500ce15bd24622492f05cdd18b97161d 0x1827e364c15cfa61dab02339904b1e542f3939c6e8d6367d352026e71ffd6af5
     - :label good :abi f(uint,uint,uint,uint) 0xdeaf0dead0600D0F00D00000000000000060A70000000000000F0AD0bad0beef 27 0x8a41a35dfd03f28615dc64b7754457691c66bd73f630c7423280282fa431a5be 0x2d40decf11713d564fa2df10dea5eb2adf45455ed309b4c8cc6853e2498323f5
 
-    # Valid signature from https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md
+    # Valid signature from https://github.com/sila/SIPs/blob/master/SIPS/sip-155.md
     - :label fail :abi f(uint,uint,uint,uint) 0xdaf5a779ae972f972197303d7b574746c7ef83eadac0f2791ad23db92e4c8e53 37 18515461264373351373200002665853028612451056578545711640558177340181847433846 46948507304638947509940763649030358759909902576025900602547168820602576006531
 
-    # Only the bottom bit of V is relevant to the actual signature. 
+    # Only the bottom bit of V is relevant to the actual signature.
     # The value is either:
     #     parity+27           (no chaind)
     #     parity+35+2*chainid (with a chainid)
-    # 
+    #
     # Try a bunch of values that would be correct, but aren't ecrecover friendly
 
       # Chainid 1

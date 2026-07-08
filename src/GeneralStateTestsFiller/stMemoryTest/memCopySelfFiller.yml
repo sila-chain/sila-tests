@@ -1,5 +1,5 @@
 # Copy memory over itself, a weird edge case that caused
-# Geth <1.10.8 to have an inconsistent state when a CALL to 
+# Geth <1.10.8 to have an inconsistent state when a CALL to
 # precompile 4 (the identity precompile) overwrote the memory
 # where the call parameters were. It caused RETURNDATACOPY
 # to be invalid afterwards
@@ -30,16 +30,16 @@ memCopySelf:
        {
           let idPrecomp := 0x04
 
-          for { let i := 0} lt(i, 0x0F) { i := add(i, 1) } 
+          for { let i := 0} lt(i, 0x0F) { i := add(i, 1) }
           {
-              mstore8(i, mul(add(i, 1), 0x11)) 
+              mstore8(i, mul(add(i, 1), 0x11))
           }
-           
+
           // The initial memory value
           sstore(0, mload(0))
-          
+
           // Call idPrecomp
-          pop(call(gas(), idPrecomp, 0, 
+          pop(call(gas(), idPrecomp, 0,
             0, 10,     // input buffer
             2, 10      // output buffer (overlapping the input)
           ))
@@ -63,7 +63,7 @@ memCopySelf:
 
 
   transaction:
-    data: 
+    data:
     - 0x
     gasLimit:
     - 80000000

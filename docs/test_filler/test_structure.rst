@@ -8,7 +8,7 @@ All tests are inside a structure with their name
 Format
 ------
 
-.. list-table:: 
+.. list-table::
    :header-rows: 1
 
    * - Format
@@ -24,8 +24,8 @@ Format
      - name-of-testFiller.yml
 
    * - Format
- 
-     - 
+
+     -
 
        ::
 
@@ -35,7 +35,7 @@ Format
               }
            }
 
-     - 
+     -
 
        ::
 

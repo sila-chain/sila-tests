@@ -1,6 +1,6 @@
 # Run the same operations with different amounts of gas until it is successful
 # This lets it run out of gas in different points of the opcode, as requested
-# in https://github.com/ethereum/tests/issues/909
+# in https://github.com/sila/tests/issues/909
 
 
 
@@ -29,7 +29,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           sstore(0,create(0, 0, 0x200))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -40,7 +40,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           sstore(0,create2(0, 0, 0x200, 0x5A17))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -51,7 +51,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           let retval := call(gas(), 0xCA11, 0, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -64,7 +64,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           let retval := callcode(gas(), 0xCA11, 0, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -75,7 +75,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           let retval := delegatecall(gas(), 0xCA11, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -86,7 +86,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           let retval := staticcall(gas(), 0xCA11, 0, 0x100, 0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -98,7 +98,7 @@ operationDiffGas:
        :yul berlin {
           mstore(0, 0xDEADBEEF)
           return(0, 0x100)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -110,7 +110,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           let useless := mload(0xBEEF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -122,7 +122,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           mstore(0xBEEF, 0xFF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -134,7 +134,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           mstore8(0xBEEF, 0xFF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -144,7 +144,7 @@ operationDiffGas:
       code: |
        :yul berlin {
           let useless := keccak256(0,0xBEEF)
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -156,7 +156,7 @@ operationDiffGas:
        :yul berlin {
          let addr := 0xCA11
          extcodecopy(addr, 0, 0, extcodesize(addr))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -184,7 +184,7 @@ operationDiffGas:
             gasAmt := add(gasAmt, gasDiff)
          }
          sstore(0, sub(gasAmt, gasDiff))
-       }        
+       }
       nonce: 1
       storage: {}
 
@@ -252,7 +252,7 @@ operationDiffGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label CALL
         - :label CALLCODE
         - :label DELEGATECALL
@@ -268,7 +268,7 @@ operationDiffGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label MLOAD
         - :label MSTORE
         - :label MSTORE8
@@ -284,7 +284,7 @@ operationDiffGas:
 
 
     - indexes:
-        data: 
+        data:
         - :label EXTCODE
         gas:  !!int -1
         value: !!int -1

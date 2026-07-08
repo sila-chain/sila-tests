@@ -2,12 +2,12 @@
 
 
 ==================================
-Generated Ethereum Object Format
+Generated Sila Object Format
 ==================================
 
 
 
-Location `/EOFTests <https://github.com/ethereum/tests/tree/develop/EOFTests>`_
+Location `/EOFTests <https://github.com/sila/tests/tree/develop/EOFTests>`_
 
 
 Test Structure

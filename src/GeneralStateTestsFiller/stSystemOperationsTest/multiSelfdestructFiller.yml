@@ -45,24 +45,24 @@ multiSelfdestruct:
            if eq(call(gas(), recipient, operation, 0,0, 0,0),0) {
               revert(0,0)
            }
-          
+
         }
       storage: {}
 
 
 
     # Run the tests. One parameter (single byte)
-    #   01 - SUC001, does not suicide, just receive more funds via call. 
-    #        check the balance of contractA 
+    #   01 - SUC001, does not suicide, just receive more funds via call.
+    #        check the balance of contractA
     #        (must be 0, the second transfer funds erased)
     #   02 - SUC002 does another suicide to dest1 (so dest1 now have 3 + x)
-    #   03 - SUC003 does another suicide to dest2 (so both dest1 and dest2 have 
+    #   03 - SUC003 does another suicide to dest2 (so both dest1 and dest2 have
     #        some balance)
     #   04 - SUC004 tries to make value transfer but fails because initial suicide
-    #          0ed the balance (answering this (check that it is immidiately 
+    #          0ed the balance (answering this (check that it is immidiately
     #          and not by the end of tx))
-    #   05 - SUC005 receives more funds and try to transfer it 
-    #          (same as SUC004, but this time work because it received funds 
+    #   05 - SUC005 receives more funds and try to transfer it
+    #          (same as SUC004, but this time work because it received funds
     #          via 2nd call)
 
 
@@ -85,7 +85,7 @@ multiSelfdestruct:
              sstore(0x02, balance(0xdead))
 
              let test := shr(248, calldataload(0))
-             switch test 
+             switch test
              case 1 {
                  // call with all zeros, so it won't do anything
                  delme := call(gas(), 0xdead, 2, 3,3, 0,0)
@@ -139,7 +139,7 @@ multiSelfdestruct:
 
 
   transaction:
-    data: 
+    data:
     - :raw 0x01
     - :raw 0x02
     - :raw 0x03

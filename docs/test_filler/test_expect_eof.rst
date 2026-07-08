@@ -1,6 +1,6 @@
 Expect
 ======
-This section contains the information we expect to see after the test is 
+This section contains the information we expect to see after the test is
 concluded.
 
 
@@ -31,7 +31,7 @@ Format
                    { <forks & results> }
                  ]
               }
-           }          
+           }
 
 
      -
@@ -55,7 +55,7 @@ Format
 
 The Network Specification
 -------------------------
-The string that identifies a fork (version) within a **network:** 
+The string that identifies a fork (version) within a **network:**
 list is one of three option:
 
 - The specific version: **Istanbul**
@@ -79,9 +79,9 @@ Each **data** value uses one of these formats:
      - Meaning
 
    * - -1
- 
+
      - !!int -1
-  
+
      - All the (**data**, **gas**, or **value**) values in the transaction
 
    * - <n>
@@ -117,9 +117,9 @@ Whether the data should result in a successful contract deployment or not.
      - Meaning
 
    * - true
- 
+
      - !!bool true
-  
+
      - Successful deployment
 
    * - false

@@ -5,7 +5,7 @@
 #
 # I don't swee the point in the old push32AndSuicide
 #
-# We can't use lll with dup, swap, or push (lll needs to manage the stack 
+# We can't use lll with dup, swap, or push (lll needs to manage the stack
 # on its own). Instead, we do:
 #
 # PUSH<n> <n bytes>
@@ -283,7 +283,7 @@ push:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call (gas) (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -295,7 +295,7 @@ push:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
@@ -342,8 +342,8 @@ push:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
         data: :label push1
@@ -355,7 +355,7 @@ push:
         0000000000000000000000000000000000000100:
           storage:
             0x00: 0xFF
-     
+
 
 
     - indexes:
@@ -368,7 +368,7 @@ push:
         0000000000000000000000000000000000000101:
           storage:
             0x00: 0xEEFF
-     
+
 
     - indexes:
         data: :label push3
@@ -380,7 +380,7 @@ push:
         0000000000000000000000000000000000000102:
           storage:
             0x00: 0xDDEEFF
-     
+
 
     - indexes:
         data: :label push4
@@ -392,7 +392,7 @@ push:
         0000000000000000000000000000000000000103:
           storage:
             0x00: 0xCCDDEEFF
-     
+
 
     - indexes:
         data: :label push5
@@ -404,7 +404,7 @@ push:
         0000000000000000000000000000000000000104:
           storage:
             0x00: 0xBBCCDDEEFF
-     
+
 
     - indexes:
         data: :label push6
@@ -416,7 +416,7 @@ push:
         0000000000000000000000000000000000000105:
           storage:
             0x00: 0xAABBCCDDEEFF
-     
+
 
     - indexes:
         data: :label push7
@@ -428,7 +428,7 @@ push:
         0000000000000000000000000000000000000106:
           storage:
             0x00: 0x99AABBCCDDEEFF
-     
+
 
     - indexes:
         data: :label push8
@@ -440,7 +440,7 @@ push:
         0000000000000000000000000000000000000107:
           storage:
             0x00: 0x8899AABBCCDDEEFF
-     
+
 
     - indexes:
         data: :label push9
@@ -452,7 +452,7 @@ push:
         0000000000000000000000000000000000000108:
           storage:
             0x00: 0x778899AABBCCDDEEFF
-     
+
 
 
 
@@ -466,7 +466,7 @@ push:
         0000000000000000000000000000000000000109:
           storage:
             0x00: 0x66778899AABBCCDDEEFF
-     
+
 
 
 
@@ -480,7 +480,7 @@ push:
         000000000000000000000000000000000000010A:
           storage:
             0x00: 0x5566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -495,7 +495,7 @@ push:
         000000000000000000000000000000000000010B:
           storage:
             0x00: 0x445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -509,7 +509,7 @@ push:
         000000000000000000000000000000000000010C:
           storage:
             0x00: 0x33445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -524,7 +524,7 @@ push:
         000000000000000000000000000000000000010D:
           storage:
             0x00: 0x2233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -538,7 +538,7 @@ push:
         000000000000000000000000000000000000010E:
           storage:
             0x00: 0x112233445566778899AABBCCDDEEFF
-     
+
 
     - indexes:
         data: :label push16
@@ -563,7 +563,7 @@ push:
         0000000000000000000000000000000000000110:
           storage:
             0x00: 0xFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -577,7 +577,7 @@ push:
         0000000000000000000000000000000000000111:
           storage:
             0x00: 0xEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -591,7 +591,7 @@ push:
         0000000000000000000000000000000000000112:
           storage:
             0x00: 0xDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -605,7 +605,7 @@ push:
         0000000000000000000000000000000000000113:
           storage:
             0x00: 0xCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -620,7 +620,7 @@ push:
         0000000000000000000000000000000000000114:
           storage:
             0x00: 0xBBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -634,7 +634,7 @@ push:
         0000000000000000000000000000000000000115:
           storage:
             0x00: 0xAABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -648,7 +648,7 @@ push:
         0000000000000000000000000000000000000116:
           storage:
             0x00: 0x99AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -662,7 +662,7 @@ push:
         0000000000000000000000000000000000000117:
           storage:
             0x00: 0x8899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -677,7 +677,7 @@ push:
         0000000000000000000000000000000000000118:
           storage:
             0x00: 0x778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
     - indexes:
@@ -690,7 +690,7 @@ push:
         0000000000000000000000000000000000000119:
           storage:
             0x00: 0x66778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -704,7 +704,7 @@ push:
         000000000000000000000000000000000000011A:
           storage:
             0x00: 0x5566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -719,7 +719,7 @@ push:
         000000000000000000000000000000000000011B:
           storage:
             0x00: 0x445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -733,7 +733,7 @@ push:
         000000000000000000000000000000000000011C:
           storage:
             0x00: 0x33445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -747,7 +747,7 @@ push:
         000000000000000000000000000000000000011D:
           storage:
             0x00: 0x2233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -761,7 +761,7 @@ push:
         000000000000000000000000000000000000011E:
           storage:
             0x00: 0x112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 
 
 
@@ -775,5 +775,5 @@ push:
         000000000000000000000000000000000000011F:
           storage:
             0x00: 0x00112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
-     
+
 

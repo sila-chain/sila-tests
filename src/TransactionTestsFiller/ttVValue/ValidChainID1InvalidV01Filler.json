@@ -1,7 +1,7 @@
 {
     "ValidChainID1InvalidV00" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "LeadingZerosV"
         },

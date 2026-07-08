@@ -1,7 +1,7 @@
 {
     "TransactionWithHighNonce64" :
     {
-        "expectException" : 
+        "expectException" :
         {
             ">=Frontier": "NonceTooLong"
         },

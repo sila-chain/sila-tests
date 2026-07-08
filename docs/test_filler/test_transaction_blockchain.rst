@@ -21,10 +21,10 @@ Format
 
            {
                "name-of-test":
-               { 
+               {
                   <other sections>
                   "blocks": [
-                     { 
+                     {
                        transactions: [
                          {
                            data: "0xDA7A",
@@ -38,15 +38,15 @@ Format
                          {
                            data: "0xDA7A",
                            accessList: [
-                             {  
+                             {
                                 "address": "0xcccccccccccccccccccccccccccccccccccccccd",
                                 "storageKeys": ["0x1000", "0x60A7"]
                              },
-                             {  
+                             {
                                 "address": "0xccccccccccccccccccccccccccccccccccccccce",
                                 "storageKeys": []
                              }
-                           ], 
+                           ],
                            gasLimit: "0x6a506a50",
                            maxFeePerGas: 1000,
                            maxPriorityFeePerGas: 10,
@@ -79,7 +79,7 @@ Format
                  secretKey: "5ec13e7 ... 5ec13e7"
                  nonce: '0x909ce'
                - data: 0xDA7A
-                 accessList: 
+                 accessList:
                  - address: 0xcccccccccccccccccccccccccccccccccccccccd
                    storageKeys:
                    - 0x1000
@@ -99,30 +99,30 @@ Format
 Fields
 --------------
 - **data**:
-  The data, either in hexadecimal or an 
+  The data, either in hexadecimal or an
   `ABI call <https://solidity.readthedocs.io/en/v0.7.1/abi-spec.html>`_
   with this format:
   **:abi <function signature> <function parameters separated by spaces>**.
 
 
 - **accessList**:
-  An optional `EIP2930 <https://eips.ethereum.org/EIPS/eip-2930>`_ access list. 
+  An optional `SIP2930 <https://sips.sila.org/SIPS/sip-2930>`_ access list.
   The **accessList** is a list of structures, each of which has to have an **address**
   and a list of **storageKeys** (which may be empty).
 
 
-- **gasLimit**: 
+- **gasLimit**:
   Gas limit for the transaction
 
 
 - **gasPrice**:
-  Gas price in Wei, prior to London (changed by `EIP 1559 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md>`_).
+  Gas price in Wei, prior to London (changed by `SIP 1559 <https://github.com/sila/SIPs/blob/master/SIPS/sip-1559.md>`_).
 
 - **maxFeePerGas**:
   Maximum acceptable gas price in Wei. Available in London and later.
 
 - **maxPriorityFeePerGas**:
-  Tip to give the miner (per gas, in Wei). The real tip is either this value or 
+  Tip to give the miner (per gas, in Wei). The real tip is either this value or
   **maxFeePerGas-baseFeePerGas** (the lower of the two). Available in London and later.
 
 - **value**:
@@ -130,16 +130,16 @@ Fields
 
 
 - **to**:
-  The destination address, typically a contract. 
-  If you want to submit a create transaction, 
+  The destination address, typically a contract.
+  If you want to submit a create transaction,
   put an empty string here (and the data segment is the constructor).
 
 
 - **secretKey**:
   The secret key for the sending address. That address is derived from the
   secret key and therefore does not need to be specified explicitely
-  (`see here 
-  <https://www.freecodecamp.org/news/how-to-create-an-ethereum-wallet-address-from-a-private-key-ae72b0eee27b/>`_). 
+  (`see here
+  <https://www.freecodecamp.org/news/how-to-create-an-sila-wallet-address-from-a-private-key-ae72b0eee27b/>`_).
 
 
 - **nonce**:

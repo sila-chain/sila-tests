@@ -1,7 +1,7 @@
 {
     "DataTestEnoughGAS" :
     {
-		"expectException" : 
+		"expectException" :
         {
         },
         "transaction" :

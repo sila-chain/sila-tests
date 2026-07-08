@@ -18,7 +18,7 @@ slt:
     0000000000000000000000000000000000000100:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
            ; (slt a b) is true iff a<b
            ; it is signed, so negative numbers are smaller than positive ones
            [[0]] (slt (- 0 2) 0)
@@ -30,7 +30,7 @@ slt:
     0000000000000000000000000000000000000101:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             [[0]] (slt 0 (- 0 2))
         }
       nonce: '0'
@@ -40,8 +40,8 @@ slt:
     0000000000000000000000000000000000000102:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-            (def 'pow_2_256_min1 
+        {
+            (def 'pow_2_256_min1
                  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
             [[0]] (slt pow_2_256_min1 0)
         }
@@ -52,8 +52,8 @@ slt:
     0000000000000000000000000000000000000103:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
-            (def 'pow_2_256_min1 
+        {
+            (def 'pow_2_256_min1
                  0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff)
             [[0]] (slt 0 pow_2_256_min1)
         }
@@ -65,7 +65,7 @@ slt:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             (call 0xffffff (+ 0x100 $4) 0 0 0 0 0)
         }
       nonce: '0'
@@ -77,7 +77,7 @@ slt:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
   transaction:
     data:
     - :label slt_neg2_0   :abi f(uint) 0
@@ -92,8 +92,8 @@ slt:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
 
     - indexes:

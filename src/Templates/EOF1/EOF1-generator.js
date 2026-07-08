@@ -1,7 +1,7 @@
 #! /usr/bin/node
 
 // Create EOF1 code, with values that are valid and invalid in various fields.
-// based on https://github.com/lightclient/go-ethereum/blob/eof/core/vm/eof.go
+// based on https://github.com/lightclient/go-sila/blob/eof/core/vm/eof.go
 // Then create a test with deploy transactions for all of them, and see that
 // only the valid ones result in contracts
 
@@ -11,8 +11,8 @@ const eof1Good = {
   magic: 0xEF00,
   version: 1,
   sections: [
-    {    // EIP 4750 section header
-       type: 1,  // EIP 4750 metadata
+    {    // SIP 4750 section header
+       type: 1,  // SIP 4750 metadata
        size: 4   // four bytes (per code section)
     },
     {    // code sections
@@ -60,8 +60,8 @@ const section2eof1 = section => {
 
 
 
-// Create the EIP4750 section
-const code2eip4750 = code =>
+// Create the SIP4750 section
+const code2sip4750 = code =>
       byte1(code.stackInputs)+byte1(code.stackOutputs)+byte2(code.maxStack)
 
 
@@ -77,7 +77,7 @@ const encode = hash => {
       byte1(hash.endOfSections)
 
   // Type section
-  res = res + hash.code.map(code2eip4750).reduce((a,b) => a+b)
+  res = res + hash.code.map(code2sip4750).reduce((a,b) => a+b)
 
   // Finally the code sections and data section
   res = res + hash.code.map(code => code.code).reduce((a,b) => a+b) +
@@ -113,8 +113,8 @@ const createEOF1Code = (codeList, maxStacks) => {
     eof1.sections[1].lengths = codeList.map(code => code.length/2)
 
     // Assume stackInputs and stackOutputs are zero
-    eof1.code = codeList.map((code, i) => { 
-      let outputs = 128 // Assume is a Non-Returning Function 
+    eof1.code = codeList.map((code, i) => {
+      let outputs = 128 // Assume is a Non-Returning Function
       if ( i != 0 ) {
         // If code contains RETF opcode (0xe4), then it is a Returning Function
         for (var j = 0; j < code.length; j += 2) {

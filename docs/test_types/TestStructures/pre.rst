@@ -36,7 +36,7 @@ AccountFields are always complete (`balance`, `code`, `nonce`, `storage` must pr
 **Fields**
 
 ======================= ============ ===================================================================
-``address hash``         **HASH20**   is 20 bytes ethereum address 0x prefixed
+``address hash``         **HASH20**   is 20 bytes sila address 0x prefixed
 ``balance``              **VALUE**    account balance in evm state
 ``code``                 **BYTES**    account code in evm state
 ``nonce``                **VALUE**    account nonce in evm state

@@ -468,7 +468,7 @@ class Ec2Inventory(object):
         # Global Tag: instances without tags
         if len(instance.tags) == 0:
             self.push(self.inventory, 'tag_none', dest)
-            
+
         # Global Tag: tag all EC2 instances
         self.push(self.inventory, 'ec2', dest)
 

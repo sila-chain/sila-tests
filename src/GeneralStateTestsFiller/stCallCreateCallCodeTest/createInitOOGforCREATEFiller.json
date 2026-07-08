@@ -1,7 +1,7 @@
 {
     "createInitOOGforCREATE" : {
         "_info" : {
-            "comment" : "Suicide to a dynamic created contract, oog on create" 
+            "comment" : "Suicide to a dynamic created contract, oog on create"
         },
         "env" : {
             "currentCoinbase" : "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

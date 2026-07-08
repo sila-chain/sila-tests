@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Ethereum Tests documentation build configuration file, created by
+# Sila Tests documentation build configuration file, created by
 # sphinx-quickstart on Mon Aug 28 19:37:19 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -46,9 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Ethereum Tests'
-copyright = '2017, Ethereum Community'
-author = 'Ethereum Community'
+project = 'Sila Tests'
+copyright = '2017, Sila Community'
+author = 'Sila Community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -115,7 +115,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'EthereumTestsdoc'
+htmlhelp_basename = 'SilaTestsdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -142,8 +142,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'EthereumTests.tex', 'Ethereum Tests Documentation',
-     'Ethereum Community', 'manual'),
+    (master_doc, 'SilaTests.tex', 'Sila Tests Documentation',
+     'Sila Community', 'manual'),
 ]
 
 
@@ -152,7 +152,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ethereumtests', 'Ethereum Tests Documentation',
+    (master_doc, 'silatests', 'Sila Tests Documentation',
      [author], 1)
 ]
 
@@ -163,8 +163,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'EthereumTests', 'Ethereum Tests Documentation',
-     author, 'EthereumTests', 'One line description of project.',
+    (master_doc, 'SilaTests', 'Sila Tests Documentation',
+     author, 'SilaTests', 'One line description of project.',
      'Miscellaneous'),
 ]
 

@@ -1,9 +1,9 @@
 {
     "V_equals37" :
     {
-		"expectException" : 
+		"expectException" :
         {
-            "<=EIP150" : "InvalidVRS"
+            "<=SIP150" : "InvalidVRS"
         },
         "transaction" :
         {

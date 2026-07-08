@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "Ori Pomerantz qbzzt1@gmail.com",
             "filling-rpc-server" : "evm version 1.11.4-unstable-564db9a9-20230310",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.afd2a7a4.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.afd2a7a4.Linux.g++",
             "generatedTestHash" : "d691566ac1715178d3b7247caa07221e0a8139092ceb17345853f5a3c23814ec",
             "labels" : {
                 "0" : "ADD-1",

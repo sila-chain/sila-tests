@@ -223,7 +223,7 @@
                 "//comment" : "In Shanghai it is imposible to pay for such a command becaue 0 50000 requres too much gas to pay for pre allocation",
                 "//comment" : "See Create1000ShnghaiFiller",
                 "//comment" : "CREATE price changed in Shanghai",
-                "//comment" : "Due to eip-3860 (https://eips.ethereum.org/EIPS/eip-3860) pay extra 2 gas for each 32 bytes of initcode",
+                "//comment" : "Due to sip-3860 (https://sips.sila.org/SIPS/sip-3860) pay extra 2 gas for each 32 bytes of initcode",
                 "balance" : "0xfffffffffffff",
                 "code" : "{ (def 'i 0x80) (for {} (< @i 1000) [i](+ @i 1) [[ 0 ]] (CREATE 1 0 50000) ) [[ 1 ]] @i}",
                 "nonce" : "0",

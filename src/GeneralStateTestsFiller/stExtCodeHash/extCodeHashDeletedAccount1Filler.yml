@@ -50,7 +50,7 @@ extCodeHashDeletedAccount1:
           [[2]] (EXTCODESIZE 0xaaaaaaaa00000000000000000000000000000000)
           (EXTCODECOPY 0xaaaaaaaa00000000000000000000000000000000 0 0 (SLOAD 2))
           [[3]] (MLOAD 0)
-          
+
           (CALL 150000 0xaaaaaaaa00000000000000000000000000000000 0 0 0 0 32)
 
           [[4]] (EXTCODEHASH 0xaaaaaaaa00000000000000000000000000000000)
@@ -76,7 +76,7 @@ extCodeHashDeletedAccount1:
         095e7baea6a6c7c4c2dfeb977efac326af552d87:
           balance: '1000000000000000001'
           storage: {
-         
+
           }
         aaaaaaaa00000000000000000000000000000000:
           shouldnotexist: '1'

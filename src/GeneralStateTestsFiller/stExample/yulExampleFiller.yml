@@ -1,5 +1,5 @@
 # An example of using simple yul contracts in the test
-# More examples at https://ethereum-tests.readthedocs.io/en/latest/state-transition-tutorial.html#solidity-tests
+# More examples at https://sila-tests.readthedocs.io/en/latest/state-transition-tutorial.html#solidity-tests
 yulExample:
   _info:
     comment: An example test for using simple yul contracts in the test

@@ -1,5 +1,5 @@
 # Test the blake2B precompile (#9)
-# Specified in https://eips.ethereum.org/EIPS/eip-152.
+# Specified in https://sips.sila.org/SIPS/sip-152.
 
 
 blake2B:
@@ -18,7 +18,7 @@ blake2B:
     comment: Ori Pomerantz qbzzt1@gmail.com
 
 
-  pre:  
+  pre:
 
 
     cccccccccccccccccccccccccccccccccccccccc:
@@ -36,14 +36,14 @@ blake2B:
 
          // The test case we're checking
          switch param
-           // 0-8 are test cases from the EIP
+           // 0-8 are test cases from the SIP
            //
-           // Huge strings in the EIP cut into 0x20 chunks using:
+           // Huge strings in the SIP cut into 0x20 chunks using:
            // for(var i=0; i<(2*0xE0); i+=0x40) {
            //     console.log(`mstore(0x${(i/2).toString(16)}, 0x${
            //          x.slice(i, i+0x40).padEnd(0x40, "0")})`)
            // }
-          
+
            case 0 {
              bufLength := 0
            }
@@ -124,8 +124,8 @@ blake2B:
            }
 
 
-           // This case is provided by jochem-brouwer in 
-           // https://github.com/ethereum/tests/pull/948#issuecomment-925964632  
+           // This case is provided by jochem-brouwer in
+           // https://github.com/sila/tests/pull/948#issuecomment-925964632
            case 9 {
              mstore(0x00, 0x0000000c48c9bdf267e6096a3ba7ca8485ae67bb2bf894fe72f36e3cf1361d5f)
              mstore(0x20, 0x3af54fa5d182e6ad7f520e511f6c3e2b8c68059b6bbd41fbabd9831f79217e13)
@@ -169,9 +169,9 @@ blake2B:
            // Return the results
            sstore(0, retVal)   // Success? Failure?
            // The output
-           sstore(1, mload(0x200))  
+           sstore(1, mload(0x200))
            sstore(2, mload(0x220))
-        }  
+        }
       nonce: '0'
       storage: {}
       balance: 0
@@ -240,28 +240,28 @@ blake2B:
   expect:
 
   - indexes:
-      data: 
+      data:
       - :label fail
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Istanbul"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
         storage:
           0x00: 0x00
 
-          # No output, so still the default values 
+          # No output, so still the default values
           0x01: 0x00
           0x02: 0x00
 
 
   - indexes:
-      data: 
+      data:
       - :label case-04
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Istanbul"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -273,11 +273,11 @@ blake2B:
 
 
   - indexes:
-      data: 
+      data:
       - :label case-05
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Istanbul"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -290,11 +290,11 @@ blake2B:
 
 
   - indexes:
-      data: 
+      data:
       - :label case-06
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Istanbul"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -307,11 +307,11 @@ blake2B:
 
 
   - indexes:
-      data: 
+      data:
       - :label case-07
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Istanbul"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -325,11 +325,11 @@ blake2B:
 # excessively ssslllooowww
 #
 #  - indexes:
-#      data: 
+#      data:
 #      - :label case-08
 #      gas: !!int -1
 #      value: !!int -1
-#    network: 
+#    network:
 #    - ">=Istanbul"
 #    result:
 #      cccccccccccccccccccccccccccccccccccccccc:
@@ -340,11 +340,11 @@ blake2B:
 
 
   - indexes:
-      data: 
+      data:
       - :label case-09
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - ">=Istanbul"
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -356,11 +356,11 @@ blake2B:
 
   # 16 rounds
   - indexes:
-      data: 
+      data:
       - :label test-0016
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -372,11 +372,11 @@ blake2B:
 
   # 32 rounds
   - indexes:
-      data: 
+      data:
       - :label test-0032
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -388,11 +388,11 @@ blake2B:
 
   # 64 rounds
   - indexes:
-      data: 
+      data:
       - :label test-0064
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -404,11 +404,11 @@ blake2B:
 
   # 128 rounds
   - indexes:
-      data: 
+      data:
       - :label test-0128
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -421,11 +421,11 @@ blake2B:
 
   # 256 rounds
   - indexes:
-      data: 
+      data:
       - :label test-0256
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -437,11 +437,11 @@ blake2B:
 
   # 512 rounds
   - indexes:
-      data: 
+      data:
       - :label test-0512
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -453,11 +453,11 @@ blake2B:
 
   # 1024 rounds
   - indexes:
-      data: 
+      data:
       - :label test-1024
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -470,11 +470,11 @@ blake2B:
 
   # 16 rounds, 16 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0016-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -486,11 +486,11 @@ blake2B:
 
   # 32 rounds, 16 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0032-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -502,11 +502,11 @@ blake2B:
 
   # 64 rounds, 16 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0064-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -518,11 +518,11 @@ blake2B:
 
   # 128 rounds, 16 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0128-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -535,11 +535,11 @@ blake2B:
 
   # 256 rounds, 16 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0256-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -551,11 +551,11 @@ blake2B:
 
   # 512 rounds, 16 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0512-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -567,11 +567,11 @@ blake2B:
 
   # 1024 rounds, 16 bytes of msg
   - indexes:
-      data: 
+      data:
       - :label test-1024-16
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -583,11 +583,11 @@ blake2B:
 
   # 16 rounds, 120 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0016-120
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -599,11 +599,11 @@ blake2B:
 
   # 32 rounds, 120 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0032-120
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:
@@ -615,11 +615,11 @@ blake2B:
 
   # 64 rounds, 120 bytes of data
   - indexes:
-      data: 
+      data:
       - :label test-0064-120
       gas: !!int -1
       value: !!int -1
-    network: 
+    network:
     - '>Istanbul'
     result:
       cccccccccccccccccccccccccccccccccccccccc:

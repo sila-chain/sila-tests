@@ -1,7 +1,7 @@
 {
     "RightVRSTestVPrefixedBy0_3" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier": "LeadingZerosV"
         },

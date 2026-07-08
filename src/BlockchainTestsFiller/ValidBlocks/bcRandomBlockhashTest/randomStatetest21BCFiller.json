@@ -8,7 +8,7 @@
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8",
                         "gasUsed" : "21968",
-                        "receiptTrie" : "0x011be02b29d64b5383bb89d387f53ee140af461854d4513c573492014bcce1d1",
+                        "recsiptTrie" : "0x011be02b29d64b5383bb89d387f53ee140af461854d4513c573492014bcce1d1",
                         "stateRoot" : "0x16dcf885961dc85c09ce34dc5938f774df90cd9e126eaee05c52ae846843083f"
                     },
                     "Berlin" : {
@@ -16,7 +16,7 @@
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8",
                         "gasUsed" : "0x5d3c",
-                        "receiptTrie" : "0xcd3d7866677413fcfc1670e78c5488b64f6d4a21e4aa469a491b79251220e53b",
+                        "recsiptTrie" : "0xcd3d7866677413fcfc1670e78c5488b64f6d4a21e4aa469a491b79251220e53b",
                         "stateRoot" : "0xa668569b53dce75c1ee0755c8d24e48ab6b4dfaf517a94df03cf0ec61f5ef03a"
                     },
                     "London" : {
@@ -24,7 +24,7 @@
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8",
                         "gasUsed" : "0x5d3c",
-                        "receiptTrie" : "0xcd3d7866677413fcfc1670e78c5488b64f6d4a21e4aa469a491b79251220e53b",
+                        "recsiptTrie" : "0xcd3d7866677413fcfc1670e78c5488b64f6d4a21e4aa469a491b79251220e53b",
                         "stateRoot" : "0x85630cd8a2fb75b95c50476586cf8e695d0dfdd310c1b08ceac028fc6d7841bd"
                     }
                 },
@@ -78,7 +78,7 @@
             "nonce" : "0x0102030405060708",
             "number" : "0",
             "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
-            "receiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "recsiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "stateRoot" : "0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a",
             "timestamp" : "0x03b6",
             "transactionsTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",

@@ -1,7 +1,7 @@
 {
     "TransactionWithRvaluePrefixed00BigInt" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "LeadingZerosR"
         },

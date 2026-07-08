@@ -4,18 +4,18 @@
 Virtual Machine Tests Source Code
 =================================
 Location: `src/VMTestsFiller
-<https://github.com/ethereum/tests/tree/develop/src/VMTestsFiller>`_
+<https://github.com/sila/tests/tree/develop/src/VMTestsFiller>`_
 
 Virtual machine tests check a single instance of EVM execution, with one stack
-and one memory space. They are similar to state transition tests, but even 
+and one memory space. They are similar to state transition tests, but even
 simpler.
 
 .. note::
    Even though virtual machine tests are in a separate directory under **src**,
-   **retesteth** treats them as though they were under 
+   **retesteth** treats them as though they were under
    **src/BlockchainTestsFiller/ValidBlocks**. For example, this is the command to
    fill and run the **VMTests/vmLogTest/log4_PC** `(link)
-   <https://github.com/ethereum/tests/blob/develop/src/VMTestsFiller/vmLogTest/log4_PCFiller.json>`_ 
+   <https://github.com/sila/tests/blob/develop/src/VMTestsFiller/vmLogTest/log4_PCFiller.json>`_
    test.
 
    ::

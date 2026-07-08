@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "have a call to e.g. identity built-in that specifies output size more than input size. Check that only the short amount is available with RETURNDATA.  CALL is with 100000 as gas, address 4 as destination, 0 as value, 0 as in-offset, 16 as in-size, 16 as out-offset, 32 as out-size.  The returndatasize should see 16.",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "e3e9fc412b02541f6f47fa808024bbec65da995694fafddcdeacef6dde96e180",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

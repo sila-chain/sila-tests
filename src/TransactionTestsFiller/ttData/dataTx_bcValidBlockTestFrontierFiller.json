@@ -1,7 +1,7 @@
 {
     "dataTx_bcValidBlockTestFrontier":
     {
-        "expectException" : 
+        "expectException" :
         {
             ">=Homestead" : "TR_IntrinsicGas"
         },

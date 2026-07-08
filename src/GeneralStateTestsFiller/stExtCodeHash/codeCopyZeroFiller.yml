@@ -1,8 +1,8 @@
-# https://github.com/ethereum/tests/issues/493,  CODECOPY and EXTCODECOPY where codesize = 0
+# https://github.com/sila/tests/issues/493,  CODECOPY and EXTCODECOPY where codesize = 0
 ---
 codeCopyZero:
   _info:
-    comment: "https://github.com/ethereum/tests/issues/493,  CODECOPY and EXTCODECOPY where codesize = 0"
+    comment: "https://github.com/sila/tests/issues/493,  CODECOPY and EXTCODECOPY where codesize = 0"
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: '0x20000'
@@ -48,7 +48,7 @@ codeCopyZero:
     a100000000000000000000000000000000000000:
       balance: '1000000000000000000'
       code: |
-        { 
+        {
           (MSTORE 0
             (CREATE2 0 0
               (lll

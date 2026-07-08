@@ -1,7 +1,7 @@
 {
     "libsecp256k1test":
     {
-	    "expectException" : 
+	    "expectException" :
         {
         },
         "transaction": {

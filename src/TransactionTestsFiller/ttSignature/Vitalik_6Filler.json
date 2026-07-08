@@ -1,9 +1,9 @@
 {
     "Vitalik_6" :
     {
-		"expectException" : 
+		"expectException" :
         {
-            "<=EIP150" : "InvalidVRS"
+            "<=SIP150" : "InvalidVRS"
         },
         "transaction" :
         {

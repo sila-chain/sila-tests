@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "create2 oog during the init code, + when create2 is from transaction init code. but oog still in create2 init code",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "fdcd180a8797d8af699608c5a9268faa84c789803d90b81465cb0f6693b6265d",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

@@ -5,13 +5,13 @@
 # 3. A block with a timestamp one second after its parent is valid
 #
 # All three conditions come from inequality (49) of the yellow paper
-# (https://ethereum.github.io/yellowpaper/paper.pdf, p. 7)
+# (https://sila.github.io/yellowpaper/paper.pdf, p. 7)
 #
 # Note that as this test includes blocks that create exceptions, it cannot be
 # --filltests on besu currently.
 #
-# The timestamp is in seconds. p. 5 of the yellow paper 
-# (https://ethereum.github.io/yellowpaper/paper.pdf) specifies it is the output
+# The timestamp is in seconds. p. 5 of the yellow paper
+# (https://sila.github.io/yellowpaper/paper.pdf) specifies it is the output
 # of Unix's time(). According to https://linux.die.net/man/2/time that is seconds.
 
 badTimestamp:
@@ -26,7 +26,7 @@ badTimestamp:
     nonce: '0x0102030405060708'
     number: '0'
     parentHash: '0x0000000000000000000000000000000000000000000000000000000000000000'
-    receiptTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
+    recsiptTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
     stateRoot: '0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a'
     transactionsTrie: '0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421'
     uncleHash: '0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347'
@@ -53,10 +53,10 @@ badTimestamp:
 
   # One second after the previous block
   - blockHeader:
-       'London': 
+       'London':
           timestamp: 1620000001
           # When the time difference < 9 seconds the difficulty is supposed to
-          # increase. However, because retesteth gets the block from geth and then
+          # increase. However, because retestsil gets the block from geth and then
           # changes the timestamp, the difficulty is not updated.
           #
           # Therefore if timediff < 9, we need to specify the difficulty manually
@@ -108,7 +108,7 @@ badTimestamp:
 
   # Time stands still?
   - blockHeader:
-      timestamp: 1620003600	
+      timestamp: 1620003600
     blocknumber: 5
     transactions: []
     expectException:

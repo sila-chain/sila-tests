@@ -25,7 +25,7 @@
 
         }   // function val2Storage
       }     // contract Test
-      
+
 
   pre:
     cccccccccccccccccccccccccccccccccccccccc:
@@ -64,7 +64,7 @@
 
   expect:
     - indexes:
-        data: 
+        data:
         - !!int 0
         - :label ten-ten
         gas:  !!int 0
@@ -77,7 +77,7 @@
             0:    0x10
             0x10: 0x10
     - indexes:
-        data: 
+        data:
         - !!int 1
         - !!int 3
         - 4-6
@@ -91,7 +91,7 @@
             0:    0x11
             0x11: 0x11
     - indexes:
-        data: 
+        data:
         - !!int 2
         gas:  !!int 0
         value: !!int 0

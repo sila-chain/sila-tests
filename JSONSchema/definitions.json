@@ -99,7 +99,7 @@
             "type": "object"
         },
         "HexData": {
-            "description": "Hex data. see https://github.com/ethereum/wiki/wiki/JSON-RPC#hex-value-encoding",
+            "description": "Hex data. see https://github.com/sila/wiki/wiki/JSON-RPC#hex-value-encoding",
             "pattern": "^0x([0-9a-fA-F][0-9a-fA-F])*$",
             "type": "string"
         },
@@ -146,7 +146,7 @@
             "type": "string"
         },
         "HexQuantity": {
-            "description": "Hex quantity. see https://github.com/ethereum/wiki/wiki/JSON-RPC#hex-value-encoding",
+            "description": "Hex quantity. see https://github.com/sila/wiki/wiki/JSON-RPC#hex-value-encoding",
             "pattern": "(^0x0$)|(^0x[1-9a-fA-F][0-9a-fA-F]*$)",
             "type": "string"
         },
@@ -325,7 +325,7 @@
                     "type": "string"
                 },
                 {
-		    "pattern": "Ethash",
+		    "pattern": "Silash",
                     "type": "string"
                 }
             ]

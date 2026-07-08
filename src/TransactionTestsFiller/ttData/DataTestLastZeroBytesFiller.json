@@ -1,7 +1,7 @@
 {
-    "DataTestLastZeroBytes" : 
+    "DataTestLastZeroBytes" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
         },
         "transaction" :

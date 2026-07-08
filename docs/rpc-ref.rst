@@ -4,16 +4,16 @@
 The RPC Interface
 #######################
 
-Some clients, such as `besu <https://www.hyperledger.org/use/besu>`_, run tests 
+Some clients, such as `besu <https://www.hyperledger.org/use/besu>`_, run tests
 using this interface. This allows the client to run anywhere there is connectivity
-to the system running **retesteth**.
+to the system running **retestsil**.
 
-In addition to requiring some of the `standard Ethereum RPC function
-<https://ethereum.org/en/developers/docs/apis/json-rpc/#top>`_, **retesteth**
+In addition to requiring some of the `standard Sila RPC function
+<https://sila.org/en/developers/docs/apis/json-rpc/#top>`_, **retestsil**
 requires some specific functions to setup and execute tests.
 
 
-Retesteth-Specific RPCs
+Retestsil-Specific RPCs
 =======================
 
 debug_accountRange
@@ -25,9 +25,9 @@ Parameters
 #. **string _blockHashOrNumber**: The hash or number of the block
 #. **int _txIndex**: Transaction index for the point in which we want the list of accounts
 #. **string _addressHash**: The hash at which to start the list
-   If **_maxResults** is equal to the number of accounts or more than that then 
+   If **_maxResults** is equal to the number of accounts or more than that then
    we receive all the addresses
-   and there is no problem. But if there are too many accounts to report them all, we 
+   and there is no problem. But if there are too many accounts to report them all, we
    receive the next hash at which we can find an address. We then call this method again,
    with that value in **_addressHash**, to get the next batch of addresses.
 #. **int _maxResults**: Maximum number of results
@@ -38,7 +38,7 @@ Result
   the hashes (both here and in the **_addressHash** parameter) because that is the
   order in which addresses are stored in the client, so the easiest order to for
   paged retrieval.
-- **nextKey**: The next hash (in case there are more addresses to 
+- **nextKey**: The next hash (in case there are more addresses to
   return than **_maxResults**.
 
 Sample Request
@@ -178,10 +178,10 @@ Parameters
 ^^^^^^^^^^
 #. **int _number**: The number of blocks to create after the current block.
 
- 
+
 Result
 ^^^^^^^^^^^^
-Boolean value, **true** if successful 
+Boolean value, **true** if successful
 
 Sample Request
 ^^^^^^^^^^^^^^
@@ -222,7 +222,7 @@ Parameters
 
 Result
 ^^^^^^^^^^^^
-Boolean value, **true** if successful 
+Boolean value, **true** if successful
 
 Sample Request
 ^^^^^^^^^^^^^^
@@ -259,7 +259,7 @@ Success
 test_rewindToBlock
 ------------------
 Revert the state of the blockchain to a specific block number.
-Cancel the blocks after it, which lets us run multiple tests without having to 
+Cancel the blocks after it, which lets us run multiple tests without having to
 setup a new genesis block for each one.
 
 
@@ -271,7 +271,7 @@ Parameters
 
 Result
 ^^^^^^^^^^^^
-Boolean value, **true** if successful 
+Boolean value, **true** if successful
 
 Sample Request
 ^^^^^^^^^^^^^^
@@ -328,7 +328,7 @@ An object that contains the chain parameters for the test:
 
 Result
 ^^^^^^^^^^^^
-Boolean value, **true** if successful 
+Boolean value, **true** if successful
 
 Sample Request
 ^^^^^^^^^^^^^^
@@ -342,8 +342,8 @@ Sample Request
         {
           "params": {
             "homesteadForkBlock": "0x00",
-            "EIP150ForkBlock": "0x00",
-            "EIP158ForkBlock": "0x00",
+            "SIP150ForkBlock": "0x00",
+            "SIP158ForkBlock": "0x00",
             "byzantiumForkBlock": "0x00",
             "constantinopleForkBlock": "0x00",
             "constantinopleFixForkBlock": "0x00",
@@ -399,15 +399,15 @@ Sample Result
 
 Success
 
-Standard RPCs Retesteth Uses
+Standard RPCs Retestsil Uses
 ============================
-- `eth_blockNumber <https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_blocknumber>`_
-- `eth_getBalance <https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_getbalance>`_
-- `eth_getBlockByNumber <https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_getblockbynumber>`_
-- `eth_getCode <https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_getcode>`_
-- `eth_getTransactionCount <https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_gettransactioncount>`_
-- `eth_sendRawTransaction <https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_sendrawtransaction>`_
-- `web3_clientVersion <https://ethereum.org/en/developers/docs/apis/json-rpc/#web3_clientversion>`_
+- `eth_blockNumber <https://sila.org/en/developers/docs/apis/json-rpc/#eth_blocknumber>`_
+- `eth_getBalance <https://sila.org/en/developers/docs/apis/json-rpc/#eth_getbalance>`_
+- `eth_getBlockByNumber <https://sila.org/en/developers/docs/apis/json-rpc/#eth_getblockbynumber>`_
+- `eth_getCode <https://sila.org/en/developers/docs/apis/json-rpc/#eth_getcode>`_
+- `eth_getTransactionCount <https://sila.org/en/developers/docs/apis/json-rpc/#eth_gettransactioncount>`_
+- `eth_sendRawTransaction <https://sila.org/en/developers/docs/apis/json-rpc/#eth_sendrawtransaction>`_
+- `web3_clientVersion <https://sila.org/en/developers/docs/apis/json-rpc/#web3_clientversion>`_
 
 
 

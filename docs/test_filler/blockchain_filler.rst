@@ -4,9 +4,9 @@
 Blockchain Tests Source Code
 =================================
 Location: `/src/BlockchainTestsFiller
-<https://github.com/ethereum/tests/tree/develop/src/BlockchainTestsFiller>`_
+<https://github.com/sila/tests/tree/develop/src/BlockchainTestsFiller>`_
 
-Blockchain tests can include multiple blocks and each of those blocks can include 
+Blockchain tests can include multiple blocks and each of those blocks can include
 multiple transactions. These blocks can be either valid or invalid.
 
 

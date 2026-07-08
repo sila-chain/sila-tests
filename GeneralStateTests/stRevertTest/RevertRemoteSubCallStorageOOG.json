@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "contract A calls itself. In the sub-call, storage is modified, the calls returns successfully. After that, storage is modified again and then an exception occurs.  0xc0406226 == sha(run())",
             "filling-rpc-server" : "evm version 1.13.0-unstable-6ddb92ca-20230811",
-            "filling-tool-version" : "retesteth-0.3.1-cancun+commit.8cf9b032.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.1-cancun+commit.8cf9b032.Linux.g++",
             "generatedTestHash" : "1663239cece0aa5cfae63bdd7f4851bfc9a9864b59fa1d9e170a297d0ef43e58",
             "lllcversion" : "Version: 0.5.14-develop.2023.8.11+commit.b2b86751.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

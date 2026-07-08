@@ -20,7 +20,7 @@
          let cellAddr := sub(10,10)
 
          sstore(cellAddr,add(60,9))
-       }        
+       }
       nonce: 1
       storage: {}
 

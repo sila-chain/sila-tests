@@ -1,9 +1,9 @@
 {
     "extCodeCopyBounds" : {
         "_info" : {
-            "comment" : "EXTCODECOPY edge case https://github.com/ethereum/tests/issues/438",
+            "comment" : "EXTCODECOPY edge case https://github.com/sila/tests/issues/438",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "033884259b029a1dc1f88a0b8bc411fef1c5a4431cdd81c06a725e41705285a2",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

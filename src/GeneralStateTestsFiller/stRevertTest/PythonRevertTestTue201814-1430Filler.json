@@ -1,7 +1,7 @@
 {
   "PythonRevertTestTue201814-1430": {
     "_info" : {
-	"comment" : "A random test that had failed in Python ethereum implementation"
+	"comment" : "A random test that had failed in Python sila implementation"
     },
     "expect" : [
 	{

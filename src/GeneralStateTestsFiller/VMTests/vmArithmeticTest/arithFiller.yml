@@ -20,9 +20,9 @@ arith:
       balance: '0x0ba1a9ce0ba1a9ce'
         # 00 PUSH1 1      6001                      1
         # 02 PUSH1 1      6001                      1,1
-        # 04 SWAP1        90 
+        # 04 SWAP1        90
         # 05 ADD          01                        2
-        # 06 PUSH1 7      6007                      7,2 
+        # 06 PUSH1 7      6007                      7,2
         # 08 MUL          02                        14
         # 09 PUSH1 5      6005                      5,14
         # 0B ADD          01                        19
@@ -44,8 +44,8 @@ arith:
         # 21 PUSH1 3      6003                      3,3,4
         # 23 SUB          03                        0,4
         # 24 PUSH1 9      6009                      9,0,4
-        # 26 PUSH1 0x11   6011                      17,9,0,4                           
-        # 28 EXP          0A                        17^9,0,4                       
+        # 26 PUSH1 0x11   6011                      17,9,0,4
+        # 28 EXP          0A                        17^9,0,4
         # 29 PUSH1 0      6000                      0,17^9,0,4
         # 2B SSTORE       55 The original was MSTORE, but that's not testable
         # 2C PUSH1 8      6008                      8,0,4
@@ -61,7 +61,7 @@ arith:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 # The transaction to check
   transaction:
     data:
@@ -74,8 +74,8 @@ arith:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
 
     - indexes:

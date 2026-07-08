@@ -1187,7 +1187,7 @@ twoOps:
 
 
   transaction:
-    data: 
+    data:
     - :raw 0x00
     gasLimit:
     - '80000000'

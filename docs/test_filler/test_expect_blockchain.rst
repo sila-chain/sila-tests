@@ -1,6 +1,6 @@
 Expect
 ======
-This section contains the information we expect to see after the test is 
+This section contains the information we expect to see after the test is
 concluded.
 
 
@@ -41,7 +41,7 @@ Format
                    { <forks & results> }
                  ]
               }
-           }          
+           }
 
 
      -
@@ -61,15 +61,15 @@ Format
                     storage:
                       0x0:  12345
                       10: 0x121212
-                    code: 0x00      
-                  address 2: 
+                    code: 0x00
+                  address 2:
                      <address fields go here>
               - <forks & results>
 
 
 The Network Specification
 -------------------------
-The string that identifies a fork (version) within a **network:** 
+The string that identifies a fork (version) within a **network:**
 list is one of three option:
 
 - The specific version: **Istanbul**

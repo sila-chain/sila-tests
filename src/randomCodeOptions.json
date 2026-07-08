@@ -1,5 +1,5 @@
 {
-	"probabilities" : 
+	"probabilities" :
 	{
 		"//comment" : "spawn undefined bytecodes in code",
 		"useUndefinedOpCodes" : false,
@@ -26,6 +26,6 @@
 		"precompiledDestProbability" : 2,
 
 		"//comment" : "probability of calling to the tx sending account",
-		"sendingAddressProbability" : 3	
+		"sendingAddressProbability" : 3
 	}
 }

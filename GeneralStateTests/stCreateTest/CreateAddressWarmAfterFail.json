@@ -1,9 +1,9 @@
 {
     "CreateAddressWarmAfterFail" : {
         "_info" : {
-            "comment" : "Invokes failing CREATE (because initcode fails) and checks\nif the create address is considered warm in the follow up call as required by EIP-2929.\nAddresses taken from https://toolkit.abdk.consulting/ethereum#contract-address\n\nWritten primarily by Paweł Bylica (@chfast). Somewhat modified by Ori (@qbzzt)\n",
+            "comment" : "Invokes failing CREATE (because initcode fails) and checks\nif the create address is considered warm in the follow up call as required by SIP-2929.\nAddresses taken from https://toolkit.abdk.consulting/sila#contract-address\n\nWritten primarily by Paweł Bylica (@chfast). Somewhat modified by Ori (@qbzzt)\n",
             "filling-rpc-server" : "evm version 1.13.0-unstable-6ddb92ca-20230811",
-            "filling-tool-version" : "retesteth-0.3.1-cancun+commit.8cf9b032.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.1-cancun+commit.8cf9b032.Linux.g++",
             "generatedTestHash" : "9fae99ffda593e631edd2173ee9251d2d88020b0b1f6f3d5ceb58b5dab86e694",
             "labels" : {
                 "0" : "create-contructor-revert",

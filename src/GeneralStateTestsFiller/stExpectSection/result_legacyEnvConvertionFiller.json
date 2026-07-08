@@ -1,7 +1,7 @@
 {
     "result_legacyEnvConvertion" : {
         "_info" : {
-            "comment" : "A unittest for retesteth env section convertion"
+            "comment" : "A unittest for retestsil env section convertion"
         },
         "verifyBC" : {
             "Berlin" : {

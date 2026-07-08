@@ -3,11 +3,11 @@
         "_info" : {
             "comment" : "Test vectors BSHA0006",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "a323e372d581c9c4acf4e2053102f8def912e4cabdd0e553d5bb15085225977d",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",
-            "source" : "src/BlockchainTestsFiller/EIPTests/bc4895-withdrawals/withdrawalsRLPnotAListFiller.json",
+            "source" : "src/BlockchainTestsFiller/SIPTests/bc4895-withdrawals/withdrawalsRLPnotAListFiller.json",
             "sourceHash" : "c2af8c7ae8a66898347b0d38a2dd8236618ff4ebb5198f43a550d4678391cd79"
         },
         "blocks" : [
@@ -31,7 +31,7 @@
             "nonce" : "0x0000000000000000",
             "number" : "0x00",
             "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
-            "receiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "recsiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "stateRoot" : "0x046119afb1ab36aaa8f66088677ed96cd62762f6d3e65642898e189fbe702d51",
             "timestamp" : "0x03b6",
             "transactionsTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",

@@ -40,7 +40,7 @@ Format
                    }
                  ]
               }
-           }          
+           }
 
 
      -
@@ -74,15 +74,15 @@ The fields in each block are optional. Only include those fields you need.
 
   .. include:: ../test_filler/test_blockheader.rst
 
-  One field inside the block header which is not standard in Ethereum is 
+  One field inside the block header which is not standard in Sila is
   **expectException**. That field, which is only used in invalid block tests,
   identifies the exception we expect to receive for the block on different
-  forks of Ethereum. You can read more about it in the `Invalid Block Tests 
-  section of the Blockchain Tests 
+  forks of Sila. You can read more about it in the `Invalid Block Tests
+  section of the Blockchain Tests
   tutorial <../blockchain-tutorial.html#invalid-block-tests>`_.
 
   Note that starting with London **gasLimit** cannot be changed by more than 1/1024
-  from the previous value because of `EIP 1559 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md>`_.
+  from the previous value because of `SIP 1559 <https://github.com/sila/SIPs/blob/master/SIPS/sip-1559.md>`_.
   You can specify **baseFeePerGas**, but the block is only valid if it is the same value
   that was calculated from the previous block.
 
@@ -94,19 +94,19 @@ The fields in each block are optional. Only include those fields you need.
 
 - **uncleHeaders**:
 
-  A list of the `uncle blocks (blocks mined at the same time) 
+  A list of the `uncle blocks (blocks mined at the same time)
   <https://www.investopedia.com/terms/u/uncle-block-cryptocurrency.asp>`_.
   Each item in the list has two fields:
- 
+
   - **chainname**: The name of the chain from which the uncle block comes
 
   - **populateFromBlock**: The block number within that chain for the block
     that is an uncle of the block you are specifying.
 
   However, if you write a test with uncles, you need to run it twice, once
-  to get the state hash values to write them in the test filler file, and 
+  to get the state hash values to write them in the test filler file, and
   again to actually run the test.
 
 - **transactions**:
 
-  A list of transaction objects in the block. 
+  A list of transaction objects in the block.

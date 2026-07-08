@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "1) Account A already exists in the state and contains code\nCall to Account B do the following:\n- stores Account A code hash to 1\n- stores Account A code size to 2\n- stores Account A code to 3\n- Run selfdestruct on A\n- stores Account A code hash to 4\n- stores Account A code size to 5\n- stores Account A code to 6\n",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "836fc1bdc520f4789ddf4797bf53bea1695e9e323d96e46a3d284882ff9b1233",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

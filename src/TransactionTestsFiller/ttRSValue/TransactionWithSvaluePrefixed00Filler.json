@@ -1,7 +1,7 @@
 {
     "TransactionWithSvaluePrefixed00" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
         },
         "transaction" :

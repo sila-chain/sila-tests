@@ -1,9 +1,9 @@
 {
     "doubleSelfdestructTest" : {
         "_info" : {
-            "comment" : "The first test case required here \nhttps://github.com/ethereum/tests/issues/431#issue-306081539\n\nImplements: SUC007.0, SUC007.1, SUC007.2, SUC007.3,\n            SUC008.0, SUC008.1, SUC008.2, SUC008.3\n",
+            "comment" : "The first test case required here \nhttps://github.com/sila/tests/issues/431#issue-306081539\n\nImplements: SUC007.0, SUC007.1, SUC007.2, SUC007.3,\n            SUC008.0, SUC008.1, SUC008.2, SUC008.3\n",
             "filling-rpc-server" : "evm version 1.13.0-unstable-6ddb92ca-20230811",
-            "filling-tool-version" : "retesteth-0.3.1-cancun+commit.8cf9b032.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.1-cancun+commit.8cf9b032.Linux.g++",
             "generatedTestHash" : "6bdc89f2cec2f4fc9bfb94b0ed6137d661e7d3b5498e28ea20a3fda734476831",
             "labels" : {
                 "0" : "called-self-destruct",

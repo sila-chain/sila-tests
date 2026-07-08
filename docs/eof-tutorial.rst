@@ -1,7 +1,7 @@
 .. eof_tutorial:
 
 ###########################################
-Ethereum Object Format Tests
+Sila Object Format Tests
 ###########################################
 
 `Ori Pomerantz <mailto://qbzzt1@gmail.com>`_
@@ -10,14 +10,14 @@ In this tutorial you learn how to write and execute EOF tests.
 These tests let you check various combinations to see what is accepted as valid EOF
 and what is rejected.
 
-Make sure you understand `State Transition Tests <state-transition-tutorial.html>`_ 
+Make sure you understand `State Transition Tests <state-transition-tutorial.html>`_
 before you start here.
 
 
 Fillers
 =======
-The fillers for EOF tests are in **.../src/EOFFiller**. 
-This tutorial explains the YML filler, 
+The fillers for EOF tests are in **.../src/EOFFiller**.
+This tutorial explains the YML filler,
 **.../src/EOFFiller/efExample/ymlExampleFiller.yml**.
 
 
@@ -33,21 +33,21 @@ The file includes these sections:
 
 The Data Section
 ----------------
-Each entry in the data is typically **:raw** bytes, because we are checking a data 
-format. However, because EOF is a lot more complicated than most raw data 
+Each entry in the data is typically **:raw** bytes, because we are checking a data
+format. However, because EOF is a lot more complicated than most raw data
 provided in tests, it is a good idea to use multi-line fields with comments.
 For example, this code
 
 ::
 
-  - | 
-      :raw 
+  - |
+      :raw
       0xEF0001  # Magic and version
         010004  # One code segment
         020001  # One code segment
           000a  # Code segment zero length: 10 bytes
         030016  # Data segment length (the code being deployed): 0x16=22 bytes
-        00      # End of header 
+        00      # End of header
 
 This is functionally equivalent to
 
@@ -68,7 +68,7 @@ Here is a sample expect section entry.
   - indexes:
       data:
       - 0-1
-    network: 
+    network:
     - '>=Shanghai'
     result: !!bool true
 

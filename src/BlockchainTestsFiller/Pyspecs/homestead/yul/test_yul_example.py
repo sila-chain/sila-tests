@@ -4,8 +4,8 @@ Test Yul Source Code Examples
 
 import pytest
 
-from ethereum_test_forks import Fork, Frontier, Homestead
-from ethereum_test_tools import (
+from sila_test_forks import Fork, Frontier, Homestead
+from sila_test_tools import (
     Account,
     Environment,
     StateTestFiller,

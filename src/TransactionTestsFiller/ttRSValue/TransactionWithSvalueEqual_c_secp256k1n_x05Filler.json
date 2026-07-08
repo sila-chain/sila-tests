@@ -1,7 +1,7 @@
 {
     "TransactionWithSvalueEqual_c_secp256k1n_x05" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
         },
         "transaction" :

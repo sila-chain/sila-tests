@@ -3,11 +3,11 @@
         "_info" : {
             "comment" : "Test vectors BSHB0018",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "7f80c6b1890ae8e6fcdf71ac54401bde17a48eeff436b95d76815816f928599b",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",
-            "source" : "src/BlockchainTestsFiller/EIPTests/bc4895-withdrawals/amountIs0TouchAccountAndTransactionFiller.json",
+            "source" : "src/BlockchainTestsFiller/SIPTests/bc4895-withdrawals/amountIs0TouchAccountAndTransactionFiller.json",
             "sourceHash" : "971579a65c34cdc9ca41bd2e4035149a80dd7ca96c5a7ed68c83034c91e0b9d4"
         },
         "blocks" : [
@@ -25,7 +25,7 @@
                     "nonce" : "0x0000000000000000",
                     "number" : "0x01",
                     "parentHash" : "0xdfe96ee1b0225b92710f44fa8d5aceb68e3cef0238fe432b35f160ad12e4060b",
-                    "receiptTrie" : "0x056b23fbba480696b65fe5a59b8f2148a1299103c4f57df839233af2cf4ca2d2",
+                    "recsiptTrie" : "0x056b23fbba480696b65fe5a59b8f2148a1299103c4f57df839233af2cf4ca2d2",
                     "stateRoot" : "0x8fad40d2c27f51e29f5b90797afb797c066c3a6a9dc016861d99e8a4150490b2",
                     "timestamp" : "0x079e",
                     "transactionsTrie" : "0xf1b606143e252d52c1c5cbf50f6e2cdb22d6283bf9c98015d68f76b8a2e3b9b9",
@@ -74,7 +74,7 @@
             "nonce" : "0x0000000000000000",
             "number" : "0x00",
             "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
-            "receiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+            "recsiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
             "stateRoot" : "0x71c4b6550ed66adf23e0253c5edfa40059a57f6b5f30ad25fec72bb4a63ccb9e",
             "timestamp" : "0x03b6",
             "transactionsTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",

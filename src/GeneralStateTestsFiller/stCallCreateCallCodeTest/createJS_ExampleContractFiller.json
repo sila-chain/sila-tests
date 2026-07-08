@@ -1,7 +1,7 @@
 {
     "createJS_ExampleContract" : {
         "_info" : {
-            "comment" : "Deploy legacy contract normally" 
+            "comment" : "Deploy legacy contract normally"
         },
         "env" : {
             "currentCoinbase" : "2adc25665018aa1fe0e6bc666dac8fc2697ff9ba",

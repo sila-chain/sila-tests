@@ -18,9 +18,9 @@ createCodeSizeLimit:
     b94f5374fce5edbc8e2a8697c15331677e6ebf0b:
       balance: 0
       code: |
-        :yul berlin 
+        :yul berlin
         {
-          mstore(0, calldataload(0)) 
+          mstore(0, calldataload(0))
           sstore(0, create(0, 0, calldatasize()))
           sstore(1, 1)
         }
@@ -28,7 +28,7 @@ createCodeSizeLimit:
       storage: {}
 
   transaction:
-    data: 
+    data:
       - ':label valid :yul berlin { return(0, 0x6000) }'
       - ':label invalid :yul berlin { return(0, 0x6001) }'
     gasLimit:

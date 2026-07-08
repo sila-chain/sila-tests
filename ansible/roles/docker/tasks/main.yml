@@ -12,9 +12,9 @@
     - linux-generic
     - python-pip
 
-- name: Kernel update needs a restart 
+- name: Kernel update needs a restart
   sudo: true
-  command: shutdown -r now 
+  command: shutdown -r now
   async: 0
   poll: 0
   ignore_errors: true
@@ -28,7 +28,7 @@
   sudo: true
   # install script from https://docs.docker.com/installation/ubuntulinux/
   # TODO this is not idempotent
-  shell: curl -sSL https://get.docker.com/ubuntu/ | sudo sh  
+  shell: curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 
 - name: install docker python API
   sudo: true

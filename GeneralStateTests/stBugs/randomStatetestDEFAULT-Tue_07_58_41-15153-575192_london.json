@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "This is a canon example of a test found by fuzzing with EVMlab, demoing how a suicide-created-but-empty account has a non-zero codehash in geth",
             "filling-rpc-server" : "evm version 1.11.4-unstable-e14043db-20230308",
-            "filling-tool-version" : "retesteth-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.0-shanghai+commit.fd2c0a83.Linux.g++",
             "generatedTestHash" : "25f646ebafb05f2cd38b5214ad6c2acff32588561411cd486eca18940e43a7e9",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

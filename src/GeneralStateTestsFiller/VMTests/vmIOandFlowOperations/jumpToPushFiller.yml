@@ -12,7 +12,7 @@ jumpToPush:
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
 
   pre:
-    
+
     # PUSH1 - A: OK
     000000000000000000000000000000000000001A:
       balance: 0
@@ -1724,7 +1724,7 @@ jumpToPush:
 
 
 
-    
+
     # DelegateCall to the test contract
     cccccccccccccccccccccccccccccccccccccccc:
       balance: 0
@@ -1744,7 +1744,7 @@ jumpToPush:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
   transaction:
     data:
@@ -1842,11 +1842,11 @@ jumpToPush:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
-        data: 
+        data:
         - :label jump-fail
         gas:  !!int -1
         value: !!int -1
@@ -1858,7 +1858,7 @@ jumpToPush:
             0x00: 0x00
 
     - indexes:
-        data: 
+        data:
         - :label jump-ok
         gas:  !!int -1
         value: !!int -1

@@ -1,5 +1,5 @@
 ---
-- name: create default security group 
+- name: create default security group
   ec2_group:
     name: "{{ security_group }}"
     region: "{{ region }}"
@@ -16,17 +16,17 @@
 
 
 - name: start ec2 instances
-  ec2:  
+  ec2:
     group: "{{ security_group }}"
-    instance_type: "{{ instance_type }}" 
-    image: "{{ image }}" 
-    wait: true 
+    instance_type: "{{ instance_type }}"
+    image: "{{ image }}"
+    wait: true
     region: "{{ region }}"
     key_name: "{{ keypair }}"
     instance_tags:
       Name: "{{ item }}"
       Role: client-tests
-    count_tag: 
+    count_tag:
       Name: "{{ item }}"
     exact_count: 1
   with_sequence: start=0 end={{ total_no_instances - 1 }} format=testrunner-%1u

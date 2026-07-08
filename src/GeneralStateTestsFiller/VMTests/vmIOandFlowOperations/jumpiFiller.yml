@@ -77,7 +77,7 @@ jumpi:
       # 7  PUSH2 0x600D
       # A  PUSH1 0x00
       # C  SSTORE
-      # D  STOP  
+      # D  STOP
       code: :raw 0x6001600657005B61600D60005500
       nonce: '0'
       storage: {}
@@ -94,7 +94,7 @@ jumpi:
       # 7  PUSH2 0x600D
       # A  PUSH1 0x00
       # C  SSTORE
-      # D  STOP  
+      # D  STOP
       code: :raw 0x6000600657005B61600D60005500
       nonce: '0'
       storage: {}
@@ -234,7 +234,7 @@ jumpi:
 
     # Jump to the data of a push, when it just happens to be
     # 0x5B (jumpdest)
-    # 
+    #
     # Amazingly, but correctly, this fails
     0000000000000000000000000000000000000109:
       balance: '0x0ba1a9ce0ba1a9ce'
@@ -403,8 +403,8 @@ jumpi:
     0000000000000000000000000000000000000110:
       balance: '0x0ba1a9ce0ba1a9ce'
       #  0 PUSH1 0x01
-      #  2 PUSH1 0x0e 
-      #  4 JUMPI 
+      #  2 PUSH1 0x0e
+      #  4 JUMPI
       #  5 JUMPDEST
       #  6 JUMPDEST
       #  .
@@ -449,7 +449,7 @@ jumpi:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             ; limited gas because of the endless loop
             (delegatecall 0x10000 $4 0 0 0 0)
         }
@@ -463,17 +463,17 @@ jumpi:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
   transaction:
     data:
-    # The two old bad_indirect_jump tests 
+    # The two old bad_indirect_jump tests
     - :label jump-hyperspace    :abi f(uint) 0x0100
     - :label jump-hyperspace    :abi f(uint) 0x0101
 
-    # The two old bad_indirect_jump tests, except without the jump 
+    # The two old bad_indirect_jump tests, except without the jump
     - :label not-jump-hyperspace    :abi f(uint) 0x0200
     - :label not-jump-hyperspace    :abi f(uint) 0x0201
 
@@ -541,11 +541,11 @@ jumpi:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
-        data: 
+        data:
         - :label jump-hyperspace
         - :label jump-not-jumpdest
         - :label endless-loop
@@ -564,7 +564,7 @@ jumpi:
 
 
     - indexes:
-        data: 
+        data:
         - :label jump-stop-dest
         - :label jump-dest
         - :label jump-dynamic

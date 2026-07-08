@@ -16,7 +16,7 @@ emptyPostTransfer:
     nonce: 0x0102030405060708
     number: 0
     parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-    receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+    recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
     stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
     timestamp: 0x54c98c81
     transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -41,9 +41,9 @@ emptyPostTransfer:
       balance: '0xba1a9ce'
       nonce: 1
       code: |
-         :yul berlin {             
+         :yul berlin {
              sstore(number(), balance(0xBA5E))
-             sstore(add(0x100,number()), extcodehash(0xBA5E)) 
+             sstore(add(0x100,number()), extcodehash(0xBA5E))
          }
       storage:
         # Values that get overwritten
@@ -63,7 +63,7 @@ emptyPostTransfer:
       balance: 0
       nonce: 1
       code: |
-         :yul berlin {             
+         :yul berlin {
              selfdestruct(0xBA5E)
          }
       storage: {}
@@ -122,7 +122,7 @@ emptyPostTransfer:
       to: 0x000000000000000000000000000000000000DEAD
       value: 0
 
-  
+
     # Write data
     - data: 0x
       gasLimit: 500000

@@ -29,7 +29,7 @@ CREATE2_HighNonceMinus1:
       storage: {}
 
   transaction:
-    data: 
+    data:
       - ''
     gasLimit:
       - 70000000

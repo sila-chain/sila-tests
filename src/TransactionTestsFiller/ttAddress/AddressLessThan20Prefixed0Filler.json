@@ -1,7 +1,7 @@
 {
-    "AddressLessThan20Prefixed0" : 
+    "AddressLessThan20Prefixed0" :
     {
-        "expectException" : 
+        "expectException" :
         {
         },
         "transaction" :

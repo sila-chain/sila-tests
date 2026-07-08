@@ -31,7 +31,7 @@ Format
                     "nonce" : "0x0000000000000000",
                     "number" : "0x00",
                     "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
-                    "receiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+                    "recsiptTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
                     "stateRoot" : "0x14f0692d8daa55f0eb56a1cf1e2b07746d66ddfa3f8bae21fece76d1421b5d47",
                     "timestamp" : "0x54c98c81",
                     "transactionsTrie" : "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
@@ -58,7 +58,7 @@ Format
                  nonce: 0x0102030405060708
                  number: 0
                  parentHash: 0x0000000000000000000000000000000000000000000000000000000000000000
-                 receiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+                 recsiptTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
                  stateRoot: 0xf99eb1626cfa6db435c0836235942d7ccaa935f1ae247d3f1c21e495685f903a
                  timestamp: 0x54c98c81
                  transactionsTrie: 0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
@@ -76,9 +76,9 @@ Interaction with The Merge
 The transition from proof of work (PoW) to proof of stake (PoS) changes the meaning of some
 genesis fields.
 
-* **difficulty** is set to zero for proof of stake genesis blocks. 
+* **difficulty** is set to zero for proof of stake genesis blocks.
   If you try to run a PoS test on an older fork that uses PoW, the default difficulty is `0x020000`.
 * **mixHash** is used for the random value that in production comes from the beacon chain.
   If this value is specified in the genesis block, that value is the "random" value until there is
-  a blockheader with **mixHash**. 
+  a blockheader with **mixHash**.
   When that happens, that **mixHash** value is the random value until the next block with a **mixHash**.

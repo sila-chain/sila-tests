@@ -49,7 +49,7 @@ jump:
       # 5  PUSH2 0x600D
       # 8  PUSH1 0x00
       # A  SSTORE
-      # B  STOP  
+      # B  STOP
       code: :raw 0x600456005B61600D60005500
       nonce: '0'
       storage: {}
@@ -150,7 +150,7 @@ jump:
 
     # Jump to the data of a push, when it just happens to be
     # 0x5B (jumpdest)
-    # 
+    #
     # Amazingly, but correctly, this fails
     0000000000000000000000000000000000000109:
       balance: '0x0ba1a9ce0ba1a9ce'
@@ -265,8 +265,8 @@ jump:
     # Jump into a big list of JUMPDESTs
     0000000000000000000000000000000000000110:
       balance: '0x0ba1a9ce0ba1a9ce'
-      #  0 PUSH1 0x0e 
-      #  2 JUMP 
+      #  0 PUSH1 0x0e
+      #  2 JUMP
       #  3 JUMPDEST
       #  4 JUMPDEST
       #  .
@@ -287,7 +287,7 @@ jump:
     cccccccccccccccccccccccccccccccccccccccc:
       balance: '0x0ba1a9ce0ba1a9ce'
       code: |
-        {  
+        {
             ; limited gas because of the endless loop
             (delegatecall 0x10000 (+ 0x100 $4) 0 0 0 0)
         }
@@ -301,13 +301,13 @@ jump:
       code: '0x'
       nonce: '0'
       storage: {}
-      
+
 
 
 
   transaction:
     data:
-    # The two old bad_indirect_jump tests 
+    # The two old bad_indirect_jump tests
     - :label jump-hyperspace    :abi f(uint) 0
     - :label jump-hyperspace    :abi f(uint) 1
 
@@ -360,11 +360,11 @@ jump:
     value:
     - '1'
     secretKey: "45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8"
-    
-    
+
+
   expect:
     - indexes:
-        data: 
+        data:
         - :label jump-hyperspace
         - :label jump-not-jumpdest
         - :label endless-loop
@@ -381,7 +381,7 @@ jump:
 
 
     - indexes:
-        data: 
+        data:
         - :label jump-stop-dest
         - :label jump-dest
         - :label jump-dynamic

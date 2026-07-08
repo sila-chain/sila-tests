@@ -3,7 +3,7 @@
         "_info" : {
             "comment" : "A state test with invalid transaction example filler",
             "filling-rpc-server" : "evm version 1.11.5-unstable-5d23d21f-20230320",
-            "filling-tool-version" : "retesteth-0.3.1-shanghai+commit.18385406.Linux.g++",
+            "filling-tool-version" : "retestsil-0.3.1-shanghai+commit.18385406.Linux.g++",
             "generatedTestHash" : "dc9e058cdaf2f054901dcabb54b270f086e33678b3ad2080ea514438078e1372",
             "lllcversion" : "Version: 0.5.14-develop.2022.7.30+commit.a096d7a9.Linux.g++",
             "solidity" : "Version: 0.8.17+commit.8df45f5f.Linux.g++",

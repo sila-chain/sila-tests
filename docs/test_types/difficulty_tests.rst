@@ -3,7 +3,7 @@
 Difficulty Test
 ---------------
 
-Location `/BasicTests <https://github.com/ethereum/tests/tree/develop/BasicTests>`_
+Location `/BasicTests <https://github.com/sila/tests/tree/develop/BasicTests>`_
 
 
 Test Implementation
@@ -15,10 +15,10 @@ These tests are designed to just check the difficulty formula of a block.
 
    difficulty = DIFFICULTY(currentBlockNumber, currentTimestamp, parentTimestamp, parentDifficulty)
 
-described at `EIP2 <https://github.com/ethereum/EIPs/blob/master/EIPS/eip-2.md>`_
+described at `SIP2 <https://github.com/sila/SIPs/blob/master/SIPS/sip-2.md>`_
 point 4 with homestead changes.
 
-So basically this .json tests are just to check how this function is calculated on different function parameters (parentDifficulty, currentNumber) in its extremum points. 
+So basically this .json tests are just to check how this function is calculated on different function parameters (parentDifficulty, currentNumber) in its extremum points.
 
 There are several test files:
 

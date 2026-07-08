@@ -125,7 +125,7 @@ const boilerPlate2 = `
 
 
   transaction:
-    data: 
+    data:
     - :raw 0x00
     gasLimit:
     - '80000000'

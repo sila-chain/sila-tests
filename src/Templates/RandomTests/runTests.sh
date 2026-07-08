@@ -20,7 +20,7 @@ do
      printf "            -b Blockchain test (default state test)\n"
      printf "            -t Path to tests repository\n"
      printf "            -e Path to save error files\n"
-     printf "            -r Use retesteth, not a docker container\n"
+     printf "            -r Use retestsil, not a docker container\n"
      exit 2;;
   esac
 done

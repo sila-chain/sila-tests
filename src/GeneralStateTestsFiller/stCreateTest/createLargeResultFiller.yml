@@ -18,7 +18,7 @@ createLargeResult:
 
   pre:
     # Constructor code
-    000000000000000000000000000000000000C0DE:    
+    000000000000000000000000000000000000C0DE:
       balance: 0
       nonce: 1
       storage: {}
@@ -30,7 +30,7 @@ createLargeResult:
 
            // Copy the requested length from the constructor code
            codecopy(0x100, 0x100, 0x20)
-           
+
            // Return it as the new contract
            return(0, mload(0x100))
         }
@@ -77,9 +77,9 @@ createLargeResult:
          sstore(0, newAddr)
          sstore(1, sub(sload(1), gas()))
          sstore(2, extcodehash(newAddr))
-         
+
          let noOptimization := msize()
-       }        
+       }
       nonce: 1
       storage:
          0: 0x60A7
@@ -136,7 +136,7 @@ createLargeResult:
 
   expect:
     - indexes:
-        data: 
+        data:
         - :label CREATE-RETURN
       network:
         - 'London'
@@ -145,13 +145,13 @@ createLargeResult:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             # Address
-            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e 
+            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e
             # Remaining gas
             1: 0x017776
             # Hash of new contract code
             2: 0xd956c0abd597440481902014a37b733358ee7685461eb1b5916eefd83381e6d9
     - indexes:
-        data: 
+        data:
         - :label CREATE-RETURN
       network:
         - '>=Shanghai'
@@ -159,7 +159,7 @@ createLargeResult:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             # Address
-            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e 
+            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e
             # Remaining gas
             1: 0x017788
             # Hash of new contract code
@@ -167,7 +167,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-RETURN
       network:
         - 'London'
@@ -182,7 +182,7 @@ createLargeResult:
             # Hash of new contract code
             2: 0xd956c0abd597440481902014a37b733358ee7685461eb1b5916eefd83381e6d9
     - indexes:
-        data: 
+        data:
         - :label CREATE2-RETURN
       network:
         - '>=Shanghai'
@@ -198,7 +198,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT
       network:
         - 'London'
@@ -213,7 +213,7 @@ createLargeResult:
             # Hash of non existent contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT
       network:
         - '>=Shanghai'
@@ -229,7 +229,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT
       network:
         - 'London'
@@ -244,7 +244,7 @@ createLargeResult:
             # Hash of non existent contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT
       network:
         - '>=Shanghai'
@@ -262,7 +262,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-RETURN-MAX
       network:
         - 'London'
@@ -271,13 +271,13 @@ createLargeResult:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             # Address
-            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e 
+            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e
             # Remaining gas
             1: 0x4bbcdb
             # Hash of new contract code
             2: 0xdcbcc213f0c91b71d38dedd06c95ccb99467b9b05f275bed536de1044f5f18fa
     - indexes:
-        data: 
+        data:
         - :label CREATE-RETURN-MAX
       network:
         - '>=Shanghai'
@@ -285,7 +285,7 @@ createLargeResult:
         cccccccccccccccccccccccccccccccccccccccc:
           storage:
             # Address
-            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e 
+            0: 0x553e6c30af61e7a3576f31311ea8a620f80d047e
             # Remaining gas
             1: 0x4bbced
             # Hash of new contract code
@@ -293,7 +293,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-RETURN-MAX
       network:
         - 'London'
@@ -308,7 +308,7 @@ createLargeResult:
             # Hash of new contract code
             2: 0xdcbcc213f0c91b71d38dedd06c95ccb99467b9b05f275bed536de1044f5f18fa
     - indexes:
-        data: 
+        data:
         - :label CREATE2-RETURN-MAX
       network:
         - '>=Shanghai'
@@ -324,7 +324,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT-MAX
       network:
         - 'London'
@@ -339,7 +339,7 @@ createLargeResult:
             # Hash of non existent contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT-MAX
       network:
         - '>=Shanghai'
@@ -355,7 +355,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT-MAX
       network:
         - 'London'
@@ -370,7 +370,7 @@ createLargeResult:
             # Hash of non existent contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT-MAX
       network:
         - '>=Shanghai'
@@ -387,7 +387,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-RETURN-TOOBIG
       network:
         - '>=London'
@@ -404,7 +404,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-RETURN-TOOBIG
       network:
         - '>=London'
@@ -420,7 +420,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT-TOOBIG
       network:
         - 'London'
@@ -435,7 +435,7 @@ createLargeResult:
             # Hash when there is no contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT-TOOBIG
       network:
         - '>=Shanghai'
@@ -452,7 +452,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT-TOOBIG
       network:
         - 'London'
@@ -467,7 +467,7 @@ createLargeResult:
             # Hash when there is no contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT-TOOBIG
       network:
         - '>=Shanghai'
@@ -484,7 +484,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-RETURN-HUGE
       network:
         - '>=London'
@@ -501,7 +501,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-RETURN-HUGE
       network:
         - '>=London'
@@ -519,7 +519,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT-HUGE
       network:
         - 'London'
@@ -534,7 +534,7 @@ createLargeResult:
             # Hash when there is no contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE-REVERT-HUGE
       network:
         - '>=Shanghai'
@@ -551,7 +551,7 @@ createLargeResult:
 
 
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT-HUGE
       network:
         - 'London'
@@ -566,7 +566,7 @@ createLargeResult:
             # Hash when there is no contract
             2: 0
     - indexes:
-        data: 
+        data:
         - :label CREATE2-REVERT-HUGE
       network:
         - '>=Shanghai'

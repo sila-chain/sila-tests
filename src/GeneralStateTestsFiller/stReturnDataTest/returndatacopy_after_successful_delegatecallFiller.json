@@ -33,16 +33,16 @@
             }
         },
         "expect": [
-            {   
-                "indexes" : { 
-                   "data" : -1, 
-                   "gas" : -1, 
+            {
+                "indexes" : {
+                   "data" : -1,
+                   "gas" : -1,
                    "value" : -1
                 },
                 "network" : [">=Istanbul"],
-                "result" : { 
-                    "0x0f572e5295c57f15886f9b263e2f6d2d6c7b5ec6" : { 
-                        "storage" : { 
+                "result" : {
+                    "0x0f572e5295c57f15886f9b263e2f6d2d6c7b5ec6" : {
+                        "storage" : {
                             "0x00" : "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b"
                         }
                     }

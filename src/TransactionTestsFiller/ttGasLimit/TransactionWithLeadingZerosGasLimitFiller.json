@@ -1,7 +1,7 @@
 {
     "TransactionWithLeadingZerosGasLimit" :
     {
-	    "expectException" : 
+	    "expectException" :
         {
             ">=Frontier" : "LeadingZerosGasLimit"
         },

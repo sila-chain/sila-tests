@@ -10,11 +10,11 @@ Consensus Tests
 ===============
 (aka State Transition Tests)
 
-Consensus tests are test cases for all Ethereum implementations. The test cases are distributed in the "Filled" form, which contains, for example, the expected state root hash after transactions. The filled test cases are usually not written by hand, but generated from "test filler" files. ``retesteth`` executable in combination with test protocol supporting clients (``Geth``, ``Besu``, ``Geth-t8ntool``) can convert test fillers into test cases.
+Consensus tests are test cases for all Sila implementations. The test cases are distributed in the "Filled" form, which contains, for example, the expected state root hash after transactions. The filled test cases are usually not written by hand, but generated from "test filler" files. ``retesteth`` executable in combination with test protocol supporting clients (``Geth``, ``Besu``, ``Geth-t8ntool``) can convert test fillers into test cases.
 
 When you add a test case in the consensus test suite, you are supposed to push both the filler and the filled test cases into the `tests repository`_.
 
-.. _`tests repository`: https://github.com/ethereum/tests
+.. _`tests repository`: https://github.com/sila/tests
 
 
 
@@ -38,35 +38,35 @@ Option 1: Using the docker image
 
 Option 2: Building locally
 --------------------------
-.. _retesteth: https://github.com/ethereum/retesteth
+.. _retesteth: https://github.com/sila/retesteth
 .. _solidity: https://github.com/winsvega/solidity
-.. _`Retesteth`: https://github.com/ethereum/retesteth
+.. _`Retesteth`: https://github.com/sila/retesteth
 .. _`Solidity`: https://github.com/winsvega/solidity
-.. _`Tests`: https://github.com/ethereum/tests
+.. _`Tests`: https://github.com/sila/tests
 
 Get the following tools and compile it according to the build instructions:
 
 ============== ====================================
  `Retesteth`_  Test generator
  `Solidity`_   lll code to evm bytecode translator
- `Tests`_      Ethereum tests repository
+ `Tests`_      Sila tests repository
 ============== ====================================
 
 Once setup, create environment variable (so to skip --testpath command for retesteth)
 
 .. code:: bash
 
-    // Given that you cloned repos to ~/Ethereum
+    // Given that you cloned repos to ~/Sila
     // Add line replacing the path to the test repository you cloned
     sudo nano /etc/environment
-    ETHEREUM_TEST_PATH="/home/user/Ethereum/tests"
+    SILA_TEST_PATH="/home/user/Sila/tests"
 
     // Add lllc to system executables
-    sudo ln -s /home/user/Ethereum/solidity/build/lllc/lllc /bin/lllc
+    sudo ln -s /home/user/Sila/solidity/build/lllc/lllc /bin/lllc
 
     // Add retesteth to system executables (optional)
-    sudo ln -s /home/user/Ethereum/retesteth/build/retesteth/retesteth /bin/retesteth
-    
+    sudo ln -s /home/user/Sila/retesteth/build/retesteth/retesteth /bin/retesteth
+
     // Reboot for the changes to take effect
 
 
@@ -75,8 +75,8 @@ Generating a GeneralStateTest Case
 
 .. note::
     Additional wiki on retesteth commands and test generation:
-    https://github.com/ethereum/retesteth/wiki/Retesteth-commands
-    https://github.com/ethereum/retesteth/wiki/Creating-a-State-Test-with-retesteth
+    https://github.com/sila/retesteth/wiki/Retesteth-commands
+    https://github.com/sila/retesteth/wiki/Creating-a-State-Test-with-retesteth
 
 Designing a Test Case
 ---------------------
@@ -90,7 +90,7 @@ For creating a new GeneralStateTest case, you need:
 
 For an idea, peek into `an existing test filler`_ under ``src/GeneralStateTestsFiller`` in the tests repository.
 
-.. _`an existing test filler`: https://github.com/ethereum/tests/blob/develop/src/GeneralStateTestsFiller/stExample/add11Filler.json
+.. _`an existing test filler`: https://github.com/sila/tests/blob/develop/src/GeneralStateTestsFiller/stExample/add11Filler.json
 
 
 Usually, when a test is about an instruction, the pre-state contains a contract with a code containing the instruction.  Typically, the contract stores a value in the storage, so that the instruction's behavior is visible in the storage in the expectation.
@@ -233,10 +233,10 @@ Moreover, these transactions are tested under different versions of the protocol
 ``indexes`` field specifies a subset of the transactions.  ``-1`` means "whichever".
 ``"data" : 0`` points to the first element in the ``data`` field in ``transaction``.
 
-``network`` field is somehow similar.  It specifies the versions of the protocol for which the expectation applies.  For expectations common to all versions, say ``"network" : [">=Frontier"] ( the old ``"network" : ALL`` syntax is not supported any more). As you can see in this example to reference all networks it is also possible to use greater or greater equal syntax like ``"network": [">=Byzantium"]`` to select a subset of forks to generate tests for (here: all forks from ``Byzantium`` onwards). 
+``network`` field is somehow similar.  It specifies the versions of the protocol for which the expectation applies.  For expectations common to all versions, say ``"network" : [">=Frontier"] ( the old ``"network" : ALL`` syntax is not supported any more). As you can see in this example to reference all networks it is also possible to use greater or greater equal syntax like ``"network": [">=Byzantium"]`` to select a subset of forks to generate tests for (here: all forks from ``Byzantium`` onwards).
 
 .. note::
-   Order of forks: ``Frontier`` < ``Homestead`` < ``EIP150`` < ``EIP158`` < ``Byzantium`` < ``Constantinople``
+   Order of forks: ``Frontier`` < ``Homestead`` < ``SIP150`` < ``SIP158`` < ``Byzantium`` < ``Constantinople``
 
 Filling the Test
 ----------------
@@ -245,20 +245,20 @@ The test filler file is not for consumption.  The filler file needs to be filled
 
 First, if you created a new subdirectory for the filler, you need to edit the source of ``Retesteth`` so that ``retesteth`` recognizes the new subdirectory.  The file to edit is `StateTests.cpp`_, which lists the names of the subdirectories scanned for GeneralStateTest filters.
 
-.. _`StateTests.cpp`: https://github.com/ethereum/aleth/blob/master/test/tools/jsontests/StateTests.cpp
+.. _`StateTests.cpp`: https://github.com/sila/aleth/blob/master/test/tools/jsontests/StateTests.cpp
 
 
 After building ``retesteth``, you are ready to fill the test.
 
 
-Set the environmental variable ``ETHEREUM_TEST_PATH`` to the directory where ``tests`` repository is checked out, this should be provided as an absolute path:
+Set the environmental variable ``SILA_TEST_PATH`` to the directory where ``tests`` repository is checked out, this should be provided as an absolute path:
 
 .. code:: bash
-   
-   export ETHEREUM_TEST_PATH="<LOCAL_PATH_TO_ETH_TESTS>" 
+
+   export SILA_TEST_PATH="<LOCAL_PATH_TO_ETH_TESTS>"
 
 .. note::
-   Depending on your shell, there are various ways to permanently set up ``ETHEREUM_TEST_PATH`` environment variable. For example, adding the export statement from above to ``~/.bashrc`` might work for ``bash`` users.
+   Depending on your shell, there are various ways to permanently set up ``SILA_TEST_PATH`` environment variable. For example, adding the export statement from above to ``~/.bashrc`` might work for ``bash`` users.
 
 Then run:
 
@@ -275,7 +275,7 @@ Then run:
 ``retesteth`` with ``--filltests`` fills every test filler it finds. The command might modify existing test cases. After running ``retesteth`` with ``--filltests`` , try running ``git status`` in the ``tests`` directory. If ``git status`` indicates changes in unexpected files, that is an indication that the behavior of ``Aleth`` changed unexpectedly.
 
 .. note::
-   If ``retesteth`` is looking for tests in the ``../../test/jsontests`` directory (falling back to a path relative to the ``Retesteth`` build directory if ``ETHEREUM_TEST_PATH`` is not set), you have probably not specified the ``--testpath`` option (use an absolute path if you do).
+   If ``retesteth`` is looking for tests in the ``../../test/jsontests`` directory (falling back to a path relative to the ``Retesteth`` build directory if ``SILA_TEST_PATH`` is not set), you have probably not specified the ``--testpath`` option (use an absolute path if you do).
 
 
 Trying the Filled Test
@@ -284,7 +284,7 @@ Trying the Filled Test
 Trying the Filled Test Locally
 ++++++++++++++++++++++++++++++
 
-For trying the filled test, in ``retesteth/build`` directory, run the following (with ``ETHEREUM_TEST_PATH`` set):
+For trying the filled test, in ``retesteth/build`` directory, run the following (with ``SILA_TEST_PATH`` set):
 
 .. code:: bash
 
@@ -294,20 +294,20 @@ For trying the filled test, in ``retesteth/build`` directory, run the following 
 Trying the Filled Test in Travis CI
 +++++++++++++++++++++++++++++++++++
 
-The following instructions are highly specific to the Aleth C++ Ethereum client, which is currently used for test generation. Once a new test generation tool is ready, this process will likely change.
+The following instructions are highly specific to the Aleth C++ Sila client, which is currently used for test generation. Once a new test generation tool is ready, this process will likely change.
 
-Goal here is the get the ``Aleth`` Travis CI build to run the new tests with ``Aleth`` to check they pass. To do that a PR has to be submitted to Aleth that updates the git submodule for ethereum/tests to point to a branch with the new tests.
+Goal here is the get the ``Aleth`` Travis CI build to run the new tests with ``Aleth`` to check they pass. To do that a PR has to be submitted to Aleth that updates the git submodule for sila/tests to point to a branch with the new tests.
 
-Preparations on the ethereum/tests side
+Preparations on the sila/tests side
 ---------------------------------------
 
-For trying the filled test(s) on ``Travis CI`` for ``Aleth``, the new test cases need to exist in a branch in ``ethereum/tests``. For this, ask somebody with a push permission to ``ethereum/tests``.
+For trying the filled test(s) on ``Travis CI`` for ``Aleth``, the new test cases need to exist in a branch in ``sila/tests``. For this, ask somebody with a push permission to ``sila/tests``.
 
 
 Preparations on the Aleth side
 ------------------------------
 
-Enter ``aleth/test/jsontests`` directory, and checkout the new branch in ``ethereum/tests`` as described in the instructions above. Then go back to the main ``Aleth`` directory and perform ``git add test/jsontests`` followed by ``git commit``.
+Enter ``aleth/test/jsontests`` directory, and checkout the new branch in ``sila/tests`` as described in the instructions above. Then go back to the main ``Aleth`` directory and perform ``git add test/jsontests`` followed by ``git commit``.
 
 When you file this commit as a pull request to ``Aleth``, Travis CI should try the newly filled tests.
 
@@ -321,7 +321,7 @@ If changes in the ``Aleth`` code itself were necessary, also file a pull request
 Advanced: Converting a GeneralStateTest Case into a BlockchainTest Case
 =======================================================================
 
-In the tests repository, each GeneralStateTest is eventually translated into a BlockchainTest.  This can be done by the following sequence of commands (remember ``ETHEREUM_TEST_PATH`` :-)).
+In the tests repository, each GeneralStateTest is eventually translated into a BlockchainTest.  This can be done by the following sequence of commands (remember ``SILA_TEST_PATH`` :-)).
 
 .. code::
 
@@ -355,7 +355,7 @@ Advanced: Retesteth selectors
 
 
 * ``--singletest callcall_00`` runs only one test of the name ``callcall_00``.
-* ``--singlenet EIP150`` runs tests only using one version of the protocol.
+* ``--singlenet SIP150`` runs tests only using one version of the protocol.
 * ``-d 0`` runs tests only on the first element in the ``data`` array of GeneralStateTest.
 * ``-g 0`` runs tests only on the first element in the ``gas`` array of GeneralStateTest.
 * ``-v 0`` runs tests only on the first element in the ``value`` array of GeneralStateTest.

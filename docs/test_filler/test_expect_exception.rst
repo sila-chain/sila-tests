@@ -1,4 +1,4 @@
-This field specifies the exception we expect to see raised by for this 
+This field specifies the exception we expect to see raised by for this
 transaction. It is optional - you only add it if an exception is expected.
 
   .. list-table::
@@ -68,6 +68,6 @@ The fields are fork specifications:
          <Berlin
 
 
-The value is an exception name. You can see the list 
-`in the retesteth code 
-<https://github.com/ethereum/retesteth/blob/develop/retesteth/configs/clientconfigs/t8ntool.cpp#L158-L166>`_.
+The value is an exception name. You can see the list
+`in the retestsil code
+<https://github.com/sila/retestsil/blob/develop/retestsil/configs/clientconfigs/t8ntool.cpp#L158-L166>`_.

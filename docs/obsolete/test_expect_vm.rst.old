@@ -1,7 +1,7 @@
 Expect
 ======
-This section contains the information we expect to see after the test is 
-concluded. Virtual machine tests use a simplified version, which 
+This section contains the information we expect to see after the test is
+concluded. Virtual machine tests use a simplified version, which
 includes only one address and for that address only the storage.
 
 
@@ -31,7 +31,7 @@ Format
                     }
                  }
               }
-           }          
+           }
 
 
      -

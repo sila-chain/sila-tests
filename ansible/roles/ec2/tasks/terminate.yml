@@ -1,5 +1,5 @@
 ---
-- name: Terminate ec2 instances 
+- name: Terminate ec2 instances
   local_action: ec2
         state=absent
         instance_ids={{ ec2_id }}

@@ -19,7 +19,7 @@ extCodeHashDeletedAccount:
     # get account A codehash, destructs account A, get account A codehash
     095e7baea6a6c7c4c2dfeb977efac326af552d87:
       balance: '1000000000000000000'
-      code: |   
+      code: |
         {
           ;; Gets external code hash, stores it in [[0]]
           (CALL 150000 0xdeadbeef00000000000000000000000000000000 0 0 0 0 32)
@@ -94,7 +94,7 @@ extCodeHashDeletedAccount:
         {
           ;;(MSTORE 0 (EXTCODESIZE 0xaaaaaaaa00000000000000000000000000000000))
           ;;(EXTCODECOPY 0xaaaaaaaa00000000000000000000000000000000
-            
+
           (EXTCODECOPY 0xaaaaaaaa00000000000000000000000000000000
                        0
                        0

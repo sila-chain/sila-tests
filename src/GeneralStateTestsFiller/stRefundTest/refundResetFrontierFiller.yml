@@ -22,7 +22,7 @@ refundResetFrontier:
       balance: 0
       nonce: 1
       code: |
-        :yul berlin 
+        :yul berlin
         {
            /* Constructor to return a large buffer as code */
            mstore8(0x00, 0x61)   /* PUSH2 0x1000 */
@@ -42,13 +42,13 @@ refundResetFrontier:
     0x000000000000000000000000000000000000ca11:
       balance: 0
       nonce: 1
-      code: | 
-        :yul berlin 
+      code: |
+        :yul berlin
         {
            /* Avoid running into the different cost of zeros in a tx
             * slt checks if the top bit is on
             */
-           let data := slt(calldataload(0), 0) 
+           let data := slt(calldataload(0), 0)
            let enoughGas := slt(calldataload(1), 0)
 
            /* Get a refund (or not) */
@@ -68,7 +68,7 @@ refundResetFrontier:
            sstore(0x0d, data)
            sstore(0x0e, data)
            sstore(0x0f, data)
- 
+
            let gasAmt
 
            /* Just enough gas */
@@ -76,7 +76,7 @@ refundResetFrontier:
 
            /* Fail at the end of the CREATE */
            if eq(enoughGas, 0) { gasAmt := 32480 }
-       
+
            let res := call(gasAmt, 0xc0de, 0, 0, 0, 0, 0)
 
            let noOptimization := msize()
@@ -181,9 +181,9 @@ refundResetFrontier:
 
 # Refund
 #     Enough gas for CREATE:     66936 gas
-#     Not enough gas for CREATE: 66931 gas 
+#     Not enough gas for CREATE: 66931 gas
 
 
 # Savings (from CREATE failings OOG)
-#     No refund: 10 gas 
-#     Refund:     5 gas    
+#     No refund: 10 gas
+#     Refund:     5 gas

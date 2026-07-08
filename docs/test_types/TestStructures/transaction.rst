@@ -39,7 +39,7 @@ Transaction section defines single transaction to be executed in BlockchainTest'
    Fields `r`, `s` are u256 and can be less than 32 bytes!
 
 .. Note::
-   There is an EIP limiting `s` max value (source?). From a certain fork transactions with `s` value > `sMaxValue` are considered to be invalid.
+   There is an SIP limiting `s` max value (source?). From a certain fork transactions with `s` value > `sMaxValue` are considered to be invalid.
 
 
 **Fields**

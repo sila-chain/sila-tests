@@ -6,20 +6,20 @@ mkdir --parents ~/testout
 cd ~/testout
 export EVMJIT="-cache=0"
 while [ 1 ]
-do	
-	TEST="$(docker run --rm --entrypoint=\"/cpp-ethereum/build/test/createRandomStateTest\" ethereum/cppjit-testrunner)"
+do
+	TEST="$(docker run --rm --entrypoint=\"/cpp-sila/build/test/createRandomStateTest\" sila/cppjit-testrunner)"
 	# echo "$TEST"
-	
-	# test pyethereum
-	OUTPUT_PYTHON="$(docker run --rm ethereum/python-testrunner --notrace <<< "$TEST")"
+
+	# test pysila
+	OUTPUT_PYTHON="$(docker run --rm sila/python-testrunner --notrace <<< "$TEST")"
 	RESULT_PYTHON=$?
 
 	# test go
-	OUTPUT_GO="$(docker run --rm ethereum/go-testrunner "$TEST")"
+	OUTPUT_GO="$(docker run --rm sila/go-testrunner "$TEST")"
 	RESULT_GO=$?
-	
+
 	# test cpp-jit
-	OUTPUT_CPPJIT="$(docker run --rm ethereum/cppjit-testrunner "$TEST")"
+	OUTPUT_CPPJIT="$(docker run --rm sila/cppjit-testrunner "$TEST")"
 	RESULT_CPPJIT=$?
 
 	# go fails

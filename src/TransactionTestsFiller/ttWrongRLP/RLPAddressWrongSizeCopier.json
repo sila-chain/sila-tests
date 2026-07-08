@@ -25,11 +25,11 @@
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "EIP150": {
+            "SIP150": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "EIP158": {
+            "SIP158": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },

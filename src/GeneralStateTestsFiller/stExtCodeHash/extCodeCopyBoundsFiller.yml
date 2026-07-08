@@ -1,4 +1,4 @@
-# EXTCODECOPY edge case https://github.com/ethereum/tests/issues/438
+# EXTCODECOPY edge case https://github.com/sila/tests/issues/438
 ---
 extCodeCopyBounds:
   env:
@@ -9,7 +9,7 @@ extCodeCopyBounds:
     currentTimestamp: "1000"
     previousHash: 5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6
   _info:
-    comment: "EXTCODECOPY edge case https://github.com/ethereum/tests/issues/438"
+    comment: "EXTCODECOPY edge case https://github.com/sila/tests/issues/438"
   pre:
     095e7baea6a6c7c4c2dfeb977efac326af552d87:
       balance: '1000000000000000000'
@@ -20,7 +20,7 @@ extCodeCopyBounds:
 
           [[0]] (MLOAD 0)
           [[1]] (MLOAD 32)
-          
+
           (EXTCODECOPY 0xe713449c212d891357cc2966816b1d528cfb59e0 1 0x010000000000000000000000000000000000000000 12)
 
           [[2]] (MLOAD 0)

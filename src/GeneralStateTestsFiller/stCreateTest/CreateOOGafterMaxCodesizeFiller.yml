@@ -15,7 +15,7 @@ CreateOOGafterMaxCodesize:
       code: |
         :yul berlin
         {
-          // If calldata > 0, self-destruct, otherwise 
+          // If calldata > 0, self-destruct, otherwise
           sstore(0, codesize())
           if gt(calldatasize(), 0) {
             selfdestruct(0)
@@ -175,7 +175,7 @@ CreateOOGafterMaxCodesize:
   expect:
 
     - indexes:
-        data: 
+        data:
         - :label LowContractCount_NoDelegateCreate_CallCreateOOG
         gas:  !!int -1
         value: !!int -1
@@ -229,7 +229,7 @@ CreateOOGafterMaxCodesize:
           storage: {
             '0': '0x6000'
           }
-        
+
         # Call contracts (OOG'd):
         # #1
         76e2310dc9277b22ffceb40d49229131674ebe02:
@@ -264,7 +264,7 @@ CreateOOGafterMaxCodesize:
         # #10
         bd205415c24eb289b6a275baae74527b92b49fe2:
           shouldnotexist: 1
-        
+
         # Call contracts (No OOG, Self-destructed):
         # #1
         76e2310dc9277b22ffceb40d49229131674ebe02:
@@ -360,7 +360,7 @@ CreateOOGafterMaxCodesize:
           storage: {
             '0': '0x6000'
           }
-        
+
         # Call contracts (OOG'd):
         # #1
         76e2310dc9277b22ffceb40d49229131674ebe02:
@@ -395,7 +395,7 @@ CreateOOGafterMaxCodesize:
         # #250
         336debb8ce5a3cf4b40be471ac04f77b51f2d2e1:
           shouldnotexist: 1
-        
+
         # Call contracts (No OOG, Self-destructed):
         # #1
         76e2310dc9277b22ffceb40d49229131674ebe02:
@@ -403,7 +403,7 @@ CreateOOGafterMaxCodesize:
         # #244
         638e1b782452eaf5270509651f665d2c00e599ff:
           shouldnotexist: 1
-          
+
         # Call contracts (No OOG, Not Self-destructed):
         # #245
         511c6c5591eacfc8b9bf2658916225418508f548:

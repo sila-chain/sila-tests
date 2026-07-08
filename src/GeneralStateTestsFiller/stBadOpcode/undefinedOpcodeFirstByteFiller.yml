@@ -19,9 +19,9 @@ undefinedOpcodeFirstByte:
       balance: 0
       code: |
         :yul berlin
-        { 
-          for { let opcode := 0 } lt(opcode, 256) { opcode := add(opcode, 1) } 
-          { 
+        {
+          for { let opcode := 0 } lt(opcode, 256) { opcode := add(opcode, 1) }
+          {
             let addr := shl(152, opcode)
             if call(10000, addr, 0, 0, 0, 0, 0) { sstore(opcode, 1) }
           }
@@ -1328,7 +1328,7 @@ undefinedOpcodeFirstByte:
 
 
   transaction:
-    data: 
+    data:
       - ''
     gasLimit:
       - 70000000
@@ -1512,7 +1512,7 @@ undefinedOpcodeFirstByte:
             '0x59': 1 # MSIZE
             '0x5A': 1 # GAS
             '0x5B': 1 # JUMPDEST
-            
+
             '0x5F': 1 # PUSH0
             '0x60': 1 # PUSHx ...
             '0x61': 1
