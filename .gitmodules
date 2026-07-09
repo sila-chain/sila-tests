@@ -1,3 +1,3 @@
-[submodule "LegacyTests"]
-	path = LegacyTests
-	url = https://github.com/sila/legacytests
+[submodule "SilaLegacyTests"]
+        path = SilaLegacyTests
+        url = https://github.com/sila-chain/sila-legacytests.git
