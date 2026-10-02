@@ -30,7 +30,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x8c9f64bd93a9c07f8e59624e5499bd683d11b52eedcbc1b204b14f1cc5fe5e95",
                     "indexes" : {
@@ -102,7 +102,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c613900000000000000000000000000000000000000000000000000000000000000061ca04f7114759d69db050a87677a2dff3d6f9399f0b66da593b2cc50748708377f6fa042f32766ce38ec3cee0d2c2dbc4d14b9cbf94e4af75b0584a04c933457bb83bb"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0xa34c8e6e77f275e218e98913265aa1b41c6af0b0e9dd0c2a71ebc7333d19c17a",
                     "indexes" : {
@@ -174,7 +174,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c613900000000000000000000000000000000000000000000000000000000000000061ca04f7114759d69db050a87677a2dff3d6f9399f0b66da593b2cc50748708377f6fa042f32766ce38ec3cee0d2c2dbc4d14b9cbf94e4af75b0584a04c933457bb83bb"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0xf8b8571b911b3e93052f8ae4b9ba66232737441cbe32d670c0a25fd5fb746556",
                     "indexes" : {
@@ -318,7 +318,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c613900000000000000000000000000000000000000000000000000000000000000061ca04f7114759d69db050a87677a2dff3d6f9399f0b66da593b2cc50748708377f6fa042f32766ce38ec3cee0d2c2dbc4d14b9cbf94e4af75b0584a04c933457bb83bb"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0xf8b8571b911b3e93052f8ae4b9ba66232737441cbe32d670c0a25fd5fb746556",
                     "indexes" : {

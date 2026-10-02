@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0xe10534382e41fb7d37bc11468965e7302e2f8d25cc2e92824477d7ecd25dc5d5",
                     "indexes" : {
@@ -43,7 +43,7 @@
                     "txbytes" : "0xf861800a8401312d0094095e7baea6a6c7c4c2dfeb977efac326af552d8701801ba085a7500c32dbdb9e5a2fa691a1ec545464fd47a1ab0100f56e99ae45a0b4254aa067ce7d6e037837250f485ad35e35e4d5a950eb75094ea667e9e2fb9d35eefad3"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x8ddd6cf9fc9445fccd756746978193a88f2450409c67bc87a6a3478dce3afbba",
                     "indexes" : {
@@ -65,7 +65,7 @@
                     "txbytes" : "0xf861800a8401312d0094095e7baea6a6c7c4c2dfeb977efac326af552d8701801ba085a7500c32dbdb9e5a2fa691a1ec545464fd47a1ab0100f56e99ae45a0b4254aa067ce7d6e037837250f485ad35e35e4d5a950eb75094ea667e9e2fb9d35eefad3"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x717cbdeab78597d5b58c6afcf5306fa24555d71f48c27aff222cf4bf5c403ba0",
                     "indexes" : {
@@ -109,7 +109,7 @@
                     "txbytes" : "0xf861800a8401312d0094095e7baea6a6c7c4c2dfeb977efac326af552d8701801ba085a7500c32dbdb9e5a2fa691a1ec545464fd47a1ab0100f56e99ae45a0b4254aa067ce7d6e037837250f485ad35e35e4d5a950eb75094ea667e9e2fb9d35eefad3"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x9d68de915b996ecb63bf48cd92d5ed90f555e5e2d3eedb1e797c321863bd8dda",
                     "indexes" : {

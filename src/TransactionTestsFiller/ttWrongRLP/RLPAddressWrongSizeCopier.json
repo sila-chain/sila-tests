@@ -1,7 +1,7 @@
 {
     "RLPAddressWrongSize": {
         "result": {
-            "Shanghai": {
+            "SilaShanghai": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
@@ -9,19 +9,19 @@
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Berlin": {
+            "SilaBerlin": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "SilaByzantium": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "SilaConstantinople": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "SilaConstantinopleFix": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
@@ -37,15 +37,15 @@
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Homestead": {
+            "SilaHomestead": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "SilaIstanbul": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "SilaLondon": {
                 "exception": "AddressTooShort",
 				"intrinsicGas" : "0x00"
             }

@@ -11,19 +11,19 @@
             "sourceHash" : "d4c6a5aa9db54920f0ddda84ef1713bac86a056f82bd5003664cee168db96d81"
         },
         "result" : {
-            "Berlin" : {
+            "SilaBerlin" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "Byzantium" : {
+            "SilaByzantium" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "Constantinople" : {
+            "SilaConstantinople" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix" : {
+            "SilaConstantinopleFix" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
@@ -39,15 +39,15 @@
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "Homestead" : {
+            "SilaHomestead" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "Istanbul" : {
+            "SilaIstanbul" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "London" : {
+            "SilaLondon" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
@@ -55,7 +55,7 @@
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "exception" : "AddressTooLong",
                 "intrinsicGas" : "0x00"
             }

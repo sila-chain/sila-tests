@@ -11,19 +11,19 @@
             "sourceHash" : "b3b9e0b57c83a57ffbad07259ba99b0121abe44323b4125e7f200a12c6d6f81d"
         },
         "result" : {
-            "Berlin" : {
+            "SilaBerlin" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
-            "Byzantium" : {
+            "SilaByzantium" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
-            "Constantinople" : {
+            "SilaConstantinople" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix" : {
+            "SilaConstantinopleFix" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
@@ -39,15 +39,15 @@
                 "exception" : "InvalidVRS",
                 "intrinsicGas" : "0x00"
             },
-            "Homestead" : {
+            "SilaHomestead" : {
                 "exception" : "InvalidVRS",
                 "intrinsicGas" : "0x00"
             },
-            "Istanbul" : {
+            "SilaIstanbul" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
-            "London" : {
+            "SilaLondon" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
@@ -55,7 +55,7 @@
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "exception" : "InvalidChainID",
                 "intrinsicGas" : "0x00"
             }

@@ -78,9 +78,9 @@
             },
             {
                 "expectException" : {
-                    "Istanbul" : "InvalidGasLimit2",
-                    "Berlin" : "InvalidGasLimit2",
-                    "London" : "InvalidGasLimit2",
+                    "SilaIstanbul" : "InvalidGasLimit2",
+                    "SilaBerlin" : "InvalidGasLimit2",
+                    "SilaLondon" : "InvalidGasLimit2",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeUncleHashIsNotEmpty"
                 },

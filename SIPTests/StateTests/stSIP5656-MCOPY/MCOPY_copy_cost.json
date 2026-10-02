@@ -57,7 +57,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Cancun" : [
+            "SilaCancun" : [
                 {
                     "hash" : "0xf147dab1882fe8c66d65fd7936abf800bd86040051a445f978ab5390067f4f9a",
                     "indexes" : {

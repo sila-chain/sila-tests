@@ -32,7 +32,7 @@
                    "gas" : 1,
                    "value" : -1
                 },
-                "network" : ["Istanbul", "Berlin", "London", "Merge"],
+                "network" : ["SilaIstanbul", "SilaBerlin", "SilaLondon", "Merge"],
                 "result" : {
                   "0x471a0e624a2ac11c82cf1ff843127f1c6aa98351" : {
         		     "//comment" : "1023's address",

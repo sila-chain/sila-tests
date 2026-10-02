@@ -31,7 +31,7 @@
                     "gas" : 0,
                     "value" : 0
                 },
-                "network" : [   "Istanbul", "Berlin", "London", "Merge"],
+                "network" : [   "SilaIstanbul", "SilaBerlin", "SilaLondon", "Merge"],
                 "result" : {
                     "6295ee1b4f6dd65047762f924ecd367c17eabf8f" : {
 						"shouldnotexist": "1"
@@ -44,7 +44,7 @@
                     "gas" : 0,
                     "value" : 0
                 },
-                "network" : [   "Istanbul"],
+                "network" : [   "SilaIstanbul"],
                 "result" : {
                     "6295ee1b4f6dd65047762f924ecd367c17eabf8f" : {
 						"shouldnotexist": "1"

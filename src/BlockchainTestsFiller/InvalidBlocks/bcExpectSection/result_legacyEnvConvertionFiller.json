@@ -2,7 +2,7 @@
     "result_legacyEnvConvertion" : {
         "verify" : {
             "//comment" : "Verify how retestsil generate the test structures",
-            "Berlin" : {
+            "SilaBerlin" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "shouldnotexist",
                             "difficulty" : "0x020000",
@@ -26,7 +26,7 @@
                             }
                         ]
             },
-            "London" : {
+            "SilaLondon" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "0x10",
                             "difficulty" : "0x020000",
@@ -74,7 +74,7 @@
                             }
                         ]
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "0x10",
                             "difficulty" : "0x00",
@@ -98,7 +98,7 @@
                             }
                         ]
             },
-            "Cancun" : {
+            "SilaCancun" : {
                         "genesisBlockHeader" : {
                             "baseFeePerGas" : "0x10",
                             "difficulty" : "0x00",

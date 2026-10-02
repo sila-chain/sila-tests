@@ -20,7 +20,7 @@
 	"sealEngine" : "NoProof",
 	"expect" : [
 	   {
-		    "network" : ["Istanbul", "Berlin"],
+		    "network" : ["SilaIstanbul", "SilaBerlin"],
 		    "result" : {
 			    "0000000000000000000000000000000000000000" : {
     				"balance" : "2002"
@@ -35,7 +35,7 @@
 		   }
 	   },
 	   {
-		    "network" : ["London"],
+		    "network" : ["SilaLondon"],
 		    "result" : {
 			    "0000000000000000000000000000000000000000" : {
     				"balance" : "2002"

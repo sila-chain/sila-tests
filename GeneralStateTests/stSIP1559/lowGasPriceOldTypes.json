@@ -23,7 +23,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "London" : [
+            "SilaLondon" : [
                 {
                     "expectException" : "TR_FeeCapLessThanBlocks",
                     "hash" : "0xbe57f760a74706ecb4287298e4bab95049107d6d6970f0d8f6386b6fee196c1e",
@@ -71,7 +71,7 @@
                     "txbytes" : "0x01f86701018203e783061a8094cccccccccccccccccccccccccccccccccccccccc830186a001c080a071d41e66f218b09ba0bf90491584fc8a63ec62078c5e86f964456146e5fc3b8ba06757f546fdd4d4505be1e5373174f7d5706f5f5fcf8e89ca8663767a16cd682c"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "expectException" : "TR_FeeCapLessThanBlocks",
                     "hash" : "0xbe57f760a74706ecb4287298e4bab95049107d6d6970f0d8f6386b6fee196c1e",

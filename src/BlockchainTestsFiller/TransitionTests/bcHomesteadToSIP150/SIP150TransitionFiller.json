@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "HomesteadToSIP150At5",
+                "network" : "SilaHomesteadToSIP150At5",
                 "result" : {
                     "1000000000000000000000000000000000000001" : {
                         "storage" : {

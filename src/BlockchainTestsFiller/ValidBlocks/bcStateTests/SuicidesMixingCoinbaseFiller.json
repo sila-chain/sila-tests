@@ -20,7 +20,7 @@
 	    "sealEngine" : "NoProof",
         "expect" : [
 	        {
-                "network" : ["Istanbul", "Berlin", "London"],
+                "network" : ["SilaIstanbul", "SilaBerlin", "SilaLondon"],
                 "result" : {
     	            "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                     	"nonce" : "2"
@@ -108,15 +108,15 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "SilaIstanbul" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0xac9493741ce4ef1867a901bc5d121b6fa7ef1258f7cd509ccd14129904483c23"
                     },
-                    "Berlin" : {
+                    "SilaBerlin" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0x6438b33033d165c601bf8af48f26efdc1152ba14ef4b5f1fba245ddad3c6cd4d"
                     },
-                    "London" : {
+                    "SilaLondon" : {
                         "coinbase" : "0xb24f5374fce5edbc8e2a8697c15331677e6ebf0b",
                         "stateRoot" : "0x53a5f1f4ae11e46b728bdc5d1fed6fbb674f824551bb5027e230b7d236f18c47"
                     },

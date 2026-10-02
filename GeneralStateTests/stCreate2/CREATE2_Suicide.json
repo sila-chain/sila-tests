@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x668d9c33ed3f8374cd7ddabfb6fa62cd1fb5bcdfcb99d51744e4f5315b63a87b",
                     "indexes" : {
@@ -143,7 +143,7 @@
                     "txbytes" : "0xf889800a830927c0800ab83c6a6130ff6000526002601ef36000526000600b60156001f5506000600060006000736cd0e5133771823da00d4cb545ec8cdab0e38203620249f0fa001ca09cae7848daa63471f30b4872d29dcb0cd8973e201d84f498c7efd8a2f56a35aba0193071f7e0a74d49aa4d1eb17e829c7b124bfe0d3cde2ca362b80e41a87c4e42"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x668d9c33ed3f8374cd7ddabfb6fa62cd1fb5bcdfcb99d51744e4f5315b63a87b",
                     "indexes" : {
@@ -265,7 +265,7 @@
                     "txbytes" : "0xf889800a830927c0800ab83c6a6130ff6000526002601ef36000526000600b60156001f5506000600060006000736cd0e5133771823da00d4cb545ec8cdab0e38203620249f0fa001ca09cae7848daa63471f30b4872d29dcb0cd8973e201d84f498c7efd8a2f56a35aba0193071f7e0a74d49aa4d1eb17e829c7b124bfe0d3cde2ca362b80e41a87c4e42"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x98f004faac04d6d7caf5724421c321e739a0092d765a1c52f48cbc6dd5dcaa9a",
                     "indexes" : {
@@ -509,7 +509,7 @@
                     "txbytes" : "0xf889800a830927c0800ab83c6a6130ff6000526002601ef36000526000600b60156001f5506000600060006000736cd0e5133771823da00d4cb545ec8cdab0e38203620249f0fa001ca09cae7848daa63471f30b4872d29dcb0cd8973e201d84f498c7efd8a2f56a35aba0193071f7e0a74d49aa4d1eb17e829c7b124bfe0d3cde2ca362b80e41a87c4e42"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x5636c118568b6b14ad74497615e919e3dec655fda29729886a62c192d0b248ee",
                     "indexes" : {

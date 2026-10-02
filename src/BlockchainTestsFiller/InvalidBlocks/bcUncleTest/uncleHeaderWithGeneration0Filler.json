@@ -72,9 +72,9 @@
             },
             {
                 "expectException" : {
-                    "Istanbul" : "UncleIsAncestor",
-                    "Berlin" : "UncleIsAncestor",
-                    "London" : "UncleIsAncestor",
+                    "SilaIstanbul" : "UncleIsAncestor",
+                    "SilaBerlin" : "UncleIsAncestor",
+                    "SilaLondon" : "UncleIsAncestor",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeUncleHashIsNotEmpty"
                 },

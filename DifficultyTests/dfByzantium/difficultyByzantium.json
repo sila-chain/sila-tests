@@ -10,7 +10,7 @@
             "source" : "src/DifficultyTestsFiller/dfByzantium/difficultyByzantiumCopier.json",
             "sourceHash" : "6dd4eb2d47172b84bcf3b88fa0d7f3f4adc56cf23f3ab04925ca4971f014d7b5"
         },
-        "Byzantium" : {
+        "SilaByzantium" : {
             "DifficultyTest1" : {
                 "currentBlockNumber" : "0x0186a0",
                 "currentDifficulty" : "0x69702c7f2c9fad14",

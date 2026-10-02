@@ -10,7 +10,7 @@
             "source" : "src/DifficultyTestsFiller/dfSIP2384/difficultySIP2384_random_to20MCopier.json",
             "sourceHash" : "e366beb973b9256c737a4b58a98b449166e2b97fde0bcba2c4a1864ce245264a"
         },
-        "Berlin" : {
+        "SilaBerlin" : {
             "TestHeight10005684" : {
                 "currentBlockNumber" : "0x98acb4",
                 "currentDifficulty" : "0x5bba1f16e781d5cf",

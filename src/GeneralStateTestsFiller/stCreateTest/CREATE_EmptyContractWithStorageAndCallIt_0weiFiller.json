@@ -10,7 +10,7 @@
         },
         "expect" : [
             {
-                "network" : ["Istanbul"],
+                "network" : ["SilaIstanbul"],
                 "result" : {
 		            "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 		                "storage" : {
@@ -32,7 +32,7 @@
                 }
             },
             {
-                "network" : ["Berlin", "London", "Merge"],
+                "network" : ["SilaBerlin", "SilaLondon", "Merge"],
                 "result" : {
 		            "b94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 		                "storage" : {

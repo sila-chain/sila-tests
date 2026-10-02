@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "FrontierToHomesteadAt5",
+                "network" : "FrontierToSilaHomesteadAt5",
                 "result" : {
                     "1000000000000000000000000000000000000001" : {
                         "storage" : {

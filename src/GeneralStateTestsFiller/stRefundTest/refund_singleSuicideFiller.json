@@ -15,7 +15,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : ["Istanbul"],
+                "network" : ["SilaIstanbul"],
                 "result" : {
                     "1000000000000000000000000000000000000001" : {
                         "shouldnotexist" : "1"
@@ -35,7 +35,7 @@
                     "gas" : -1,
                     "value" : -1
                 },
-                "network" : ["Berlin"],
+                "network" : ["SilaBerlin"],
                 "result" : {
                     "1000000000000000000000000000000000000001" : {
                         "shouldnotexist" : "1"

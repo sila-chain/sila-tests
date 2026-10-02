@@ -23,7 +23,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
             {
-                "network" : "HomesteadToDaoAt5",
+                "network" : "SilaHomesteadToDaoAt5",
                 "result" : {
                     "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "17"
@@ -375,7 +375,7 @@
                     "stateRoot" : "0x351d5204de138478ad43d5a45236553867cdd16111fe15a91b8e8f48ec93c788"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                     {
@@ -447,7 +447,7 @@
                     "extraData" : "0x64616f2d686172642d666f726b"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                     {
@@ -502,7 +502,7 @@
                     "extraData" : "0x64616f2d686172642d666f726b"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                     {
@@ -592,7 +592,7 @@
                     "extraData" : "0x64616f2d686172642d666f726b"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                 ],
@@ -759,7 +759,7 @@
                     "extraData" : "0x64616f2d686172642d666f726b"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                 ],
@@ -809,7 +809,7 @@
                     "extraData" : "0x64616f2d686172642d666f726b"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                 ],

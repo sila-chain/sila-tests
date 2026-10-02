@@ -1,7 +1,7 @@
 {
     "RLPValueWithFirstZeros" : {
 	     "result": {
-            "Shanghai": {
+            "SilaShanghai": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
@@ -9,19 +9,19 @@
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "Berlin": {
+            "SilaBerlin": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "SilaByzantium": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "SilaConstantinople": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "SilaConstantinopleFix": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
@@ -37,15 +37,15 @@
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "Homestead": {
+            "SilaHomestead": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "SilaIstanbul": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "SilaLondon": {
                 "exception": "LeadingZerosValue",
 				"intrinsicGas" : "0x00"
             }

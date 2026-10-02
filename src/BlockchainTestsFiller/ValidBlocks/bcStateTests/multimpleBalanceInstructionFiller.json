@@ -20,7 +20,7 @@
     	"sealEngine" : "NoProof",
         "expect" : [
 	    {
-		    "network" : ["Istanbul"],
+		    "network" : ["SilaIstanbul"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
 				    "storage" : {
@@ -42,7 +42,7 @@
 		    }
 	    },
 	    {
-		    "network" : ["Berlin"],
+		    "network" : ["SilaBerlin"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
 				    "storage" : {
@@ -64,7 +64,7 @@
 		    }
 	    },
 	    {
-		    "network" : ["London"],
+		    "network" : ["SilaLondon"],
 		    "result" : {
 			    "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
 				    "storage" : {

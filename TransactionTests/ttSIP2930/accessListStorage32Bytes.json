@@ -11,20 +11,20 @@
             "sourceHash" : "0e330fbbd754c8c41b424268d459cf59d1010476948a30097d9866c0d6fb1f5d"
         },
         "result" : {
-            "Berlin" : {
+            "SilaBerlin" : {
                 "hash" : "0xb4f8b14a7aaf85ec2f76be9fbe4155deae1f87b2da95af73be3c27ed8d4c8cb7",
                 "intrinsicGas" : "0x62d4",
                 "sender" : "0xebe76799923fd62804659fb00b4f0f1a94c0eb1e"
             },
-            "Byzantium" : {
+            "SilaByzantium" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Constantinople" : {
+            "SilaConstantinople" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix" : {
+            "SilaConstantinopleFix" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
@@ -40,15 +40,15 @@
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Homestead" : {
+            "SilaHomestead" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Istanbul" : {
+            "SilaIstanbul" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "London" : {
+            "SilaLondon" : {
                 "hash" : "0xb4f8b14a7aaf85ec2f76be9fbe4155deae1f87b2da95af73be3c27ed8d4c8cb7",
                 "intrinsicGas" : "0x62d4",
                 "sender" : "0xebe76799923fd62804659fb00b4f0f1a94c0eb1e"
@@ -58,7 +58,7 @@
                 "intrinsicGas" : "0x62d4",
                 "sender" : "0xebe76799923fd62804659fb00b4f0f1a94c0eb1e"
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "hash" : "0xb4f8b14a7aaf85ec2f76be9fbe4155deae1f87b2da95af73be3c27ed8d4c8cb7",
                 "intrinsicGas" : "0x62d4",
                 "sender" : "0xebe76799923fd62804659fb00b4f0f1a94c0eb1e"

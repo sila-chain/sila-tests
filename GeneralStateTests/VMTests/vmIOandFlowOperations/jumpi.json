@@ -49,7 +49,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x2c8822e98f4f50b3f233efdbe108d1a6203ed33e5ad5b27c6d39fb6ee970295c",
                     "indexes" : {
@@ -311,7 +311,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c613900000000000000000000000000000000000000000000000000000000000001111ca0da3a2ea70df9c39795d0e02590ad8b169a5729a54073c98d9a271f36b3e84baba02d1e84873eb84038d24e6c81da94831c655948aecad2f4bb1935072c6d928798"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x144c32783b482e39dc62e4f15a6fdc21b035e966058c07918a7fdc3b7c15e765",
                     "indexes" : {
@@ -573,7 +573,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c613900000000000000000000000000000000000000000000000000000000000001111ca0da3a2ea70df9c39795d0e02590ad8b169a5729a54073c98d9a271f36b3e84baba02d1e84873eb84038d24e6c81da94831c655948aecad2f4bb1935072c6d928798"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0xfb28b3cac78f1eb013438683844e189fb6c52a5ef9153052572878d0d43de39d",
                     "indexes" : {
@@ -1097,7 +1097,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c613900000000000000000000000000000000000000000000000000000000000001111ca0da3a2ea70df9c39795d0e02590ad8b169a5729a54073c98d9a271f36b3e84baba02d1e84873eb84038d24e6c81da94831c655948aecad2f4bb1935072c6d928798"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0xfb28b3cac78f1eb013438683844e189fb6c52a5ef9153052572878d0d43de39d",
                     "indexes" : {

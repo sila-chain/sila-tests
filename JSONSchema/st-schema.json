@@ -212,13 +212,13 @@
                 "post": {
                     "additionalProperties": false,
                     "properties": {
-                        "Byzantium": {
+                        "SilaByzantium": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "Constantinople": {
+                        "SilaConstantinople": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "ConstantinopleFix": {
+                        "SilaConstantinopleFix": {
                             "$ref": "#/definitions/TransactionResults"
                         },
                         "SIP150": {
@@ -230,13 +230,13 @@
                         "Frontier": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "Homestead": {
+                        "SilaHomestead": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "Istanbul": {
+                        "SilaIstanbul": {
                             "$ref": "#/definitions/TransactionResults"
                         },
-                        "Berlin": {
+                        "SilaBerlin": {
                             "$ref": "#/definitions/TransactionResults"
                         }
                     },

@@ -23,7 +23,7 @@
 	    "sealEngine" : "NoProof",
         "expect" : [
 	        {
-                "network" : ["Istanbul", "Berlin"],
+                "network" : ["SilaIstanbul", "SilaBerlin"],
                 "result" : {
                     "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "0",
@@ -81,8 +81,8 @@
                 "transactions" : [
                      {
                         "expectException" : {
-                            "Istanbul" : "TR_GasLimitReached",
-                            "Berlin" : "TR_GasLimitReached",
+                            "SilaIstanbul" : "TR_GasLimitReached",
+                            "SilaBerlin" : "TR_GasLimitReached",
                             ">=London" : "TR_FeeCapLessThanBlocksORGasLimitReached"
                         },
                         "data" : "",

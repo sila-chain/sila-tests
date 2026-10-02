@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x1c35d3e55a5576e1e14454070964d3ba8964b61e3e940108d9ad9685564533f7",
                     "indexes" : {
@@ -113,7 +113,7 @@
                     "txbytes" : "0xf8a6800a8404c4b40094095e7baea6a6c7c4c2dfeb977efac326af552d8701b844c5b5a1ae00000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000000000000000000000000000000000e81ba0569405cfc5894e7e286a429aed99daa37e7be82622353af0c20ace612482aa84a05b9d69d1aff649c00abf2efeb893eb1d18d59d07ca5725084e6d3014070d3aff"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x1c35d3e55a5576e1e14454070964d3ba8964b61e3e940108d9ad9685564533f7",
                     "indexes" : {
@@ -205,7 +205,7 @@
                     "txbytes" : "0xf8a6800a8404c4b40094095e7baea6a6c7c4c2dfeb977efac326af552d8701b844c5b5a1ae00000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000000000000000000000000000000000e81ba0569405cfc5894e7e286a429aed99daa37e7be82622353af0c20ace612482aa84a05b9d69d1aff649c00abf2efeb893eb1d18d59d07ca5725084e6d3014070d3aff"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x8328caab32a040224bf923aed0b1e0093b9776097afe306ee421a51d375aa41a",
                     "indexes" : {
@@ -389,7 +389,7 @@
                     "txbytes" : "0xf8a6800a8404c4b40094095e7baea6a6c7c4c2dfeb977efac326af552d8701b844c5b5a1ae00000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000000000000000000000000000000000e81ba0569405cfc5894e7e286a429aed99daa37e7be82622353af0c20ace612482aa84a05b9d69d1aff649c00abf2efeb893eb1d18d59d07ca5725084e6d3014070d3aff"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x8328caab32a040224bf923aed0b1e0093b9776097afe306ee421a51d375aa41a",
                     "indexes" : {

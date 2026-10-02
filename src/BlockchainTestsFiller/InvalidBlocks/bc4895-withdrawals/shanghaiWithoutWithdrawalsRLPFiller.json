@@ -1,7 +1,7 @@
 {
     "shanghaiWithoutWithdrawalsRLP" : {
         "verify" : {
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "blocks" : [
                     {
                        "//comment" : "Check that block 1 has withdrawalsRoot in header but no wt in RLP body",

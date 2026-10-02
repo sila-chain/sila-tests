@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0xca57ed1ea27fc7deaeb55fb4edd12d03054db0f1f3d77245d027f00e8db3a61c",
                     "indexes" : {
@@ -223,7 +223,7 @@
                     "txbytes" : "0xf89a800a830f42408001b84d6000601080603d60003960006000f5506000600060006000600073dea0000000000000000000000000000000000000620927c0f15060206000fd0000fe600060005560016000556001600155001ca07a93665d69304d81d3ce35e317cb93f67558eec3a146f8b23f728eccaf10ac3fa04aa3ed2ae8fa53b80f5c188425d4f96c8d87e55c13bff62c1d5bb00c6b06730d"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0xe3103426cf134b6b8d1e8ffe364f59b4ef29395ad1a4fe266e55a276dde73187",
                     "indexes" : {
@@ -425,7 +425,7 @@
                     "txbytes" : "0xf89a800a830f42408001b84d6000601080603d60003960006000f5506000600060006000600073dea0000000000000000000000000000000000000620927c0f15060206000fd0000fe600060005560016000556001600155001ca07a93665d69304d81d3ce35e317cb93f67558eec3a146f8b23f728eccaf10ac3fa04aa3ed2ae8fa53b80f5c188425d4f96c8d87e55c13bff62c1d5bb00c6b06730d"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0xf44f8a2a78c81721ae9be3fa8da76c6d400de91394fca06c37793764e32526e6",
                     "indexes" : {
@@ -829,7 +829,7 @@
                     "txbytes" : "0xf89a800a830f42408001b84d6000601080603d60003960006000f5506000600060006000600073dea0000000000000000000000000000000000000620927c0f15060206000fd0000fe600060005560016000556001600155001ca07a93665d69304d81d3ce35e317cb93f67558eec3a146f8b23f728eccaf10ac3fa04aa3ed2ae8fa53b80f5c188425d4f96c8d87e55c13bff62c1d5bb00c6b06730d"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x5414426e98ad01ad05567f68c1efa12d6db7bd63d715c0e188d92a36c1ffdf7b",
                     "indexes" : {

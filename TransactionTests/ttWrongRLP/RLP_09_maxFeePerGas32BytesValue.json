@@ -11,19 +11,19 @@
             "sourceHash" : "947536b8ba183349d707f4d72685392fc07a8f3998b38fedf66eb395757b7a70"
         },
         "result" : {
-            "Berlin" : {
+            "SilaBerlin" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Byzantium" : {
+            "SilaByzantium" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Constantinople" : {
+            "SilaConstantinople" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix" : {
+            "SilaConstantinopleFix" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
@@ -39,15 +39,15 @@
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Homestead" : {
+            "SilaHomestead" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Istanbul" : {
+            "SilaIstanbul" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "London" : {
+            "SilaLondon" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x5208"
             },
@@ -55,7 +55,7 @@
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "exception" : "TR_TypeNotSupported",
                 "intrinsicGas" : "0x00"
             }

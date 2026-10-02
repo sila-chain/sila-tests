@@ -78,9 +78,9 @@
                     "stateRoot" : "0xaf4765939e9fc7da9e2e4ba67d896c41f126e161f1b1f514a84fda61cff3d2ef"
                 },
                 "expectException" : {
-                    "Istanbul" : "InvalidDifficulty",
-                    "Berlin" : "InvalidDifficulty",
-                    "London" : "InvalidDifficulty",
+                    "SilaIstanbul" : "InvalidDifficulty",
+                    "SilaBerlin" : "InvalidDifficulty",
+                    "SilaLondon" : "InvalidDifficulty",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeUncleHashIsNotEmpty"
                 },

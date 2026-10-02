@@ -48,9 +48,9 @@
                     "difficulty" : "10000"
                 },
                 "expectException" : {
-                    "Istanbul" : "InvalidDifficulty",
-                    "Berlin" : "InvalidDifficulty",
-                    "London" : "InvalidDifficulty",
+                    "SilaIstanbul" : "InvalidDifficulty",
+                    "SilaBerlin" : "InvalidDifficulty",
+                    "SilaLondon" : "InvalidDifficulty",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeDifficultyIsNot0"
                 },

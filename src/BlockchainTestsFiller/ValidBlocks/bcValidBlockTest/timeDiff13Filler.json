@@ -60,15 +60,15 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "SilaIstanbul" : {
                         "RelTimestamp" : "13",
                         "difficulty" : "219984"
                     },
-                    "Berlin" : {
+                    "SilaBerlin" : {
                         "RelTimestamp" : "13",
                         "difficulty" : "219984"
                     },
-                    "London" : {
+                    "SilaLondon" : {
                         "RelTimestamp" : "13",
                         "difficulty" : "219984"
                     },

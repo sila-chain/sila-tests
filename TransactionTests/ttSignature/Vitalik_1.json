@@ -11,22 +11,22 @@
             "sourceHash" : "1471a1b8cd8266ff30ed327f7062af99f3111be0982cfcbff177ebcc7f60bab4"
         },
         "result" : {
-            "Berlin" : {
+            "SilaBerlin" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
             },
-            "Byzantium" : {
+            "SilaByzantium" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
             },
-            "Constantinople" : {
+            "SilaConstantinople" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
             },
-            "ConstantinopleFix" : {
+            "SilaConstantinopleFix" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
@@ -44,16 +44,16 @@
                 "exception" : "InvalidVRS",
                 "intrinsicGas" : "0x00"
             },
-            "Homestead" : {
+            "SilaHomestead" : {
                 "exception" : "InvalidVRS",
                 "intrinsicGas" : "0x00"
             },
-            "Istanbul" : {
+            "SilaIstanbul" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
             },
-            "London" : {
+            "SilaLondon" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
@@ -63,7 +63,7 @@
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "hash" : "0xb1e2188bc490908a78184e4818dca53684167507417fdb4c09c2d64d32a9896a",
                 "intrinsicGas" : "0x5208",
                 "sender" : "0xf0f6f18bca1b28cd68e4357452947e021241e9ce"

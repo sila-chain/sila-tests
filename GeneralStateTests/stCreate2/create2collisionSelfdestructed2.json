@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x91da744fb4fa7f0a77013bbb1eb81d34b6f47bec0eaedfffe0a263ce57c93705",
                     "indexes" : {
@@ -43,7 +43,7 @@
                     "txbytes" : "0xf88b800a83061a808080b83e6000600060006000600073cff64f4c5df8f436c4f2c1af4b2e3f9e3004c77961c350f1506b626010ff6000526003601df36000526000600c60146000f5001ba0cdb79f005bd592b9120f3f4c6e745157a44055feff0a1329c2b366c0096a139ba0244f8bcf14c0318eeeacd996f473a5c89d0ce5c55d3a079837eec0e5641029cc"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x76cf9a1a252039b320754e45b849e08e730db27503643fa4cc2ed06aa8c7d01b",
                     "indexes" : {
@@ -65,7 +65,7 @@
                     "txbytes" : "0xf88b800a83061a808080b83e6000600060006000600073cff64f4c5df8f436c4f2c1af4b2e3f9e3004c77961c350f1506b626010ff6000526003601df36000526000600c60146000f5001ba0cdb79f005bd592b9120f3f4c6e745157a44055feff0a1329c2b366c0096a139ba0244f8bcf14c0318eeeacd996f473a5c89d0ce5c55d3a079837eec0e5641029cc"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x47062f46b7bea902ac122e72abf8865e5dca89c9a358b5c583d1db8f9bb72002",
                     "indexes" : {
@@ -109,7 +109,7 @@
                     "txbytes" : "0xf88b800a83061a808080b83e6000600060006000600073cff64f4c5df8f436c4f2c1af4b2e3f9e3004c77961c350f1506b626010ff6000526003601df36000526000600c60146000f5001ba0cdb79f005bd592b9120f3f4c6e745157a44055feff0a1329c2b366c0096a139ba0244f8bcf14c0318eeeacd996f473a5c89d0ce5c55d3a079837eec0e5641029cc"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x47062f46b7bea902ac122e72abf8865e5dca89c9a358b5c583d1db8f9bb72002",
                     "indexes" : {

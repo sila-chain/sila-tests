@@ -1,6 +1,6 @@
 {
     "difficultyHomestead": {
-        "Homestead": {
+        "SilaHomestead": {
             "DifficultyTest1": {
                 "parentTimestamp": "0x68450ae0c",
                 "parentDifficulty": "0x6aa9fe0e7a00ac12",

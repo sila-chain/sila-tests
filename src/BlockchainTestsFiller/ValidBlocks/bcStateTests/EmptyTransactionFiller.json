@@ -46,8 +46,8 @@
                 "transactions" : [
                      {
                         "expectException" : {
-                            "Istanbul" : "TR_IntrinsicGas",
-                            "Berlin" : "TR_IntrinsicGas",
+                            "SilaIstanbul" : "TR_IntrinsicGas",
+                            "SilaBerlin" : "TR_IntrinsicGas",
                             ">=London" : "TR_FeeCapLessThanBlocksORNoFunds"
                         },
                         "data" : "",

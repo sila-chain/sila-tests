@@ -14,7 +14,7 @@
             "ymlExample_0" : {
                 "code" : "0x60016000f3",
                 "results" : {
-                    "Cancun" : {
+                    "SilaCancun" : {
                         "exception" : "EOF_InvalidCode",
                         "result" : false
                     },
@@ -27,7 +27,7 @@
             "ymlExample_1" : {
                 "code" : "0xef0001010004020001000a040016000080000338600060003938601df3ef0001010004020001000304001d0000800001385000",
                 "results" : {
-                    "Cancun" : {
+                    "SilaCancun" : {
                         "exception" : "EOF_InvalidCode",
                         "result" : false
                     },
@@ -39,7 +39,7 @@
             "ymlExample_2" : {
                 "code" : "0xefffff",
                 "results" : {
-                    "Cancun" : {
+                    "SilaCancun" : {
                         "exception" : "EOF_InvalidCode",
                         "result" : false
                     },
@@ -52,7 +52,7 @@
             "ymlExample_3" : {
                 "code" : "0x610badfe",
                 "results" : {
-                    "Cancun" : {
+                    "SilaCancun" : {
                         "exception" : "EOF_InvalidCode",
                         "result" : false
                     },

@@ -20,7 +20,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
 	    {
-		    "network" : ["Istanbul", "Berlin"],
+		    "network" : ["SilaIstanbul", "SilaBerlin"],
 		    "result" : {
                 "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
     		        "storage" : {
@@ -49,7 +49,7 @@
 		    }
 	    },
 	    {
-		    "network" : ["London"],
+		    "network" : ["SilaLondon"],
 		    "result" : {
                 "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
     		        "storage" : {

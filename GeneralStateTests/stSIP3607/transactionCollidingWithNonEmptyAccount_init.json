@@ -23,7 +23,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -69,7 +69,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "Byzantium" : [
+            "SilaByzantium" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -115,7 +115,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "Constantinople" : [
+            "SilaConstantinople" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -161,7 +161,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "ConstantinopleFix" : [
+            "SilaConstantinopleFix" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -345,7 +345,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "Homestead" : [
+            "SilaHomestead" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -391,7 +391,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -437,7 +437,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",
@@ -529,7 +529,7 @@
                     "txbytes" : "0xf86d800a83061a8080830186a09e60008060008073d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d05af4501ba0939415f7af45efd937eb2deec568614aaca3196c58cf3912a8c8b7aaa5f65748a04c0046c94a6eedc8a10b75bfb664e442b7665441187333c2fdfe4e3e688dbe51"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xe4cbd6db8a1703c767c4eb649b108ca6e68039006bf277fdb7398933a6515cad",

@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "FrontierToHomesteadAt5",
+                "network" : "FrontierToSilaHomesteadAt5",
                 "result" : {
                     "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "4"
@@ -105,7 +105,7 @@
                 "transactions" : [
                     {
                         "expectException" : {
-                            "FrontierToHomesteadAt5" : "TR_IntrinsicGas"
+                            "FrontierToSilaHomesteadAt5" : "TR_IntrinsicGas"
                         },
                         "data" : "",
                         "gasLimit" : "30000",

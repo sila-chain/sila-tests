@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "SIP158ToByzantiumAt5",
+                "network" : "SIP158ToSilaByzantiumAt5",
                 "result" : {
                     "1000000000000000000000000000000000000001" : {
                         "balance" : "1"

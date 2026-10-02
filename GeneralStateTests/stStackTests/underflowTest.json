@@ -189,7 +189,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0xfcc37ca8c81ab2d31150a5991875113ad3325c9d43217b02e1e39c602436f425",
                     "indexes" : {
@@ -1851,7 +1851,7 @@
                     "txbytes" : "0xf884800a837a120094cccccccccccccccccccccccccccccccccccccccc01a4693c61390000000000000000000000000000000000000000000000000000000000009f111ca004c71dae17a9a00de647d483146f3e09e6be95b3fbed16af11f010dd472071f9a01ea0e843b0cdc49fbb6e7930e4f01be2a56def10b3bdef57edbf8665eb954b99"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x8addde3f09a3af0d8b3744a6969aa16f66a958f3cbe8db325f19b96afc8d1387",
                     "indexes" : {
@@ -3513,7 +3513,7 @@
                     "txbytes" : "0xf884800a837a120094cccccccccccccccccccccccccccccccccccccccc01a4693c61390000000000000000000000000000000000000000000000000000000000009f111ca004c71dae17a9a00de647d483146f3e09e6be95b3fbed16af11f010dd472071f9a01ea0e843b0cdc49fbb6e7930e4f01be2a56def10b3bdef57edbf8665eb954b99"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x15a35b8c6c980b89c2d94a8a32c3f0565fdb53edca587d0256532e5f084ee093",
                     "indexes" : {
@@ -6837,7 +6837,7 @@
                     "txbytes" : "0xf884800a837a120094cccccccccccccccccccccccccccccccccccccccc01a4693c61390000000000000000000000000000000000000000000000000000000000009f111ca004c71dae17a9a00de647d483146f3e09e6be95b3fbed16af11f010dd472071f9a01ea0e843b0cdc49fbb6e7930e4f01be2a56def10b3bdef57edbf8665eb954b99"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x15a35b8c6c980b89c2d94a8a32c3f0565fdb53edca587d0256532e5f084ee093",
                     "indexes" : {

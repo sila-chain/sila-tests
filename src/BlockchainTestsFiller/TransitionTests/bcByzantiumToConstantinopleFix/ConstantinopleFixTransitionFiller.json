@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "ByzantiumToConstantinopleFixAt5",
+                "network" : "SilaByzantiumToSilaConstantinopleFixAt5",
                 "result" : {
                     "1000000000000000000000000000000000000001" : {
                         "balance" : "9"

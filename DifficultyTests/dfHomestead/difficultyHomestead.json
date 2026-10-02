@@ -10,7 +10,7 @@
             "source" : "src/DifficultyTestsFiller/dfHomestead/difficultyHomesteadCopier.json",
             "sourceHash" : "c8c8c51bee8f4538bf3a272b23bc14c89f91c6d7b496d946be9d0756f9aed150"
         },
-        "Homestead" : {
+        "SilaHomestead" : {
             "DifficultyTest1" : {
                 "currentBlockNumber" : "0x0186a0",
                 "currentDifficulty" : "0x6ab7534e3bcfec27",

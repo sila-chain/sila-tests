@@ -19,7 +19,7 @@
         },
         "expect" : [
             {
-                "network" : "FrontierToHomesteadAt5",
+                "network" : "FrontierToSilaHomesteadAt5",
                 "result" : {
                     "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "5"
@@ -201,7 +201,7 @@
                 "chainname" : "F",
                 "chainnetwork" : "Frontier",
                 "expectException" : {
-                    "FrontierToHomesteadAt5" : "InvalidGasUsed"
+                    "FrontierToSilaHomesteadAt5" : "InvalidGasUsed"
                 },
                 "transactions" : [
                     {
@@ -222,7 +222,7 @@
                 "chainname" : "F",
                 "chainnetwork" : "Frontier",
                 "expectException" : {
-                    "FrontierToHomesteadAt5" : "UnknownParent"
+                    "FrontierToSilaHomesteadAt5" : "UnknownParent"
                 },
                 "transactions" : [
                     {

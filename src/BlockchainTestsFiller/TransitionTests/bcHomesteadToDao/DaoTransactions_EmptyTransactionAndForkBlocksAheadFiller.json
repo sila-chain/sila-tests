@@ -23,7 +23,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
             {
-                "network" : "HomesteadToDaoAt5",
+                "network" : "SilaHomesteadToDaoAt5",
                 "result" : {
                     "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                         "nonce" : "6"
@@ -368,7 +368,7 @@
                     "extraData" : "0x43"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                 	  {
@@ -428,7 +428,7 @@
                     "extraData" : "0x43"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                     {
@@ -450,7 +450,7 @@
                     "extraData" : "0x43"
                 },
                 "expectException" : {
-                    "HomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
+                    "SilaHomesteadToDaoAt5" : "ExtraDataIncorrectDAO"
                 },
                 "transactions" : [
                     {

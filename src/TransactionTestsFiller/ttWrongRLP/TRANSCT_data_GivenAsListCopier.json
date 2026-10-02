@@ -1,7 +1,7 @@
 {
     "TRANSCT_data_GivenAsList": {
         "result": {
-            "Shanghai": {
+            "SilaShanghai": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
@@ -9,19 +9,19 @@
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "Berlin": {
+            "SilaBerlin": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "SilaByzantium": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "SilaConstantinople": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "SilaConstantinopleFix": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
@@ -37,15 +37,15 @@
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "Homestead": {
+            "SilaHomestead": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "SilaIstanbul": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "SilaLondon": {
                 "exception": "InvalidData",
 				"intrinsicGas" : "0x00"
             }

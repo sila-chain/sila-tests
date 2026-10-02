@@ -72,9 +72,9 @@
             },
             {
                 "expectException" : {
-                    "Istanbul" : "TooManyUncles",
-                    "Berlin" : "TooManyUncles",
-                    "London" : "TooManyUncles",
+                    "SilaIstanbul" : "TooManyUncles",
+                    "SilaBerlin" : "TooManyUncles",
+                    "SilaLondon" : "TooManyUncles",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeUncleHashIsNotEmpty"
                 },

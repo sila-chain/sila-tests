@@ -55,7 +55,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0xa0df2fee3a7ff77c83dcd13e0affd4991ad2c6cf809d849a1489cf79e519c35b",
                     "indexes" : {
@@ -377,7 +377,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c6139000000000000000000000000000000000000000000000000000000000000001f1ba0d857909ab8c903282175d5372f9030bf223f483c0dc68e05b7c1cded26446acda05e4dc987bd56eeeffc63541c8a9203687a949813391b0d874d4624e2e0c4ee88"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0xc0eec6dab46c29040b89ad53bd7e7f3a94c80d08cd05ba637c1b871ed53a87f7",
                     "indexes" : {
@@ -699,7 +699,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c6139000000000000000000000000000000000000000000000000000000000000001f1ba0d857909ab8c903282175d5372f9030bf223f483c0dc68e05b7c1cded26446acda05e4dc987bd56eeeffc63541c8a9203687a949813391b0d874d4624e2e0c4ee88"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x274339ab02ba7f3e446f41b1c01c39861382f9e855345db3e792b4f058d656f6",
                     "indexes" : {
@@ -1343,7 +1343,7 @@
                     "txbytes" : "0xf885800a8404c4b40094cccccccccccccccccccccccccccccccccccccccc01a4693c6139000000000000000000000000000000000000000000000000000000000000001f1ba0d857909ab8c903282175d5372f9030bf223f483c0dc68e05b7c1cded26446acda05e4dc987bd56eeeffc63541c8a9203687a949813391b0d874d4624e2e0c4ee88"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x274339ab02ba7f3e446f41b1c01c39861382f9e855345db3e792b4f058d656f6",
                     "indexes" : {

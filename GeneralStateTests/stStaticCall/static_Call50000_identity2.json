@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x3e45248f68db4378b57d90ec2656605713654266837e89f5b6133919b37e02cf",
                     "indexes" : {
@@ -43,7 +43,7 @@
                     "txbytes" : "0xf881800a843499e1a09410000000000000000000000000000000000000000aa0000000000000000000000000cccf5374fce5edbc8e2a8697c15331677e6ebf0b1ca0920ebf90ef33bd18398aa029b04fd5fb7982713b73332237573ce560d17f3d17a01df147c4db87ebcb9bae145c6055d648305c635478fab0249f46186c0538f3a3"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x57c1a5ee3b829b946766994bcc448fe65f4adb54c35622163d481952d27b2732",
                     "indexes" : {
@@ -65,7 +65,7 @@
                     "txbytes" : "0xf881800a843499e1a09410000000000000000000000000000000000000000aa0000000000000000000000000cccf5374fce5edbc8e2a8697c15331677e6ebf0b1ca0920ebf90ef33bd18398aa029b04fd5fb7982713b73332237573ce560d17f3d17a01df147c4db87ebcb9bae145c6055d648305c635478fab0249f46186c0538f3a3"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x465061b4d2328c6bd20fc29a685987c9bfbd38f92b9493f4d1ed28e0bbe73513",
                     "indexes" : {
@@ -109,7 +109,7 @@
                     "txbytes" : "0xf881800a843499e1a09410000000000000000000000000000000000000000aa0000000000000000000000000cccf5374fce5edbc8e2a8697c15331677e6ebf0b1ca0920ebf90ef33bd18398aa029b04fd5fb7982713b73332237573ce560d17f3d17a01df147c4db87ebcb9bae145c6055d648305c635478fab0249f46186c0538f3a3"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x465061b4d2328c6bd20fc29a685987c9bfbd38f92b9493f4d1ed28e0bbe73513",
                     "indexes" : {

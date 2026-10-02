@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x0cceb116d92f1dd4ffbebcc39f0e56e08a29a15a5a86ffe006f903c7f8c48db0",
                     "indexes" : {
@@ -53,7 +53,7 @@
                     "txbytes" : "0xf880800a83029fe094100000000000000000000000000000000000000080a000000000000000000000000030000000000000000000000000000000000000021ca025e90a0d60df2ea212950262a818fa7f29f5ad45c3c54b183fe4aec50978f627a00e762f2c0f59ebfc60242e5b275bbc136e575a93f5e66ad7050aaaa9910a5bc4"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x818332c5f4489b5aee15cc02d63be7bfe4a2c623ea265d1f816fd8c97fc19e4b",
                     "indexes" : {
@@ -85,7 +85,7 @@
                     "txbytes" : "0xf880800a83029fe094100000000000000000000000000000000000000080a000000000000000000000000030000000000000000000000000000000000000021ca025e90a0d60df2ea212950262a818fa7f29f5ad45c3c54b183fe4aec50978f627a00e762f2c0f59ebfc60242e5b275bbc136e575a93f5e66ad7050aaaa9910a5bc4"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x26e1d40975b5d59bd3cca67d10e3aa659978c82fb556cc8d0904364f90e0803f",
                     "indexes" : {
@@ -149,7 +149,7 @@
                     "txbytes" : "0xf880800a83029fe094100000000000000000000000000000000000000080a000000000000000000000000030000000000000000000000000000000000000021ca025e90a0d60df2ea212950262a818fa7f29f5ad45c3c54b183fe4aec50978f627a00e762f2c0f59ebfc60242e5b275bbc136e575a93f5e66ad7050aaaa9910a5bc4"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x26e1d40975b5d59bd3cca67d10e3aa659978c82fb556cc8d0904364f90e0803f",
                     "indexes" : {

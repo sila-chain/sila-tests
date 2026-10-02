@@ -23,7 +23,7 @@
         "sealEngine" : "NoProof",
         "expect" : [
 	        {
-		        "network" : ["Istanbul", "Berlin", "London"],
+		        "network" : ["SilaIstanbul", "SilaBerlin", "SilaLondon"],
 		        "result" : {
 			        "0x095e7baea6a6c7c4c2dfeb977efac326af552d87" : {
                         "balance" : "20"
@@ -92,10 +92,10 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "SilaIstanbul" : {
                         "stateRoot" : "0x5dab8e9f31f205de63b84b35c21b5fe22873865fe44a2e977188de5a4ea0fa69"
                     },
-                    "Berlin" : {
+                    "SilaBerlin" : {
                         "stateRoot" : "0x5dab8e9f31f205de63b84b35c21b5fe22873865fe44a2e977188de5a4ea0fa69"
                     },
                     ">=London" : {

@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "London" : [
+            "SilaLondon" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xb326b0f9bdbf3dac935ffe578676ceb8c10e369aac5d96521900815951e04ff9",
@@ -47,7 +47,7 @@
                     "txbytes" : "0xf863800a83061a8094a94f5374fce5edbc8e2a8697c15331677e6ebf0b830186a0801ba02babb190411301aad79da24e4a6bf1cb3197855e76dfadbc76a85bbf5b1e3ea3a033b4a142663a140757c5eb1af576fc328eb0a4f711730886c03a587abc2173de"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "expectException" : "SenderNotEOA",
                     "hash" : "0xb326b0f9bdbf3dac935ffe578676ceb8c10e369aac5d96521900815951e04ff9",

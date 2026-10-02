@@ -35,7 +35,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0xb308e59e5b92ae2b6e6b3aa73ae51ac33cecd6e5a0078e634eb0ac22bd09e073",
                     "indexes" : {
@@ -77,7 +77,7 @@
                     "txbytes" : "0xf86a800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b808a60ef60005360206000f31ba036a8d004476109bc6d56b18701fbde81b722c2e2e75dadc47af7a23fba0f9c1fa051d310370e93d5d256a3ef1d477211df118d37500d592336859f294390ca09f6"
                 }
             ],
-            "Cancun" : [
+            "SilaCancun" : [
                 {
                     "hash" : "0x2f2d04f87a18ee95041bfc83e64befa06a57fafe757b1e42adeef80147d6ea1d",
                     "indexes" : {
@@ -179,7 +179,7 @@
                     "txbytes" : "0xf89f800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80b83eef0001010004020001002904000200008000027fef00010100040200010004040004000080000160005000aabbccdd0000000000600052601b6000f3eeff1ca0fe7d28492fe09de426d4173abd20a79c0afc8eae3946ea6876b8fba06faafafda02f0a6487ff6f85bf2a4a41e5d96e3bd0da4f7b8b96b4393189140eba6f60145b"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x2f2d04f87a18ee95041bfc83e64befa06a57fafe757b1e42adeef80147d6ea1d",
                     "indexes" : {
@@ -365,7 +365,7 @@
                     "txbytes" : "0xf89f800a83e4e1c094b94f5374fce5edbc8e2a8697c15331677e6ebf0b80b83eef0001010004020001002904000200008000027fef00010100040200010004040004000080000160005000aabbccdd0000000000600052601b6000f3eeff1ca0fe7d28492fe09de426d4173abd20a79c0afc8eae3946ea6876b8fba06faafafda02f0a6487ff6f85bf2a4a41e5d96e3bd0da4f7b8b96b4393189140eba6f60145b"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x2f2d04f87a18ee95041bfc83e64befa06a57fafe757b1e42adeef80147d6ea1d",
                     "indexes" : {

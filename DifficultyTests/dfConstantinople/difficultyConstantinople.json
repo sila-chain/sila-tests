@@ -10,7 +10,7 @@
             "source" : "src/DifficultyTestsFiller/dfConstantinople/difficultyConstantinopleCopier.json",
             "sourceHash" : "35a33723a7e373fb477fbe9d8468f06f522ee8fad70d93e480914135be55723a"
         },
-        "Constantinople" : {
+        "SilaConstantinople" : {
             "DifficultyTest1" : {
                 "currentBlockNumber" : "0x0186a0",
                 "currentDifficulty" : "0x56c67d1e106966c3",

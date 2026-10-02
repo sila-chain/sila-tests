@@ -21,7 +21,7 @@
         "expect" : [
 	    {
             "//comment" : "Such scenario only possible with gasPrice = 0 which is dissallowed since London due to minBlockBaseFee >= 7",
-		    "network" : ["Istanbul", "Berlin"],
+		    "network" : ["SilaIstanbul", "SilaBerlin"],
 		    "result" : {
 			    "c94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
 				"storage" : {

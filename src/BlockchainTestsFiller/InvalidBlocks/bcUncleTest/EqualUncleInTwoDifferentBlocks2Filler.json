@@ -75,10 +75,10 @@
             },
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "SilaIstanbul" : {
                         "stateRoot" : "0x34377470e14d3b044d1f2cb6e61b9720b294961696610a2d885e31896a0d12ca"
                     },
-                    "Berlin" : {
+                    "SilaBerlin" : {
                         "stateRoot" : "0x34377470e14d3b044d1f2cb6e61b9720b294961696610a2d885e31896a0d12ca"
                     },
                     ">=London" : {

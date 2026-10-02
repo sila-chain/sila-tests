@@ -3,7 +3,7 @@
         "blocks" : [
             {
                 "blockHeader" : {
-                    "Istanbul" : {
+                    "SilaIstanbul" : {
                         "difficulty" : "0x020000",
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8",
@@ -11,7 +11,7 @@
                         "recsiptTrie" : "0xdf1b59a97c40083d4f1c580a7344fda99829c3b48e56cdad37a783b81d63efcc",
                         "stateRoot" : "0xfa5658c9109c3747bb540c3900d06c296b3c14df753254e8053cb4876ca9f601"
                     },
-                    "Berlin" : {
+                    "SilaBerlin" : {
                         "difficulty" : "0x020000",
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8",
@@ -19,7 +19,7 @@
                         "recsiptTrie" : "0x0d81bb14c3df363b6f1e145e41d7faabc8edc3bbacbb64b22b7049f4bb723fec",
                         "stateRoot" : "0x6f581aefee9fc4279883c7cc66a5aa4e3a02defefc7195cb50f44e23dbfa4cfd"
                     },
-                    "London" : {
+                    "SilaLondon" : {
                         "difficulty" : "0x020000",
                         "gasLimit" : "0x7fffffffffffffff",
                         "timestamp" : "0x03e8",

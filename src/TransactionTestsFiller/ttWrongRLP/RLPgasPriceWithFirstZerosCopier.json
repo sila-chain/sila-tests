@@ -1,7 +1,7 @@
 {
     "RLPgasPriceWithFirstZeros": {
         "result": {
-            "Shanghai": {
+            "SilaShanghai": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
@@ -9,19 +9,19 @@
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Berlin": {
+            "SilaBerlin": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Byzantium": {
+            "SilaByzantium": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Constantinople": {
+            "SilaConstantinople": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "ConstantinopleFix": {
+            "SilaConstantinopleFix": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
@@ -37,15 +37,15 @@
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Homestead": {
+            "SilaHomestead": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "Istanbul": {
+            "SilaIstanbul": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             },
-            "London": {
+            "SilaLondon": {
                 "exception": "LeadingZerosGasPrice",
 				"intrinsicGas" : "0x00"
             }

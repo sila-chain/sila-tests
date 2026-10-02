@@ -4,7 +4,7 @@
             "comment" : "A unittest for retestsil env section convertion"
         },
         "verifyBC" : {
-            "Berlin" : {
+            "SilaBerlin" : {
                 "genesisBlockHeader" : {
                     "difficulty" : "0x020000",
                     "mixHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -28,7 +28,7 @@
                     }
                 ]
             },
-            "London" : {
+            "SilaLondon" : {
                 "genesisBlockHeader" : {
                     "difficulty" : "0x020000",
                     "mixHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -76,7 +76,7 @@
                     }
                 ]
             },
-            "Shanghai" : {
+            "SilaShanghai" : {
                 "genesisBlockHeader" : {
                     "difficulty" : "0x00",
                     "mixHash" : "0x0000000000000000000000000000000000000000000000000000000000020000",
@@ -100,7 +100,7 @@
                     }
                 ]
             },
-            "Cancun" : {
+            "SilaCancun" : {
                 "genesisBlockHeader" : {
                     "difficulty" : "0x00",
                     "mixHash" : "0x0000000000000000000000000000000000000000000000000000000000020000",

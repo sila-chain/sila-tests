@@ -21,7 +21,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0xe1661bf51d9108cbf31b126d0dc08a05201c40c081a1019b76cea18e1e5797ce",
                     "indexes" : {
@@ -103,7 +103,7 @@
                     "txbytes" : "0xf880800a833d090094b00000000000000000000000000000000000000064a0000000000000000000000000ca110080000000000000000000000000000000001ca066929a4ec0e5297274c01579f64ce6382c9cec7a8c10ab285705ca1bc73f6d60a01b51253e096141ed222e2c7e11bd0df69b91e780c67673651b2081ebfab24522"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x671c5171ab35cd31c26b7dce25050b193ef94cb520fb902fcbde185cb3b1f9d1",
                     "indexes" : {
@@ -185,7 +185,7 @@
                     "txbytes" : "0xf880800a833d090094b00000000000000000000000000000000000000064a0000000000000000000000000ca110080000000000000000000000000000000001ca066929a4ec0e5297274c01579f64ce6382c9cec7a8c10ab285705ca1bc73f6d60a01b51253e096141ed222e2c7e11bd0df69b91e780c67673651b2081ebfab24522"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0x6d5cde7e9a866ccdec9e12184379238899e9247fdbf223bf31ad84098f84fd8b",
                     "indexes" : {
@@ -349,7 +349,7 @@
                     "txbytes" : "0xf880800a833d090094b00000000000000000000000000000000000000064a0000000000000000000000000ca110080000000000000000000000000000000001ca066929a4ec0e5297274c01579f64ce6382c9cec7a8c10ab285705ca1bc73f6d60a01b51253e096141ed222e2c7e11bd0df69b91e780c67673651b2081ebfab24522"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0x6d5cde7e9a866ccdec9e12184379238899e9247fdbf223bf31ad84098f84fd8b",
                     "indexes" : {

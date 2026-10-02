@@ -28,7 +28,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Berlin" : [
+            "SilaBerlin" : [
                 {
                     "hash" : "0x892da0a49589a1c2e6a59094596811ddccf1a6602f7d79e8a05252a85fb316de",
                     "indexes" : {
@@ -60,7 +60,7 @@
                     "txbytes" : "0xf8ea800a887fffffffffffffff94cccccccccccccccccccccccccccccccccccccccc80b88415d423278edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf5011c68db1c179cd35ab3fc60c63704aa7fcbea40f19782b1611aaba86726a7686cffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000001e84801ca06368792390f8ea16f2392fb5166884f061ae4ada88292842b97c6cbc232fe709a04308f5703284115cea86857d04ab8b99f7722b4ce597bf7bbe9dd84f77a2f72c"
                 }
             ],
-            "Istanbul" : [
+            "SilaIstanbul" : [
                 {
                     "hash" : "0x55ba28e30587ae5233b5ebda810303359b2ba51b86e70a0f5daf7686d1d43beb",
                     "indexes" : {
@@ -92,7 +92,7 @@
                     "txbytes" : "0xf8ea800a887fffffffffffffff94cccccccccccccccccccccccccccccccccccccccc80b88415d423278edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf5011c68db1c179cd35ab3fc60c63704aa7fcbea40f19782b1611aaba86726a7686cffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000001e84801ca06368792390f8ea16f2392fb5166884f061ae4ada88292842b97c6cbc232fe709a04308f5703284115cea86857d04ab8b99f7722b4ce597bf7bbe9dd84f77a2f72c"
                 }
             ],
-            "London" : [
+            "SilaLondon" : [
                 {
                     "hash" : "0xbe2c4126ca9f17cf7de9d703c2435c5ab8423df7c46c7e4b119daa8e89c76839",
                     "indexes" : {
@@ -156,7 +156,7 @@
                     "txbytes" : "0xf8ea800a887fffffffffffffff94cccccccccccccccccccccccccccccccccccccccc80b88415d423278edad8b55b1586805ea8c245d8c16b06a5102b791fc6eb60693731c0677bf5011c68db1c179cd35ab3fc60c63704aa7fcbea40f19782b1611aaba86726a7686cffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000001e84801ca06368792390f8ea16f2392fb5166884f061ae4ada88292842b97c6cbc232fe709a04308f5703284115cea86857d04ab8b99f7722b4ce597bf7bbe9dd84f77a2f72c"
                 }
             ],
-            "Shanghai" : [
+            "SilaShanghai" : [
                 {
                     "hash" : "0xbe2c4126ca9f17cf7de9d703c2435c5ab8423df7c46c7e4b119daa8e89c76839",
                     "indexes" : {

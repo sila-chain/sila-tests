@@ -155,9 +155,9 @@
                 "chainname" : "B",
                 "blocknumber" : "4",
                 "expectException" : {
-                    "Istanbul" : "InvalidUncleParentHash",
-                    "Berlin" : "InvalidUncleParentHash",
-                    "London" : "InvalidUncleParentHash",
+                    "SilaIstanbul" : "InvalidUncleParentHash",
+                    "SilaBerlin" : "InvalidUncleParentHash",
+                    "SilaLondon" : "InvalidUncleParentHash",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeUncleHashIsNotEmpty"
                 },

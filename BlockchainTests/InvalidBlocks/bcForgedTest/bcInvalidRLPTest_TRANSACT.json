@@ -9,7 +9,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -67,7 +67,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -125,7 +125,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -183,7 +183,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -415,7 +415,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -473,7 +473,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -531,7 +531,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -589,7 +589,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -647,7 +647,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -705,7 +705,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -937,7 +937,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -995,7 +995,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1053,7 +1053,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1112,7 +1112,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1170,7 +1170,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1228,7 +1228,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1286,7 +1286,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1518,7 +1518,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1576,7 +1576,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1634,7 +1634,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1693,7 +1693,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1751,7 +1751,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1809,7 +1809,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -1867,7 +1867,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2099,7 +2099,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2157,7 +2157,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2215,7 +2215,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2274,7 +2274,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2332,7 +2332,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2390,7 +2390,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2448,7 +2448,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2680,7 +2680,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2738,7 +2738,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2796,7 +2796,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2855,7 +2855,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2913,7 +2913,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -2971,7 +2971,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3029,7 +3029,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3261,7 +3261,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3319,7 +3319,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3377,7 +3377,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3436,7 +3436,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3494,7 +3494,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3552,7 +3552,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3610,7 +3610,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3842,7 +3842,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3900,7 +3900,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -3958,7 +3958,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4017,7 +4017,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4075,7 +4075,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4133,7 +4133,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4191,7 +4191,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4423,7 +4423,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4481,7 +4481,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4539,7 +4539,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4597,7 +4597,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4655,7 +4655,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4713,7 +4713,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -4945,7 +4945,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5003,7 +5003,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5061,7 +5061,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5119,7 +5119,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5177,7 +5177,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5235,7 +5235,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5467,7 +5467,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5525,7 +5525,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5583,7 +5583,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5642,7 +5642,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5700,7 +5700,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5758,7 +5758,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -5816,7 +5816,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6048,7 +6048,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6106,7 +6106,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6164,7 +6164,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6222,7 +6222,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6280,7 +6280,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6338,7 +6338,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6570,7 +6570,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6628,7 +6628,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6686,7 +6686,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6745,7 +6745,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6803,7 +6803,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6861,7 +6861,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -6919,7 +6919,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7151,7 +7151,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7209,7 +7209,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7267,7 +7267,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7325,7 +7325,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7383,7 +7383,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7441,7 +7441,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7673,7 +7673,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7731,7 +7731,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7789,7 +7789,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "London",
+        "network" : "SilaLondon",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7848,7 +7848,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Berlin",
+        "network" : "SilaBerlin",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7906,7 +7906,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Byzantium",
+        "network" : "SilaByzantium",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -7964,7 +7964,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Constantinople",
+        "network" : "SilaConstantinople",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -8022,7 +8022,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "ConstantinopleFix",
+        "network" : "SilaConstantinopleFix",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -8254,7 +8254,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Homestead",
+        "network" : "SilaHomestead",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",
@@ -8312,7 +8312,7 @@
             "sourceHash" : "e00f862fd962d9dd2e41324be2b3c118efcbfec6530cfb9662c701aa8f93c92a"
         },
         "sealEngine" : "NoProof",
-        "network" : "Istanbul",
+        "network" : "SilaIstanbul",
         "pre" : {
             "0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b" : {
                 "balance" : "0x02540be400",

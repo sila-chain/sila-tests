@@ -25,7 +25,7 @@
             "previousHash" : "0x5e20a0453cecd065ea59c37ac63e079ee08998b6045136a8ce6635c7912ec0b6"
         },
         "post" : {
-            "Cancun" : [
+            "SilaCancun" : [
                 {
                     "expectException" : "TR_EMPTYBLOB",
                     "hash" : "0x668817abd521eb1401e0b8e52014bf6e36346dc786bf9084f3f03ac09b2ffaa2",

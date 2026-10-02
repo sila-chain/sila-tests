@@ -72,9 +72,9 @@
             },
             {
                 "expectException" : {
-                    "Istanbul" : "InvalidStateRoot",
-                    "Berlin" : "InvalidStateRoot",
-                    "London" : "InvalidStateRoot",
+                    "SilaIstanbul" : "InvalidStateRoot",
+                    "SilaBerlin" : "InvalidStateRoot",
+                    "SilaLondon" : "InvalidStateRoot",
                     "Merge" : "3675PreMerge1559BlockRejected",
                     ">=Shanghai" : "PostMergeUncleHashIsNotEmpty"
                 },
